@@ -1,0 +1,157 @@
+.introduction {
+  padding: 0 26px 0 26px;
+  margin-bottom: 25px;
+}
+
+.introduction__container {
+  position: relative;
+}
+
+.introduction__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 81px 72px 150px 109px;
+  border-radius: 22.27px;
+  background-color: #fcf9ec;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.introduction__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/img/svg/introductionLeftBorderBG.svg') no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.introduction__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37%;
+  height: 100%;
+  background: url('../assets/img/svg/introductionRightBorderBG.svg') no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.introduction__dialog {
+  display: flex;
+  height: fit-content;
+}
+
+.introduction__dialog-owner-avatar {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.introduction__dialog_text-wrapper {
+  max-width: 712px;
+  padding: 25px 51px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+}
+
+.introduction__dialog_text {
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.introduction__dialog_text-underline {
+  text-decoration: underline;
+}
+
+.introduction__dialog_text:nth-of-type(1) {
+  max-width: 580px;
+  margin-bottom: 25px;
+}
+
+.introduction__dialog_text:nth-of-type(2) {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.introduction__dialog_text:nth-of-type(3) {
+  max-width: 530px;
+}
+
+.introduction__info {
+  padding-top: 44px;
+}
+
+.introduction__info_qr {
+}
+
+.introduction__info_figure {
+}
+
+.introduction__info_figcaption {
+  padding-left: 40px;
+  margin-bottom: 3px;
+  font-family: Geologica;
+  font-size: 13.28px;
+  font-weight: 400;
+  line-height: 17.93px;
+  color: #1c195b;
+}
+
+.introduction__info_owners-photo {
+
+}
+
+.introduction__info_qr-code-wrapper {
+}
+
+.introduction__info_qr-code {
+}
+
+.introduction__info_owners-figure {
+  position: absolute;
+  bottom: 0;
+  right: 13px;
+  width: 617px;
+  height: 551px;
+}
+
+.introduction__info_owners-wrapper {
+  position: relative;
+}
+
+.introduction__info_owners-figcaption {
+  position: absolute;
+  right: 92px;
+  bottom: 126px;
+  padding: 11px 56px 11px 18px;
+  border-radius: 6px;
+  background-color: #2943DE;
+}
+
+.introduction__info_owners-info-heading {
+  margin-bottom: 5px;
+  font-family: Wadik;
+font-size: 18px;
+font-weight: 700;
+line-height: 23.4px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.introduction__info_owners-info-text {
+  font-family: Geologica;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.8px;
+text-align: left;
+
+}

@@ -1,0 +1,151 @@
+.why-us {
+  padding: 0 26px 0 26px;
+  margin-bottom: 25px;
+}
+
+.why-us__wrapper {
+  position: relative;
+  padding: 73px 103px 134px 113px;
+  background: url('../assets/img/whyUsBG.png') no-repeat;
+  border-radius: 22.27px;
+  isolation: isolate;
+}
+
+.why-us__wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+  width: 643px;
+  height: 584px;
+  background: url('../assets/img/franklin.png') no-repeat;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.why-us__question-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.why-us__question {
+  max-width: 637px;
+  padding: 25px 44px 26px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #413cb2;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.why-us__question-avatar {
+  margin-left: 10px;
+}
+
+.why-us__first-answer {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.why-us__first-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.why-us__first-answer-content {
+  max-width: 822px;
+  padding: 25px 40px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1C195B;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+}
+
+.why-us__first-answer-text:nth-of-type(1) {
+  margin-bottom: 15px;
+  font-family: Bicubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.why-us__first-answer-text:nth-of-type(2) {
+  max-width: 600px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.why-us__second-answer {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.why-us__second-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.why-us__second-answer-content {
+  max-width: 642px;
+  padding: 25px 32px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1C195B;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.why-us__second-answer-text:nth-of-type(1) {
+  margin-bottom: 23px;
+}
+
+.why-us__second-answer-text:nth-of-type(2) {
+  max-width: 540px;
+  margin-bottom: 25px;
+}
+
+.why-us__second-answer-text:nth-of-type(3) {
+  position: relative;
+  padding: 22px 26px 31px 66px;
+  color: #1C195B;
+  background: url('../assets/img/svg/whyUsSecondAnswerTextBG.svg') no-repeat;
+  background-size: contain;
+}
+
+.why-us__second-answer-text:nth-of-type(3)::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+  background: url('../assets/img/svg/whyUsSecondAnswerDollarSign.svg') no-repeat;
+}
+
+.why-us__third-answer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.why-us__third-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.why-us__third-answer-text {
+  max-width: 599px;
+  padding: 25px 32px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1C195B;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}

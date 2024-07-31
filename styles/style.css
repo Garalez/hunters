@@ -1,0 +1,137 @@
+@import url('./header.css');
+@import url('./introduction.css');
+@import url('./participation.css');
+@import url('./why-us.css');
+@import url('./qa-investments.css');
+
+@font-face {
+  font-family: Bicubik;
+  src: url('../assets/fonts/bicubik/bicubik.woff') format('woff'),
+    url('../assets/fonts/bicubik/bicubik.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaThinRegular.ttf') format('truetype');
+  font-weight: 250;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaLightRegular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('../assets/fonts/geologica/GeologicaExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Wadik;
+  src: url('../assets/fonts/wadik/Wadik.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  max-width: 1440px;
+  min-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 0 39px 0;
+  background-color: #FCF9EC;
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+.text-selection {
+  color: #F8E74E;
+}
+
+.text-selection-blue {
+  color: #2943DE;
+}

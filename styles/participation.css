@@ -1,0 +1,385 @@
+.participation {
+  padding: 0 26px 0 26px;
+  margin-bottom: 25px;
+}
+
+.participation__wrapper {
+  display: flex;
+  padding: 70px 0px 59px 113px;
+  background: url('../assets/img/participationBG.png') no-repeat;
+  background-size: 100% 100%;
+  border-radius: 25px;
+}
+
+.participation__dialog-owner-avatar {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.participation__content {
+  padding: 25px 47px 17px 35px;
+  background-color: #1c195b;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  box-shadow: 0px 0px 45px 0px #ffe70c94;
+}
+
+.participation__heading {
+  margin-bottom: 25px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.participation__cards-wrapper {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.participation__card-provide {
+  margin-right: 25px;
+  padding: 28px 12px 29px 42px;
+  background: url('../assets/img/svg/participationCardProvideBG.svg') no-repeat;
+  background-size: contain;
+}
+
+.participation__card-provide-heading {
+  max-width: 400px;
+  margin-bottom: 19px;
+  font-family: Wadik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.91px;
+}
+
+.participation__card-provide-list {
+}
+
+.participation__card-provide-item {
+}
+
+.participation__card-provide-item:nth-of-type(1) {
+  padding-left: 43px;
+  margin-bottom: 14px;
+}
+
+.participation__card-provide-item:nth-of-type(2) {
+  padding-left: 45px;
+  margin-bottom: 16px;
+}
+
+.participation__card-provide-item:nth-of-type(3) {
+  padding-left: 46px;
+  margin-bottom: 17px;
+}
+
+.participation__card-provide-item:nth-of-type(4) {
+  padding-left: 47px;
+}
+
+.participation__card-provide-text {
+  position: relative;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
+.participation__card-provide-item:nth-of-type(1) .participation__card-provide-text::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -43px;
+  width: 28px;
+  height: 28px;
+  background: url('../assets/img/svg/participationStudy.svg') no-repeat;
+}
+
+.participation__card-provide-item:nth-of-type(2) .participation__card-provide-text::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  background: url('../assets/img/svg/participationMentor.svg') no-repeat;
+}
+
+.participation__card-provide-item:nth-of-type(3) .participation__card-provide-text::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -46px;
+  width: 31px;
+  height: 31px;
+  background: url('../assets/img/svg/participationCommunity.svg') no-repeat;
+}
+
+.participation__card-provide-item:nth-of-type(4) .participation__card-provide-text::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -47px;
+  width: 32px;
+  height: 32px;
+  background: url('../assets/img/svg/participationInvest.svg') no-repeat;
+}
+
+.participation__card-request {
+  padding: 28px 27px 29px 40px;
+  background: url('../assets/img/svg/participationCardRequestBG.svg') no-repeat;
+  background-size: contain;
+}
+
+.participation__card-request-heading {
+  margin-bottom: 15px;
+  font-family: Wadik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.91px;
+}
+
+.participation__card-request-list {
+}
+
+.participation__card-request-item:nth-of-type(1) {
+  padding-left: 38px;
+  margin-bottom: 10px;
+}
+
+.participation__card-request-item:nth-of-type(2) {
+  padding-left: 38px;
+  margin-bottom: 20px;
+}
+
+.participation__card-request-item:nth-of-type(3) {
+  padding-left: 13px;
+}
+
+.participation__card-request-item:nth-of-type(3) .participation__card-request-text {
+  position: relative;
+  width: fit-content;
+  padding: 12px 18px 13px 29px;
+  border-radius: 6px;
+  background-color: #2943de;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.participation__card-request-item:nth-of-type(3) .participation__card-request-text::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -13px;
+  width: 32px;
+  height: 37px;
+
+  background: url('../assets/img/headerCardWarningExclamationMark.png') no-repeat;
+}
+
+.participation__card-request-text {
+  position: relative;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
+.participation__card-request-item:nth-of-type(1) .participation__card-request-text::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -38px;
+  width: 24px;
+  height: 18px;
+  background: url('../assets/img/svg/headerCardCheckmark.svg') no-repeat;
+  background-size: contain;
+}
+
+.participation__card-request-item:nth-of-type(2) .participation__card-request-text::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: -38px;
+  width: 24px;
+  height: 18px;
+  background: url('../assets/img/svg/headerCardCheckmark.svg') no-repeat;
+  background-size: contain;
+}
+
+.participation__community-wrapper {
+  max-width: fit-content;
+  margin-bottom: 20px;
+}
+
+.participation__community-button-wrapper {
+  position: relative;
+  max-width: 397px;
+  margin-bottom: 9px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.participation__community-button {
+  position: relative;
+  padding: 19px 53px 14px 47px;
+  background-color: #ffe70c;
+  box-shadow: 0px 4px 34px 0px #00000057;
+
+  z-index: 2;
+  transition: all 0.3s ease;
+  transform: translate(6px, -6px);
+
+  font-family: Bicubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.participation__community-button::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -24px;
+  width: 93px;
+  height: 47px;
+  background: url('../assets/img/svg/headerCommunityBtnRibbon.svg') no-repeat;
+  background-size: contain;
+}
+
+.participation__community-button-wrapper:hover .participation__community-button {
+  transform: translate(6px, -11px);
+}
+
+.participation__community-button-underlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.7%;
+  height: 100%;
+  background-color: #ffe70c;
+  z-index: 1;
+}
+
+.participation__community-counter-wrapper {
+  padding: 10px 10px 16px 29px;
+  background: url('../assets/img/svg/headerCommunityCounterBG.svg') no-repeat;
+  background-size: contain;
+
+  filter: drop-shadow(0px 0 20px #ffe70c);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.participation__community-counter-text {
+  max-width: 235px;
+  font-family: Geologica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.participation__community-counter-counter {
+  position: relative;
+  top: 2px;
+  padding: 10px 21px 0 20px;
+  background-color: #2943de;
+  border-radius: 6px;
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.6);
+
+  font-family: Wadik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.91px;
+}
+
+.participation__profit-list {
+}
+
+.participation__profit-item {
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 23px;
+}
+
+.participation__profit-item:nth-of-type(1) {
+  margin-bottom: 7px;
+}
+
+.participation__profit-item:nth-of-type(2) {
+  margin-bottom: 17px;
+  font-family: Bicubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.81px;
+}
+
+.participation__profit-item:nth-of-type(3) {
+  padding-left: 42px;
+  margin-bottom: 9px;
+}
+
+.participation__profit-item:nth-of-type(4) {
+  padding-left: 43px;
+  margin-bottom: 8px;
+}
+
+.participation__profit-item:nth-of-type(5) {
+  padding-left: 44px;
+  margin-bottom: 8px;
+}
+
+.participation__profit-img {
+  position: relative;
+  left: -3px;
+}
+
+.participation__profit-online {
+  position: relative;
+}
+
+.participation__profit-online::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -42px;
+  width: 27px;
+  height: 27px;
+  background: url('../assets/img/svg/participationProfitDollarSign.svg') no-repeat;
+}
+
+.participation__profit-independance {
+  position: relative;
+}
+
+.participation__profit-independance::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -43px;
+  width: 28px;
+  height: 28px;
+  background: url('../assets/img/svg/participationProfitHandshake.svg') no-repeat;
+}
+
+.participation__profit-help {
+  position: relative;
+
+  max-width: 300px;
+}
+
+.participation__profit-help::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -44px;
+  width: 29px;
+  height: 29px;
+  background: url('../assets/img/svg/participationProfitHeart.svg') no-repeat;
+}
