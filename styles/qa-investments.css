@@ -1,0 +1,266 @@
+.qa-investments {
+  padding: 0 26px 0 26px;
+  margin-bottom: 25px;
+}
+
+.qa-investments__wrapper {
+  padding: 70px 108px 55px 113px;
+  border-radius: 25px;
+  background: url('../assets/img/qaInvestmentsBG.png') no-repeat;
+}
+
+.qa-investments__first-answer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-investments__first-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.qa-investments__first-answer-content {
+  max-width: 627px;
+  padding: 25px 35px 25px 35px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px rgba(76, 100, 243, 1);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+}
+
+.qa-investments__first-answer-text {
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.9px;
+}
+
+.qa-investments__first-answer-text:nth-of-type(3) {
+  margin-bottom: 25px;
+}
+
+.qa-investments__first-answer-list {
+  padding: 26px 0px 18px 87px;
+
+  background: url('../assets/img/svg/qaInvestmentsFirstAnswerListBG.svg') no-repeat;
+}
+
+.qa-investments__first-answer-item:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+
+.qa-investments__first-answer-item:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+
+.qa-investments__first-answer-item-text {
+  position: relative;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 23px;
+}
+
+.qa-investments__first-answer-item:nth-of-type(1) .qa-investments__first-answer-item-text::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  background: url('../assets/img/svg/qaInvestmentsTime.svg') no-repeat;
+}
+
+.qa-investments__first-answer-item:nth-of-type(2) .qa-investments__first-answer-item-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -46px;
+  width: 31px;
+  height: 31px;
+  background: url('../assets/img/svg/qaInvestmentsLaptop.svg') no-repeat;
+}
+
+.qa-investments__first-answer-item:nth-of-type(3) .qa-investments__first-answer-item-text::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -46px;
+  width: 31px;
+  height: 31px;
+  background: url('../assets/img/svg/qaInvestmentsDoubleCheckmark.svg') no-repeat;
+}
+
+.qa-investments__first-question-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 51px;
+}
+
+.qa-investments__first-question-text {
+  padding: 25px 35px 26px 35px;
+  background-color: #413cb2;
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.qa-investments__first-question-avatar {
+  margin-left: 10px;
+}
+
+.qa-investments__second-answer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 38px;
+}
+
+.qa-investments__second-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.qa-investments__second-answer-content {
+  width: 100%;
+  max-width: 694px;
+  padding: 25px 35px 25px 35px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px rgba(76, 100, 243, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+}
+
+.qa-investments__second-answer-heading {
+  margin-bottom: 16px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.qa-investments__second-answer-text {
+  max-width: 550px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.qa-investments__second-question-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-investments__second-question-text {
+  max-width: 621px;
+  padding: 24px 35px 26px 35px;
+  background-color: #413cb2;
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.qa-investments__second-question-avatar {
+  margin-left: 10px;
+}
+
+.qa-investments__third-answer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-investments__third-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.qa-investments__third-answer-text {
+  width: 100%;
+  max-width: 694px;
+  padding: 25px 0 25px 35px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px rgba(22, 115, 255, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.qa-investments__third-question-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-investments__third-question-text {
+  max-width: 656px;
+  padding: 25px 35px 26px 35px;
+  background-color: #413cb2;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.qa-investments__third-question-avatar {
+  margin-left: 10px;
+}
+
+.qa-investments__fourth-answer-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.qa-investments__fourth-answer-owner-avatar {
+  margin-right: 10px;
+}
+
+.qa-investments__fourth-answer-content {
+  max-width: 627px;
+  padding: 25px 35px 25px 35px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px rgba(22, 115, 255, 0.59);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+}
+
+.qa-investments__fourth-answer-list {
+  padding: 22px 0px 21px 79px;
+  background: url('../assets/img/svg/qaInvestmentsFourthAnswerListBG.svg') no-repeat;
+}
+
+.qa-investments__fourth-answer-item:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+.qa-investments__fourth-answer-item:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.qa-investments__fourth-answer-text {
+  position: relative;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 23px;
+}
+
+.qa-investments__fourth-answer-item .qa-investments__fourth-answer-text::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -38px;
+  width: 24px;
+  height: 18px;
+  background: url('../assets/img/svg/headerCardCheckmark.svg') no-repeat;
+}
+

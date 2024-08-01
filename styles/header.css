@@ -100,12 +100,12 @@
 .header__footer {
   display: flex;
   justify-content: center;
-  padding-right: 6px;
+  padding-right: 5px;
   gap: 28px;
 }
 
 .header__card-wrapper {
-  padding: 28px 33px 28px 34px;
+  padding: 28px 33px 28px 33px;
   background: url('../assets/img/svg/headerCardBorder.svg') no-repeat;
   background-size: cover;
 }

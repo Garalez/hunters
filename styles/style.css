@@ -3,6 +3,9 @@
 @import url('./participation.css');
 @import url('./why-us.css');
 @import url('./qa-investments.css');
+@import url('./qa-income.css');
+@import url('./qa-team.css');
+@import url('./qa-earnings.css');
 
 @font-face {
   font-family: Bicubik;
@@ -134,4 +137,8 @@ fieldset {
 
 .text-selection-blue {
   color: #2943DE;
+}
+
+.text-selection-red {
+  color: #FF5050;
 }
