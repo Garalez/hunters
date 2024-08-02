@@ -6,6 +6,9 @@
 @import url('./qa-income.css');
 @import url('./qa-team.css');
 @import url('./qa-earnings.css');
+@import url('./qa-acknowledge.css');
+@import url('./qa-common-issues.css');
+@import url('./footer.css');
 
 @font-face {
   font-family: Bicubik;
@@ -87,7 +90,7 @@ body {
   min-width: 390px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 0 39px 0;
+  padding: 0;
   background-color: #FCF9EC;
   color: #FFFFFF;
 }

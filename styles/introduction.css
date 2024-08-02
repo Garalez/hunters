@@ -89,12 +89,6 @@
   padding-top: 44px;
 }
 
-.introduction__info_qr {
-}
-
-.introduction__info_figure {
-}
-
 .introduction__info_figcaption {
   padding-left: 40px;
   margin-bottom: 3px;
@@ -103,16 +97,6 @@
   font-weight: 400;
   line-height: 17.93px;
   color: #1c195b;
-}
-
-.introduction__info_owners-photo {
-
-}
-
-.introduction__info_qr-code-wrapper {
-}
-
-.introduction__info_qr-code {
 }
 
 .introduction__info_owners-figure {

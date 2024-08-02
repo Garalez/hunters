@@ -1,0 +1,99 @@
+.footer {
+  padding: 51px 0 73px 0;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 968px;
+  background: url('../assets/img/footerBG.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+}
+
+.footer__subheading {
+  margin-bottom: 15px;
+  font-family: Bicubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: center;
+}
+
+.footer__warning-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-left: 27px;
+  margin-bottom: 37px;
+}
+
+.footer__warning {
+  position: relative;
+  background: url('../assets/img/svg/headerWarningBG.svg') no-repeat;
+  background-size: 100% 100%;
+  padding: 9px 11px 10px 17px;
+
+  font-family: Geologica;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.footer__warning::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -26px;
+  width: 25px;
+  height: 28px;
+  background: url('../assets/img/headerWarningExclamationMark.png') no-repeat;
+  background-size: contain;
+}
+
+.footer__title {
+  max-width: 785px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+
+.footer__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.footer__community-wrapper {
+  margin-bottom: 0;
+  padding-right: 5px;
+}
+
+.footer__community-counter-wrapper {
+  padding: 0 12px 0 18px;
+}
+
+.footer__community-counter {
+  padding: 11px 10px 14px 21px;
+  background: url('../assets/img/svg/footerCommunityCounterBG.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.footer__community-counter-counter {
+  top: 0px;
+  left: -3px;
+  padding: 10px 21px 0 20px;
+}
