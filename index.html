@@ -12,47 +12,74 @@
   <body>
     <header>
       <section class="header">
-        <div class="header__logo-wrapper">
-          <img class="header__logo" src="./assets/img/svg/logo.svg" alt="100F logo" />
-          <div class="header__logo-locale">РУ</div>
-        </div>
-        <p class="header__subheading">
-          Проект от 100 FRANKLINS
-          <span class="text-selection"
-            >по восстановлению<br />
-            благосостояния Украины и украинцев</span
-          >
-        </p>
-        <div class="header__warning-wrapper">
-          <p class="header__warning">
-            Только для украинцев 16+, у кого есть 2-3 часа в день<br />
-            и потребность в дополнительном заработке без вложений
-          </p>
-        </div>
-        <h1 class="header__title">
-          Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
-          <span class="text-selection">Поможем</span> на каждом шаге.<br />
-          И даже <span class="text-selection">инвестируем</span> в вас деньги
-        </h1>
-        <div class="header__footer">
-          <div class="header__card-wrapper">
-            <p class="header__card-required">От вас требуется:</p>
-            <p class="header__card-confirmation">Подтвердить свое гражданство и личность 16+</p>
-            <p class="header__card-runtime">2-3 часа в день на выполнение детальных заданий</p>
-            <div class="header__card-warning-wrapper">
-              <p class="header__card-warning">Стартовый капитал – не нужен!</p>
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__logo-wrapper">
+              <picture>
+                <source media="(min-width: 591px)" srcset="./assets/img/svg/logo.svg" />
+                <source media="(max-width: 590px)" srcset="./assets/img/svg/logoMobile.svg" />
+                <img class="header__logo" src="./assets/img/svg/logo.svg" alt="100F logo" />
+              </picture>
+              <div class="header__logo-locale">РУ</div>
             </div>
-          </div>
-          <div class="header__community-wrapper">
-            <div class="header__community-button-wrapper">
-              <button class="header__community-button">Стать частью сообщества</button>
-              <span class="header__community-button-underlay"></span>
-            </div>
-            <div class="header__community-counter-wrapper">
-              <p class="header__community-counter-text">
-                Оставили заявку на подключение к сообществу:
+            <p class="header__subheading header__subheading-desktop">
+              Проект от 100 FRANKLINS
+              <span class="text-selection"
+                >по восстановлению<br />
+                благосостояния Украины и украинцев</span
+              >
+            </p>
+            <p class="header__subheading header__subheading-mobile">
+              Проект от 100 FRANKLINS
+              <span class="text-selection"
+                >по восстановлению благосостояния Украины и украинцев</span
+              >
+            </p>
+            <div class="header__warning-wrapper">
+              <p class="header__warning header__warning-desktop">
+                Только для украинцев 16+, у кого есть 2-3 часа в день<br />
+                и потребность в дополнительном заработке без вложений
               </p>
-              <p class="header__community-counter-counter">1891</p>
+              <p class="header__warning header__warning-mobile">
+                Только для украинцев 16+, у кого<br />
+                есть 2-3 часа в день и потребность<br />
+                в дополнительном заработке без вложений
+              </p>
+            </div>
+            <h1 class="header__title header__title-desktop">
+              Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
+              <span class="text-selection">Поможем</span> на каждом шаге.<br />
+              И даже <span class="text-selection">инвестируем</span> в вас деньги
+            </h1>
+            <h1 class="header__title header__title-mobile">
+              Мы <span class="text-selection">бесплатно</span> вас<br />
+              научим зарабатывать<br />
+              на крипте. <span class="text-selection">Поможем</span><br />
+              на каждом шаге.<br />
+              И даже <span class="text-selection">инвестируем</span><br />
+              в вас деньги
+            </h1>
+            <div class="header__footer">
+              <div class="header__card-wrapper">
+                <p class="header__card-required">От вас требуется:</p>
+                <p class="header__card-confirmation">Подтвердить свое гражданство и личность 16+</p>
+                <p class="header__card-runtime">2-3 часа в день на выполнение детальных заданий</p>
+                <div class="header__card-warning-wrapper">
+                  <p class="header__card-warning">Стартовый капитал – не нужен!</p>
+                </div>
+              </div>
+              <div class="header__community-wrapper">
+                <div class="header__community-button-wrapper">
+                  <button class="header__community-button">Стать частью сообщества</button>
+                  <span class="header__community-button-underlay"></span>
+                </div>
+                <div class="header__community-counter-wrapper">
+                  <p class="header__community-counter-text">
+                    Оставили заявку на подключение к сообществу:
+                  </p>
+                  <p class="header__community-counter-counter">1891</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -61,20 +88,16 @@
 
     <main>
       <section class="introduction">
-        <div class="introduction__container">
-          <div class="introduction__wrapper">
+        <div class="introduction__wrapper">
+          <div class="introduction__container">
             <div class="introduction__dialog">
               <img
                 class="introduction__dialog-owner-avatar"
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
-              <!-- <img
-                class="owner-avatar-mobile"
-                src="./assets/img/ownerAvatarMobile.svg"
-                alt="owner avatar" /> -->
               <div
                 class="introduction__dialog_text-wrapper introduction__dialog_text-wrapper-desktop">
-                <p class="introduction__dialog_text">
+                <p class="introduction__dialog_text introduction__dialog_text-desktop">
                   Всем – привет! Меня зовут Кир Уланов, и до начала войны большая часть моей
                   профессиональной деятельности была сосредоточена на территории РФ. Обрубив все
                   концы – я начал строить бизнес с 0 в сфере крипты
@@ -94,46 +117,78 @@
                   при этом помогая ветеранам восстанавливаться после боевых действий
                 </p>
               </div>
+              <div
+                class="introduction__dialog_text-wrapper introduction__dialog_text-wrapper-mobile">
+                <p class="introduction__dialog_text">
+                  Всем – привет! Меня зовут Кир Уланов, и до начала войны большая часть моей
+                  профессиональной деятельности была сосредоточена на территории РФ. Обрубив все
+                  концы – я начал строить бизнес<br />
+                  с 0 в сфере крипты
+                </p>
+                <p class="introduction__dialog_text">
+                  За 2 года удалось построить компанию 100 FRANKLINS (<span
+                    class="introduction__dialog_text-underline"
+                    >100F.COM</span
+                  >) в США и организовать сообщество людей, с которыми вместе зарабатываем на крипте
+                </p>
+                <p class="introduction__dialog_text">
+                  Финально организовав все рабочие процессы, я увидел, как
+                  <span class="text-selection"
+                    >наша команда экспертов и инвесторов может помочь украинцам зарабатывать без
+                    вложений,</span
+                  >
+                  при этом помогая ветеранам восстанавливаться<br />
+                  после боевых действий
+                </p>
+              </div>
             </div>
-            <div class="introduction__info">
-              <div class="introduction__info_qr">
-                <figure class="introduction__info_figure">
-                  <figcaption class="introduction__info_figcaption">О КИРЕ</figcaption>
-                  <div class="introduction__info_qr-code-wrapper">
-                    <img
-                      class="introduction__info_qr-code"
-                      src="./assets/img/svg/qrCode.svg"
-                      alt="QR код" />
+            <div class="introduction__info-wrapper">
+              <div class="introduction__info">
+                <div class="introduction__info_qr">
+                  <figure class="introduction__info_figure">
+                    <figcaption class="introduction__info_figcaption">О КИРЕ</figcaption>
+                    <div class="introduction__info_qr-code-wrapper">
+                      <picture>
+                        <source media="(min-width: 591px)" srcset="./assets/img/svg/qrCode.svg" />
+                        <source
+                          media="(max-width: 590px)"
+                          srcset="./assets/img/svg/qrCodeMobile.svg" />
+                        <img
+                          class="introduction__info_qr-code"
+                          src="./assets/img/svg/qrCode.svg"
+                          alt="QR код" />
+                      </picture>
+                    </div>
+                  </figure>
+                </div>
+                <figure class="introduction__info_owners-figure">
+                  <div class="introduction__info_owners-wrapper">
+                    <picture>
+                      <source media="(min-width: 591px)" srcset="./assets/img/ownersPhoto.png" />
+                      <source
+                        media="(max-width: 590px)"
+                        srcset="./assets/img/ownersPhotoMobile.png" />
+                      <img
+                        class="introduction__info_owners-photo"
+                        src="./assets/img/ownersPhoto.png"
+                        alt="Фото основателя" />
+                    </picture>
+                    <figcaption class="introduction__info_owners-figcaption">
+                      <p class="introduction__info_owners-info-heading">Кир Уланов</p>
+                      <p class="introduction__info_owners-info-text">
+                        Создатель crypto-экосистемы<br />
+                        100 FRANKLINS
+                      </p>
+                    </figcaption>
                   </div>
                 </figure>
               </div>
-              <figure class="introduction__info_owners-figure">
-                <div class="introduction__info_owners-wrapper">
-                  <picture>
-                    <source media="(min-width: 590px)" srcset="./assets/img/ownersPhoto.png" />
-                    <source
-                      media="(max-width: 591px)"
-                      srcset="./assets/img/ownersPhotoMobile.png" />
-                    <img
-                      class="introduction__info_owners-photo"
-                      src="./assets/img/ownersPhoto.png"
-                      alt="Фото основателя" />
-                  </picture>
-                  <figcaption class="introduction__info_owners-figcaption">
-                    <p class="introduction__info_owners-info-heading">Кир Уланов</p>
-                    <p class="introduction__info_owners-info-text">
-                      Создатель crypto-экосистемы<br />
-                      100 FRANKLINS
-                    </p>
-                  </figcaption>
-                </div>
-              </figure>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="participation">
+      <!-- <section class="participation">
         <div class="participation__wrapper">
           <img
             class="participation__dialog-owner-avatar"
@@ -226,9 +281,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="why-us">
+      <!-- <section class="why-us">
         <div class="why-us__wrapper">
           <div class="why-us__question-wrapper">
             <p class="why-us__question">
@@ -309,9 +364,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-investments">
+      <!-- <section class="qa-investments">
         <div class="qa-investments__wrapper">
           <div class="qa-investments__first-answer-wrapper">
             <img
@@ -431,9 +486,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-income">
+      <!-- <section class="qa-income">
         <div class="qa-income__wrapper">
           <div class="qa-income__first-question-wrapper">
             <p class="qa-income__first-question-text">
@@ -501,9 +556,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-team">
+      <!-- <section class="qa-team">
         <div class="qa-team__wrapper">
           <div class="qa-team__first-question-wrapper">
             <p class="qa-team__first-question-text">
@@ -586,13 +641,6 @@
                     Рассказываем в тексте и показываем<br />
                     в детальном видеообзоре по шагам, что именно и как необходимо сделать
                   </p>
-                  <!-- <p
-                    class="qa-team__second-answer-todo qa-team__second-answer-todo-mobile">
-                    Рассказываем в тексте<br />
-                    и показываем в детальном видеообзоре по шагам,<br />
-                    что именно и как<br />
-                    необходимо сделать
-                  </p> -->
                   <div class="qa-team__second-answer-todo-img-wrapper">
                     <img src="./assets/img/screenShotGallery/secondScreenShot.png" alt="" />
                     <img src="./assets/img/screenShotGallery/thirdScreenShot.png" alt="" />
@@ -621,11 +669,6 @@
                     производство обучающих материалов, – компания 100 FRANKLINS берет на себя
                   </p>
 
-                  <!-- <p
-                    class="qa-team__second-answer-investment qa-team__second-answer-investment-mobile">
-                    Мы инвестируем. Все расходы для выполнения тестов и активностей компания 100
-                    FRANKLINS берет на себя
-                  </p> -->
                   <div class="qa-team__second-answer-investment-img-wrapper">
                     <img src="./assets/img/screenShotGallery/sixthScreenShot.png" alt="" />
                     <img src="./assets/img/screenShotGallery/seventhScreenShot.png" alt="" />
@@ -701,56 +744,7 @@
                 </div>
               </div>
 
-              <!-- <div id="reviews" class="reviews owl-carousel">
-                <div class="reviews-item reviews-card-wrapper-1">
-                  <div
-                    class="photo reviews-img-wrapper open-modal"
-                    data-video="assets/video/SemeonovVladislavReview.MP4">
-                    <img loading="lazy" src="./assets/img/Превью-8.png" alt="photo" />
-                  </div>
-                  <p class="name">
-                    Семенов<br />
-                    Владислав
-                  </p>
-                  <small class="position">Sales Team Lead</small>
-                </div>
-                <div class="reviews-item reviews-card-wrapper-2">
-                  <div
-                    class="photo reviews-img-wrapper open-modal"
-                    data-video="assets/video/IvanYatskovetsReview.MP4">
-                    <img loading="lazy" src="./assets/img/Превью-9.png" alt="photo" />
-                  </div>
-                  <p class="name">
-                    Иван<br />
-                    Яцковец
-                  </p>
-                  <small class="position">Системный администратор</small>
-                </div>
-                <div class="reviews-item reviews-card-wrapper-3">
-                  <div
-                    class="photo reviews-img-wrapper open-modal"
-                    data-video="assets/video/AntonBudnikReview.MP4">
-                    <img loading="lazy" src="./assets/img/Превью-10.png" alt="photo" />
-                  </div>
-                  <p class="name">
-                    Антон<br />
-                    Будник
-                  </p>
-                  <small class="position">Маркетинг менеджер</small>
-                </div>
-                <div class="reviews-item reviews-card-wrapper-4">
-                  <div
-                    class="photo reviews-img-wrapper open-modal"
-                    data-video="assets/video/OlgaByzdygaReview.MP4">
-                    <img loading="lazy" src="./assets/img/Превью-11.png" alt="photo" />
-                  </div>
-                  <p class="name">
-                    Ольга<br />
-                    Быздыга
-                  </p>
-                  <small class="position">Мама в декрете</small>
-                </div>
-              </div> -->
+              
             </div>
           </div>
 
@@ -777,9 +771,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-earnings">
+      <!-- <section class="qa-earnings">
         <div class="qa-earnings__wrapper">
           <div class="qa-earnings__first-question-wrapper">
             <p class="qa-earnings__first-question-text">А с вами точно… можно заработать?!</p>
@@ -879,9 +873,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-acknowledge">
+      <!-- <section class="qa-acknowledge">
         <div class="qa-acknowledge__wrapper">
           <div class="qa-acknowledge__first-question-wrapper">
             <p class="qa-acknowledge__first-question-text">
@@ -1127,9 +1121,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="qa-common-issues">
+      <!-- <section class="qa-common-issues">
         <div class="qa-common-issues__wrapper">
           <div class="qa-common-issues__first-question-wrapper">
             <p class="qa-common-issues__first-question-text">
@@ -1281,10 +1275,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
           <img src="./assets/img/svg/logo.svg" alt="100F logo" />
@@ -1329,6 +1323,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

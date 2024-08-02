@@ -3,10 +3,6 @@
   margin-bottom: 25px;
 }
 
-.introduction__container {
-  position: relative;
-}
-
 .introduction__wrapper {
   position: relative;
   display: flex;
@@ -25,21 +21,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../assets/img/svg/introductionLeftBorderBG.svg') no-repeat;
-  background-size: contain;
-  z-index: -1;
-}
-
-.introduction__wrapper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 37%;
-  height: 100%;
-  background: url('../assets/img/svg/introductionRightBorderBG.svg') no-repeat;
+  background: url('../assets/img/svg/introductionBG.svg') no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .introduction__dialog {
@@ -85,8 +69,20 @@
   max-width: 530px;
 }
 
+.introduction__info-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 13px;
+}
+
 .introduction__info {
-  padding-top: 44px;
+  position: relative;
+}
+
+.introduction__info_qr {
+  position: absolute;
+  top: 92px;
+  right: 59px;
 }
 
 .introduction__info_figcaption {
@@ -100,14 +96,12 @@
 }
 
 .introduction__info_owners-figure {
-  position: absolute;
-  bottom: 0;
-  right: 13px;
   width: 617px;
   height: 551px;
 }
 
 .introduction__info_owners-wrapper {
+  z-index: -1;
   position: relative;
 }
 
@@ -117,25 +111,158 @@
   bottom: 126px;
   padding: 11px 56px 11px 18px;
   border-radius: 6px;
-  background-color: #2943DE;
+  background-color: #2943de;
 }
 
 .introduction__info_owners-info-heading {
   margin-bottom: 5px;
   font-family: Wadik;
-font-size: 18px;
-font-weight: 700;
-line-height: 23.4px;
-letter-spacing: 0.02em;
-text-align: left;
-
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .introduction__info_owners-info-text {
   font-family: Geologica;
-font-size: 14px;
-font-weight: 400;
-line-height: 16.8px;
-text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
 
+.introduction__dialog_text-wrapper-desktop {
+  display: block;
+}
+
+.introduction__dialog_text-wrapper-mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .introduction__wrapper {
+    padding: 81px 50px 150px 70px;
+  }
+
+  .introduction__info-wrapper {
+    right: -43px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .introduction__dialog_text-wrapper {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .introduction__wrapper {
+    padding: 81px 50px 555px 50px;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 712px;
+  }
+
+  .introduction__info-wrapper {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 590px) {
+  .introduction {
+    padding: 0 7px 0 6px;
+    margin-bottom: 25px;
+  }
+
+  .introduction__container {
+    margin: 0 auto;
+    max-width: 377px;
+  }
+
+  .introduction__wrapper {
+    padding: 29px 0 331px 4px;
+  }
+
+  .introduction__wrapper::before {
+    background: url('../assets/img/introductionBGMobile.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .introduction__dialog-owner-avatar {
+    width: 38px;
+    height: 38px;
+    margin-right: 4px;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 315px;
+    padding: 15px 17px 15px 25px;
+  }
+
+  .introduction__dialog_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .introduction__dialog_text:nth-of-type(1) {
+    max-width: 255px;
+    margin-bottom: 15px;
+  }
+
+  .introduction__dialog_text:nth-of-type(2) {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+
+  .introduction__info_owners-figure {
+    width: 358px;
+    height: 320px;
+  }
+
+  .introduction__info_qr {
+    top: 26px;
+    right: -1px;
+  }
+
+  .introduction__info_qr-code {
+    width: 107px;
+    height: 106px;
+  }
+
+  .introduction__info_figcaption {
+    padding-left: 32px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    line-height: 16.2px;
+  }
+
+  .introduction__info_owners-figcaption {
+    padding: 8px 10px 8px 14px;
+    border-radius: 4.3px;
+    right: 25px;
+    bottom: 25px;
+  }
+
+  .introduction__info_owners-info-heading {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: 0.02em;
+  }
+
+  .introduction__info_owners-info-text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .introduction__dialog_text-wrapper-desktop {
+    display: none;
+  }
+
+  .introduction__dialog_text-wrapper-mobile {
+    display: block;
+  }
 }
