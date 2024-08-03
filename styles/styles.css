@@ -145,3 +145,10 @@ fieldset {
 .text-selection-red {
   color: #FF5050;
 }
+
+@media (max-width: 590px) {
+  .avatar {
+    width: 38px;
+    height: 38px;
+  }
+}

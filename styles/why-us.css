@@ -60,7 +60,7 @@
   max-width: 822px;
   padding: 25px 40px 25px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
-  background-color: #1C195B;
+  background-color: #1c195b;
   box-shadow: 0px 0px 45px 0px #ffe70c94;
 }
 
@@ -94,7 +94,7 @@
   max-width: 642px;
   padding: 25px 32px 25px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
-  background-color: #1C195B;
+  background-color: #1c195b;
   box-shadow: 0px 0px 45px 0px #ffe70c94;
   font-family: Geologica;
   font-size: 18px;
@@ -113,10 +113,11 @@
 
 .why-us__second-answer-text:nth-of-type(3) {
   position: relative;
-  padding: 22px 26px 31px 66px;
-  color: #1C195B;
-  background: url('../assets/img/svg/whyUsSecondAnswerTextBG.svg') no-repeat;
-  background-size: contain;
+  max-width: 572px;
+  padding: 22px 22px 31px 65px;
+  color: #1c195b;
+  background: url('../assets/img/whyUsSecondAnswerTextBG.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .why-us__second-answer-text:nth-of-type(3)::before {
@@ -142,10 +143,195 @@
   max-width: 599px;
   padding: 25px 32px 25px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
-  background-color: #1C195B;
+  background-color: #1c195b;
   box-shadow: 0px 0px 45px 0px #ffe70c94;
   font-family: Geologica;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+}
+
+.why-us__first-answer-content-desktop,
+.why-us__second-answer-content-desktop,
+.why-us__question-desktop {
+  display: block;
+}
+
+.why-us__first-answer-content-mobile,
+.why-us__second-answer-content-mobile,
+.why-us__question-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .why-us__wrapper {
+    padding: 73px 103px 520px 113px;
+  }
+
+  .why-us__wrapper::after {
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  .why-us__first-answer {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .why-us__wrapper {
+    padding: 73px 50px 520px 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .why-us__question {
+    max-width: 463px;
+  }
+
+  .why-us__first-answer,
+  .why-us__second-answer,
+  .why-us__third-answer {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 830px) {
+  .why-us__wrapper {
+    padding: 73px 25px 450px 25px;
+  }
+
+  .why-us__wrapper::after {
+    background-size: contain;
+    width: 570px;
+  }
+
+  .why-us__first-answer,
+  .why-us__second-answer,
+  .why-us__third-answer {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 680px) {
+  .why-us__question {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 590px) {
+  .why-us {
+    padding: 0 7px 0 6px;
+    margin-bottom: 25px;
+  }
+
+  .why-us__wrapper {
+    padding: 30px 8px 334px 12px;
+    background: url('../assets/img/whyUsBGMobile.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 15px;
+  }
+
+  .why-us__container {
+    margin: 0 auto;
+    max-width: 357px;
+  }
+
+  .why-us__wrapper::after {
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 380px;
+    height: 362px;
+    background: url('../assets/img/franklinMobile.png') no-repeat;
+    background-position: bottom;
+  }
+
+  .why-us__question-wrapper {
+    margin-bottom: 22px;
+  }
+
+  .why-us__question {
+    max-width: 263px;
+    padding: 13px 16px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .why-us__first-answer {
+    margin-bottom: 22px;
+  }
+
+  .why-us__first-answer-content {
+    padding: 16px 18px 15px 25px;
+    box-shadow: none;
+  }
+
+  .why-us__first-answer-text:nth-of-type(1) {
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .why-us__first-answer-text:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .why-us__second-answer {
+    margin-bottom: 22px;
+  }
+
+  .why-us__second-answer-content {
+    padding: 15px 12px 3px 25px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .why-us__second-answer-text:nth-of-type(1) {
+    margin-bottom: 18px;
+  }
+
+  .why-us__second-answer-text:nth-of-type(2) {
+    margin-bottom: 15px;
+  }
+
+  .why-us__second-answer-text:nth-of-type(3) {
+    padding: 13px 6px 31px 36px;
+    background: url('../assets/img/whyUsSecondAnswerTextBGMobile.png') no-repeat;
+    background-size: auto;
+  }
+
+  .why-us__second-answer-text:nth-of-type(3)::before {
+    top: 14px;
+    left: 11px;
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+  }
+
+  .why-us__third-answer-text {
+    padding: 15px 23px 15px 25px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .why-us__first-answer-owner-avatar,
+  .why-us__second-answer-owner-avatar,
+  .why-us__third-answer-owner-avatar {
+    margin-right: 4px;
+  }
+
+  .why-us__first-answer-content-desktop,
+  .why-us__second-answer-content-desktop,
+  .why-us__question-desktop {
+    display: none;
+  }
+
+  .why-us__first-answer-content-mobile,
+  .why-us__second-answer-content-mobile,
+  .why-us__question-mobile {
+    display: block;
+  }
 }
