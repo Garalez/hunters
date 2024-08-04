@@ -332,6 +332,14 @@
     padding: 24px 40px 26px 35px;
   }
 
+  .qa-investments__fourth-answer-content {
+    padding: 25px 25px 25px 30px;
+  }
+
+  .qa-investments__fourth-answer-list {
+    padding: 22px 10px 21px 65px;
+  }
+
   .qa-investments__first-answer-wrapper,
   .qa-investments__second-answer-wrapper,
   .qa-investments__third-answer-wrapper,
@@ -483,7 +491,7 @@
   .qa-investments__fourth-answer-item:nth-of-type(1),
   .qa-investments__fourth-answer-item:nth-of-type(2) {
     margin-bottom: 5px;
-}
+  }
 
   .qa-investments__fourth-answer-text {
     font-size: 14px;

@@ -5,7 +5,8 @@
 .qa-common-issues__wrapper {
   padding: 73px 103px 31px 113px;
   border-radius: 25px;
-  background: url('../assets/img/svg/qaCommonIssuesBG.svg') no-repeat;
+  background: url('../assets/img/qaCommonIssuesBG.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .qa-common-issues__first-question-wrapper {
@@ -89,10 +90,12 @@
 .qa-common-issues__second-answer-question-counter {
   position: relative;
   margin-right: 15px;
-  background-color: rgba(41, 67, 222, 1);
   width: fit-content;
+  height: fit-content;
   padding: 12px 18px 13px 29px;
+  background-color: rgba(41, 67, 222, 1);
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .qa-common-issues__second-answer-question-counter::before {
@@ -178,4 +181,85 @@
 
 .qa-common-issues__community-counter-counter {
   top: 0px;
+}
+
+@media (max-width: 1100px) {
+  .qa-common-issues__wrapper {
+    padding: 70px 50px 31px 70px;
+  }
+
+  .qa-common-issues__first-answer-text,
+  .qa-common-issues__second-answer-wrapper {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .qa-common-issues__first-question-text {
+    max-width: 463px;
+  }
+
+  .qa-common-issues__first-answer-text,
+  .qa-common-issues__second-answer-wrapper {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 830px) {
+  .qa-common-issues__wrapper {
+    padding: 70px 25px 31px 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  .qa-common-issues__first-question-text,
+  .qa-common-issues__second-question-text {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 590px) {
+  .qa-common-issues {
+    padding: 0 7px 0 6px;
+  }
+
+  .qa-common-issues__wrapper {
+    padding: 35px 8px 11px 6px;
+    border-radius: 15px;
+    background-image: url('../assets/img/qaCommonIssuesBGMobile.png');
+    background-size: 100% 100%;
+  }
+
+  .qa-common-issues__container {
+    margin: 0 auto;
+    max-width: 363px;
+  }
+
+  .qa-common-issues__first-question-text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .qa-common-issues__first-answer-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .qa-common-issues__second-answer-question-counter {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  .qa-common-issues__second-answer-question-answer {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+
+  .qa-common-issues__second-answer-question-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
 }
