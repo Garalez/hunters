@@ -847,7 +847,8 @@
   }
 
   .qa-team__third-answer-reviews {
-    position: static;
+    left: auto;
+    top: auto;
   }
 
   .qa-team__third-answer-reviews-img-wrapper img {

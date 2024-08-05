@@ -1,0 +1,115 @@
+.slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #fff;
+  z-index: 9999999;
+  height: 0;
+}
+
+.loader {
+  position: relative;
+  margin-top: 70px;
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 5px 7px;
+  width: 100%;
+  height: 27px;
+  background-color: #ffe70c;
+  border-radius: 15px;
+}
+
+.loader-bar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #3740ff, #212799);
+  border-radius: 15px;
+}
+
+.percent-text {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 18px;
+  font-family: bicubik;
+  font-weight: 300;
+  color: #413cb2;
+}
+
+.preloader-screen {
+  padding-top: 35px;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background: url('../assets/img/preloaderBg.png') no-repeat;
+  background-size: cover;
+}
+
+.preloader-screen .container {
+  text-align: center;
+  max-width: 850px;
+  padding: 0 25px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+  max-width: 1175px;
+}
+.preloader-screen .main-title {
+  max-width: 1034px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.preloader-screen .main-title span {
+  color: #fff;
+  display: block;
+  font-family: Wadik, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.preloader-screen .main-title span:nth-child(1) {
+  max-width: 325px;
+  margin-bottom: 37px;
+}
+.preloader-screen .main-title span:nth-child(2) {
+  max-width: 224px;
+  margin-bottom: 37px;
+}
+.preloader-screen .main-title span:nth-child(3) {
+  max-width: 276px;
+  margin-bottom: 37px;
+}
+.preloader-screen .main-title span:nth-child(4) {
+  max-width: 290px;
+  margin-left: 117px;
+}
+.preloader-screen .main-title span:nth-child(5) {
+  max-width: 370px;
+  margin-right: 157px;
+}
+.preloader-screen .subtitle {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 145px;
+  font-family: 'wadik', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffe70c;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.preloader-screen .container .subtitle:last-child {
+  margin-top: 75px;
+}
+
+.title-cont {
+  margin-bottom: 130px;
+}

@@ -1,5 +1,5 @@
 .footer {
-  padding: 51px 0 73px 0;
+  padding: 51px 0 33px 0;
 }
 
 .footer::before {
@@ -18,7 +18,7 @@
 .footer__logo-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 41px;
+  margin-bottom: 37px;
 }
 
 .footer__subheading {
@@ -33,7 +33,7 @@
 .footer__warning-wrapper {
   display: flex;
   justify-content: center;
-  padding-left: 27px;
+  padding-left: 26px;
   margin-bottom: 37px;
 }
 
@@ -53,7 +53,7 @@
   content: '';
   position: absolute;
   top: 14px;
-  left: -26px;
+  left: -25px;
   width: 25px;
   height: 28px;
   background: url('../assets/img/headerWarningExclamationMark.png') no-repeat;
@@ -74,7 +74,7 @@
 .footer__buttons-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .footer__community-wrapper {
@@ -88,7 +88,7 @@
 
 .footer__community-counter {
   padding: 11px 10px 14px 21px;
-  background: url('../assets/img/svg/footerCommunityCounterBG.svg') no-repeat;
+  background: url('../assets/img/headerCommunityCounterBG.png') no-repeat;
   background-size: 100% 100%;
 }
 
@@ -96,4 +96,176 @@
   top: 0px;
   left: -3px;
   padding: 10px 21px 0 20px;
+}
+
+.footer__policy-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__policy-button {
+  background: transparent;
+  border: none;
+  font-family: Geologica;
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.footer__policy-button:active {
+  border: none;
+  outline: none;
+}
+
+.footer__policy-button:focus {
+  border: none;
+  outline: none;
+}
+
+.footer__warning-desktop,
+.footer__title-desktop {
+  display: block;
+}
+
+.footer__warning-mobile,
+.footer__title-mobile {
+  display: none;
+}
+
+@media (max-width: 1010px) {
+  .footer__community-wrapper {
+    padding: 0px 0 0 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .footer {
+    padding: 38px 0 12px 0;
+    margin-bottom: 0;
+  }
+
+  .footer__wrapper {
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    height: 1397px;
+    background: url('../assets/img/footerBGMobile.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .footer__logo-wrapper {
+    justify-content: flex-start;
+    padding: 0 0px 0 17px;
+    margin-bottom: 72px;
+  }
+
+  .footer__container {
+    margin: 0 auto;
+    max-width: 390px;
+  }
+
+  .footer__subheading {
+    margin-bottom: 20px;
+    padding-left: 17px;
+    font-family: Bicubik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  .footer__warning-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 38px;
+    padding-left: 40px;
+  }
+
+  .footer__warning {
+    padding: 9px 15px 11px 18px;
+    background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    font-family: Geologica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+
+  .footer__warning::before {
+    top: 20px;
+    left: -23px;
+    height: 32px;
+    background: url('../assets/img/headerWarningExclamationMarkMobile.png') no-repeat;
+  }
+
+  .footer__title {
+    padding-left: 12px;
+    margin-bottom: 29px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .footer__buttons-wrapper {
+    max-width: 376px;
+    margin-bottom: 60px;
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
+
+  .footer__community-button-wrapper {
+    max-width: none;
+    margin-bottom: 13px;
+    margin-right: 0;
+  }
+
+  .footer__community-button {
+    max-width: none;
+    padding: 22px 52px 13px 47px;
+    transform: translate(5px, -5px);
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0.05em;
+  }
+
+  .footer__community-button-underlay {
+    top: 1px;
+  }
+
+  .footer__community-counter-wrapper {
+    padding: 0px 39px 0 46px;
+  }
+
+  .footer__community-counter {
+    padding: 9px 8px 12px 21px;
+    background: url('../assets/img/headerCommunityCounterBGMobile.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .footer__community-counter-text {
+    width: 100%;
+    max-width: 179px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__community-counter-counter {
+    top: 0;
+    padding: 7px 12px 0 10px;
+    background-color: #2943de;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 15.48px;
+  }
+
+  .footer__warning-desktop,
+  .footer__title-desktop {
+    display: none;
+  }
+
+  .footer__warning-mobile,
+  .footer__title-mobile {
+    display: block;
+  }
 }

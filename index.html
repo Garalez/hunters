@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preload" href="./assets/fonts/bicubik/bicubik.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/geologica/GeologicaExtraLight.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/wadik/Wadik.otf" as="font" type="font/otf" crossorigin="anonymous">
     <script type="module" src="./scripts/index.js"></script>
     <meta
       name="description"
@@ -11,6 +14,56 @@
     <title>Инвестиции в криптопроекты на ранних стадиях до выхода на биржу - 100F</title>
   </head>
   <body>
+    <div class='preloader'>
+      <span class="slide"></span>
+      <div id="#preloader" class="preloader-screen lazy-bg">
+        <div class="container">
+          <div class="loader">
+            <div class="loader-bar"></div>
+            <span id="percentText" class="percent-text">0%</span>
+          </div>
+          <p class="subtitle">Ми з України</p>
+          <div class="title-cont">
+            <h1 class="main-title">
+              <span id="block1" class="text-fx">We are from Ukraine</span>
+              <span id="block2" class="text-fx">Мы с Украины </span>
+              <span id="block3" class="text-fx">Somos de Ucrania</span>
+              <span id="block4" class="text-fx">Jesteśmy z Ukrainy</span>
+              <span id="block5" class="text-fx">Nous venons d 'Ukraine</span>
+            </h1>
+            <h1 class="main-title-fx">
+              <div>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+              </div>
+              <div>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+              </div>
+              <div>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+              </div>
+              <div>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+              </div>
+              <div>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+                <span class="three-fx"> </span>
+              </div>
+            </h1>
+          </div>
+  
+          <p class="subtitle">Для українців</p>
+        </div>
+      </div>
+    </div>
     <header>
       <section class="header">
         <div class="header__container">
@@ -62,7 +115,9 @@
             </h1>
             <div class="header__footer">
               <div class="header__card-wrapper">
-                <p class="header__card-required">От вас требуется:</p>
+                <p class="header__card-required">
+                  От вас <span class="text-selection">требуется:</span>
+                </p>
                 <p class="header__card-confirmation">Подтвердить свое гражданство и личность 16+</p>
                 <p class="header__card-runtime">2-3 часа в день на выполнение детальных заданий</p>
                 <div class="header__card-warning-wrapper">
@@ -78,7 +133,7 @@
                   <p class="header__community-counter-text">
                     Оставили заявку на подключение к сообществу:
                   </p>
-                  <p class="header__community-counter-counter">1891</p>
+                  <p class="header__community-counter-counter counter">1891</p>
                 </div>
               </div>
             </div>
@@ -253,7 +308,7 @@
                   <p class="participation__community-counter-text">
                     Оставили заявку на подключение к сообществу:
                   </p>
-                  <p class="participation__community-counter-counter">1891</p>
+                  <p class="participation__community-counter-counter counter">1891</p>
                 </div>
               </div>
 
@@ -1172,8 +1227,8 @@
                 <div
                   class="qa-acknowledge__first-answer-text-wrapper qa-acknowledge__first-answer-text-wrapper-mobile">
                   <p class="qa-acknowledge__first-answer-text">
-                    Обучить бесплатно каждого<br> участника – это большая экспертная работа и огромный
-                    вклад
+                    Обучить бесплатно каждого<br />
+                    участника – это большая экспертная работа и огромный вклад
                   </p>
                   <p class="qa-acknowledge__first-answer-text text-selection">
                     Мы за 100% прозрачность в наших действиях и за построение доверительных
@@ -1208,7 +1263,7 @@
                       Оставили заявку на подключение к сообществу:
                     </p>
                     <p
-                      class="header__community-counter-counter qa-acknowledge__first-answer-community-counter-counter">
+                      class="header__community-counter-counter qa-acknowledge__first-answer-community-counter-counter counter">
                       1891
                     </p>
                   </div>
@@ -1510,151 +1565,222 @@
 
       <section class="qa-common-issues">
         <div class="qa-common-issues__wrapper">
-          <div class="qa-common-issues__first-question-wrapper">
-            <p class="qa-common-issues__first-question-text">
-              На какие еще вопросы нужно <span class="text-selection">знать ответы?</span>
-            </p>
-            <img
-              class="qa-common-issues__first-question-avatar avatar"
-              src="./assets/img/svg/userAvatar.svg"
-              alt="Аватар пользователя" />
-          </div>
+          <div class="qa-common-issues__container">
+            <div class="qa-common-issues__first-question-wrapper">
+              <p class="qa-common-issues__first-question-text">
+                На какие еще вопросы нужно <span class="text-selection">знать ответы?</span>
+              </p>
+              <img
+                class="qa-common-issues__first-question-avatar avatar"
+                src="./assets/img/svg/userAvatar.svg"
+                alt="Аватар пользователя" />
+            </div>
 
-          <div class="qa-common-issues__first-answer-wrapper">
-            <img
-              class="qa-common-issues__first-answer-owner-avatar avatar"
-              src="./assets/img/ownerAvatar.png"
-              alt="owner avatar" />
-            <p class="qa-common-issues__first-answer-text">
-              На основные вопросы уже даны ответы выше. Давайте финально разберем самые основные!
-            </p>
-          </div>
+            <div class="qa-common-issues__first-answer-wrapper">
+              <img
+                class="qa-common-issues__first-answer-owner-avatar avatar"
+                src="./assets/img/ownerAvatar.png"
+                alt="owner avatar" />
+              <p class="qa-common-issues__first-answer-text">
+                На основные вопросы уже даны ответы выше. Давайте финально разберем самые основные!
+              </p>
+            </div>
 
-          <div class="qa-common-issues__second-answer-wrapper">
-            <img
-              class="qa-common-issues__second-answer-owner-avatar avatar"
-              src="./assets/img/ownerAvatar.png"
-              alt="owner avatar" />
-            <div class="qa-common-issues__second-answer-content">
-              <ul class="qa-common-issues__second-answer-list">
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 1</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Нужен ли стартовый капитал, чтобы начать зарабатывать в крипте?
+            <div class="qa-common-issues__second-answer-wrapper">
+              <img
+                class="qa-common-issues__second-answer-owner-avatar avatar"
+                src="./assets/img/ownerAvatar.png"
+                alt="owner avatar" />
+              <div class="qa-common-issues__second-answer-content">
+                <ul class="qa-common-issues__second-answer-list">
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 1</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Нужен ли стартовый капитал, чтобы начать зарабатывать в крипте?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Нужен ли стартовый капитал,<br />
+                        чтобы начать зарабатывать в крипте?
+                      </p>
+                    </div>
+                    <p class="qa-common-issues__second-answer-question-answer">
+                      Нет. Мы готовы инвестировать деньги, вам необходимо уделять только время
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Нет. Мы готовы инвестировать деньги, вам необходимо уделять только время
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 2</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Что нужно иметь для старта? Какая нужна техника?
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 2</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Что нужно иметь для старта? Какая нужна техника?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Что нужно иметь для старта?<br />
+                        Какая нужна техника?
+                      </p>
+                    </div>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
+                      Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
+                      Основная ваша деятельность заключается в работе с информацией в интернете,
+                      поэтому не обязательно покупать/иметь самый мощный компьютер на свете.
+                      Достаточно вашего домашнего компьютера
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
-                    Основная ваша деятельность заключается в работе с информацией в интернете,
-                    поэтому не обязательно покупать/иметь самый мощный компьютер на свете.
-                    Достаточно вашего домашнего компьютера
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 3</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Как можно стать частью сообщества?
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
+                      Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
+                      Основная ваша деятельность заключается в работе с информацией<br />
+                      в интернете, поэтому не обязательно покупать/иметь самый мощный компьютер на
+                      свете. Достаточно вашего домашнего компьютера
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Нажмите кнопку «Стать частью сообщества» на этой странице. После пройдите
-                    короткий опрос, и если вы успешно прошли его – следующим этапом будет
-                    прохождение верификации с одним из руководителей проекта. Верификация проходит в
-                    формате онлайн-встречи, обязательно включите видео
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 4</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Требуется ли специальное техническое или другое образование?
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 3</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Как можно стать частью сообщества?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Как можно стать частью<br />
+                        сообщества?
+                      </p>
+                    </div>
+                    <p class="qa-common-issues__second-answer-question-answer">
+                      Нажмите кнопку «Стать частью сообщества» на этой странице. После пройдите
+                      короткий опрос, и если вы успешно прошли его – следующим этапом будет
+                      прохождение верификации с одним из руководителей проекта. Верификация проходит
+                      в формате онлайн-встречи, обязательно включите видео
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
-                    сотрудника. И также качества характера – мы ценим и уважаем друг друга, и в
-                    команду принимаем единомышленников. Ваше образование не имеет значения
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 5</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Когда получится заработать первые деньги?
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 4</p>
+                      <p class="qa-common-issues__second-answer-question-text text-selection">
+                        Требуется ли специальное техническое или другое образование?
+                      </p>
+                    </div>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
+                      Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
+                      сотрудника. И также качества характера – мы ценим и уважаем друг друга, и в
+                      команду принимаем единомышленников. Ваше образование не имеет значения
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
-                    на начальном этапе. В среднем первые деньги вы начнете зарабатывать уже на 2,
-                    возможно, на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать
-                    уже после 7-8 месяцев активной работы, когда накопите базу проектов
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 6</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Как можно быть уверенным, что заработанные вознаграждения не уйдут налево?
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
+                      Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
+                      сотрудника. И также качества характера – мы ценим и уважаем друг друга,<br />
+                      и в команду принимаем единомышленников. Ваше образование не имеет значения
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне). Это
-                    абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег можно
-                    проверить и увидеть, сколько денег пришло, кому и куда они ушли далее 
-                  </p>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Ни один доллар не пройдет мимо участников нашего сообщества!
-                  </p>
-                </li>
-                <li class="qa-common-issues__second-answer-item">
-                  <div class="qa-common-issues__second-answer-question-wrapper">
-                    <p class="qa-common-issues__second-answer-question-counter">Вопрос 7</p>
-                    <p class="qa-common-issues__second-answer-question-text text-selection">
-                      Сколько можно зарабатывать с компанией 100 ФРАНКЛИНОВ?
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 5</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Когда получится заработать первые деньги?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Когда получится заработать<br />
+                        первые деньги?
+                      </p>
+                    </div>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
+                      Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
+                      на начальном этапе. В среднем первые деньги вы начнете зарабатывать уже на 2,
+                      возможно, на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно
+                      получать уже после 7-8 месяцев активной работы, когда накопите базу проектов
                     </p>
-                  </div>
-                  <p class="qa-common-issues__second-answer-question-answer">
-                    Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
-                    каждый участник мог зарабатывать от $1’000 в месяц. И со своей стороны
-                    предоставим для этого все возможности – инвестиции, экспертизу, обучение и
-                    поддержку
-                  </p>
-                </li>
-              </ul>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
+                      Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
+                      на начальном этапе.<br />
+                      В среднем первые деньги вы начнете зарабатывать уже на 2, возможно,<br />
+                      на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать уже
+                      после 7-8 месяцев активной работы, когда накопите базу проектов
+                    </p>
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 6</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Как можно быть уверенным, что заработанные вознаграждения не уйдут налево?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Как можно быть уверенным,<br />
+                        что заработанные вознаграждения<br />
+                        не уйдут налево?
+                      </p>
+                    </div>
+                    <p class="qa-common-issues__second-answer-question-answer">
+                      Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне).
+                      Это абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег
+                      можно проверить и увидеть, сколько денег пришло, кому и куда они ушли далее 
+                    </p>
+                    <p class="qa-common-issues__second-answer-question-answer">
+                      Ни один доллар не пройдет мимо участников нашего сообщества!
+                    </p>
+                  </li>
+                  <li class="qa-common-issues__second-answer-item">
+                    <div class="qa-common-issues__second-answer-question-wrapper">
+                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 7</p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
+                        Сколько можно зарабатывать с компанией 100 ФРАНКЛИНОВ?
+                      </p>
+                      <p
+                        class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
+                        Сколько можно зарабатывать<br />
+                        с компанией 100 ФРАНКЛИНОВ?
+                      </p>
+                    </div>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
+                      Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
+                      каждый участник мог зарабатывать от $1’000 в месяц. И со своей стороны
+                      предоставим для этого все возможности – инвестиции, экспертизу, обучение и
+                      поддержку
+                    </p>
+                    <p
+                      class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
+                      Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
+                      каждый участник мог зарабатывать от $1’000 в месяц.<br />
+                      И со своей стороны предоставим для этого все возможности – инвестиции,
+                      экспертизу, обучение и поддержку
+                    </p>
+                  </li>
+                </ul>
 
-              <div class="participation__community-wrapper qa-common-issues__community-wrapper">
-                <div
-                  class="participation__community-button-wrapper qa-common-issues__community-button-wrapper">
-                  <button
-                    class="participation__community-button qa-common-issues__community-button">
-                    Стать частью сообщества
-                  </button>
-                  <span
-                    class="participation__community-button-underlay qa-common-issues__community-button-underlay"></span>
-                </div>
-                <div
-                  class="participation__community-counter-wrapper qa-common-issues__community-counter-wrapper">
-                  <p
-                    class="participation__community-counter-text qa-common-issues__community-counter-text">
-                    Оставили заявку на подключение к сообществу:
-                  </p>
-                  <p
-                    class="participation__community-counter-counter qa-common-issues__community-counter-counter">
-                    1891
-                  </p>
+                <div class="participation__community-wrapper qa-common-issues__community-wrapper">
+                  <div
+                    class="participation__community-button-wrapper qa-common-issues__community-button-wrapper">
+                    <button
+                      class="participation__community-button qa-common-issues__community-button">
+                      Стать частью сообщества
+                    </button>
+                    <span
+                      class="participation__community-button-underlay qa-common-issues__community-button-underlay"></span>
+                  </div>
+                  <div
+                    class="participation__community-counter-wrapper qa-common-issues__community-counter-wrapper">
+                    <p
+                      class="participation__community-counter-text qa-common-issues__community-counter-text">
+                      Оставили заявку на подключение к сообществу:
+                    </p>
+                    <p
+                      class="participation__community-counter-counter qa-common-issues__community-counter-counter counter">
+                      1891
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1663,51 +1789,552 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__logo-wrapper">
-          <img src="./assets/img/svg/logo.svg" alt="100F logo" />
-        </div>
-        <p class="footer__subheading">
-          Проект от 100 FRANKLINS
-          <span class="text-selection"
-            >по восстановлению<br />
-            благосостояния Украины и украинцев</span
-          >
-        </p>
-        <div class="footer__warning-wrapper">
-          <p class="footer__warning">
-            Только для украинцев 16+, у кого есть 2-3 часа в день<br />
-            и потребность в дополнительном заработке без вложений
+        <div class="footer__container">
+          <div class="footer__logo-wrapper">
+            <picture>
+              <source media="(min-width: 591px)" srcset="./assets/img/svg/logo.svg" />
+              <source media="(max-width: 590px)" srcset="./assets/img/svg/logoMobile.svg" />
+              <img class="footer__logo" src="./assets/img/svg/logo.svg" alt="100F logo" />
+            </picture>
+          </div>
+          <p class="footer__subheading">
+            Проект от 100 FRANKLINS
+            <span class="text-selection"
+              >по восстановлению<br />
+              благосостояния Украины и украинцев</span
+            >
           </p>
-        </div>
-        <h2 class="footer__title">
-          Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
-          Поможем на каждом шаге.<br />
-          И даже инвестируем в вас деньги
-        </h2>
-        <div class="footer__buttons-wrapper">
-          <div class="participation__community-wrapper footer__community-wrapper">
-            <div class="participation__community-button-wrapper footer__community-button-wrapper">
-              <button class="participation__community-button footer__community-button">
-                Стать частью сообщества
-              </button>
-              <span
-                class="participation__community-button-underlay footer__community-button-underlay"></span>
-            </div>
-            <div class='footer__community-counter-wrapper'>
-              <div class="participation__community-counter-wrapper footer__community-counter">
-                <p class="participation__community-counter-text footer__community-counter-text">
-                  Оставили заявку на подключение к сообществу:
-                </p>
-                <p class="participation__community-counter-counter footer__community-counter-counter">
-                  1891
-                </p>
+          <div class="footer__warning-wrapper">
+            <p class="footer__warning footer__warning-desktop">
+              Только для украинцев 16+, у кого есть 2-3 часа в день<br />
+              и потребность в дополнительном заработке без вложений
+            </p>
+            <p class="footer__warning footer__warning-mobile">
+              Только для украинцев 16+, у кого<br />
+              есть 2-3 часа в день и потребность<br />
+              в дополнительном заработке без вложений
+            </p>
+          </div>
+          <h2 class="footer__title footer__title-desktop">
+            Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
+            Поможем на каждом шаге.<br />
+            И даже инвестируем в вас деньги
+          </h2>
+          <h2 class="footer__title footer__title-mobile">
+            Мы <span class="text-selection">бесплатно</span> вас<br />
+            научим зарабатывать<br />
+            на крипте. <span class="text-selection">Поможем</span><br />
+            на каждом шаге.<br />
+            И даже <span class="text-selection">инвестируем</span><br />
+            в вас деньги
+          </h2>
+          <div class="footer__buttons-wrapper">
+            <div class="participation__community-wrapper footer__community-wrapper">
+              <div class="participation__community-button-wrapper footer__community-button-wrapper">
+                <button class="participation__community-button footer__community-button">
+                  Стать частью сообщества
+                </button>
+                <span
+                  class="participation__community-button-underlay footer__community-button-underlay"></span>
+              </div>
+              <div class="footer__community-counter-wrapper">
+                <div class="participation__community-counter-wrapper footer__community-counter">
+                  <p class="participation__community-counter-text footer__community-counter-text">
+                    Оставили заявку на подключение к сообществу:
+                  </p>
+                  <p
+                    class="participation__community-counter-counter footer__community-counter-counter counter">
+                    1891
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <div class="footer__policy-button-wrapper">
+            <button class="footer__policy-button">Условия и Политика конфиденциальности</button>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <video id="modalVideo" width="100%" controls>
+          <source src="" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+    </div>
+
+    <div class="leave-popup-overlay">
+      <div class="leave-popup-wrapper">
+        <span class="leave-popup-close-btn"></span>
+        <h2 class="leave-popup-header">
+          <span class="text-selection">Подключайтесь к команде CRYPTO HUNTERS</span> и получите
+        </h2>
+        <div class="leave-popup-content">
+          <ul class="leave-popup-list">
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Обучение</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Наставников</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Сообщество</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Инвестиции</p></li>
+          </ul>
+          <p class="leave-popup-card-text">
+            + «<span
+              >Топ 10 способов<br />
+              заработка на крипте<br
+            /></span>
+            (даже без бюджета)»
+          </p>
+        </div>
+        <div class="header__community-wrapper leave-popup__community-wrapper">
+          <div class="header__community-button-wrapper leave-popup__community-button-wrapper">
+            <button class="header__community-button leave-popup__community-button">
+              Стать частью сообщества
+            </button>
+            <span
+              class="header__community-button-underlay leave-popup__community-button-underlay"></span>
+          </div>
+          <div class="header__community-counter-wrapper leave-popup__community-counter-wrapper">
+            <p class="header__community-counter-text leave-popup__community-counter-text">
+              Оставили заявку на подключение к сообществу:
+            </p>
+            <p
+              class="header__community-counter-counter leave-popup__community-counter-counter counter">
+              1891
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="policy">
+      <div class="policy__container">
+        <span class="policy__close-btn"></span>
+        <h2 class="policy__main-title">SERVICE AND PRIVACY POLICY AGREEMENT</h2>
+        <p>
+          100 Franklins (hereinafter referred to as the Administrator), addresses this Agreement to
+          any individual (hereinafter referred to as the Subscriber) who enters into the Agreement
+          by fully and unconditionally agreeing to all terms and conditions specified herein.
+        </p>
+        <p>
+          This document is a public offer (public offer) and acceptance (acceptance of the terms) of
+          a public offer is the performance of actions provided for in the Agreement.
+          <span class="policy__text-decoration">
+            If the Subscriber disagrees with any terms of the Agreement, the Agreement is not
+            concluded and the Subscriber has no right to use the Service.</span
+          >
+        </p>
+        <p>
+          IMPORTANT! The Content of the Service does not constitute an individual investment
+          recommendation and all instruments (cryptocurrencies or other) or operations mentioned in
+          the Service may not correspond to the Subscriber’s investment profile and investment goals
+          (expectations, beliefs, plans, anticipations, etc). The content does not contain
+          advertising for cryptocurrencies. Administrator does not sell securities or offer any
+          services related to selling of such securities.<span class="policy__text-decoration">
+            The Content of the Service is solely for educational purposes only.</span
+          >
+        </p>
+
+        <p>
+          Determining the compliance of an instrument (cryptocurrency) or operation with the
+          interests of the Subscriber, investment goals, investment horizon, and level of acceptable
+          risk is solely the
+          <span class="policy__text-decoration">Subscriber’s responsibility.</span>
+        </p>
+        <p>
+          Given the above, should Subscribers choose on their own behalf to involve in any Stock
+          Market or Cryptocurrency Market activities, Subscribers are advised to carefully consider
+          whether the risks involved in the relevant transactions are acceptable in light of their
+          investment objectives and financial capabilities.
+        </p>
+        <h2 class="policy__secondary-title">1. TERMS AND DEFINITIONS</h2>
+        <p>1.1. The Agreement uses terms with the following meanings:</p>
+        <p>
+          1.1.1. Administration is a person authorized to manage the Service, interact with
+          Subscribers (including purchasing Content), provide information support to Subscribers, as
+          well as perform other actions related to the use of the Service.
+        </p>
+        <p>
+          1.1.2. Acceptance - full and unconditional acceptance of the Offer by performing the
+          actions specified in clause 3.1 of the Agreement.
+        </p>
+        <p>
+          1.1.3. Content - literary works, musical works with or without text, audiovisual works and
+          other types of works converted into digital format, programs for electronic computers
+          posted by the Administrator in the Service for the purpose of their use by Users in
+          accordance with the terms of this Agreement.
+        </p>
+        <p>
+          1.1.4. License - the Subscriber’s right to use the Service while retaining the
+          Administrator’s right to issue licenses to other persons under the terms of a simple
+          (non-exclusive) license.
+        </p>
+        <p>1.1.5. Offer - this document posted on the Service.</p>
+
+        <p>
+          1.1.6. Subscriber is an individual who has access to the Service via the Internet and has
+          accepted the Agreement.
+        </p>
+        <p>
+          1.1.7. Service -
+          <span class="policy__marker policy__text-decoration">
+            a set of software, databases and Content, united by a single design and name, expressed
+            through a Channel, Community, Chatbot, and Site, providing the ability to view and
+            listen, download and (or) otherwise use Content through various types of devices: mobile
+            phones, smartphones, tablet computers, etc.</span
+          >
+        </p>
+        <p>
+          1.1.8. Channel is part of the service, an automated information system
+          <span class="policy__marker policy__text-decoration"
+            >(Telegram channel, available in the Telegram information space with the name “name of
+            channel”)</span
+          >
+        </p>
+        <p>
+          1.1.9. Community is part of the service, an automated information system (closed Telegram
+          channel), available in the Telegram information space with the name CHAT |
+          <span class="policy__marker policy__text-decoration">“name of channel” </span> via the
+          link that is provided to the Subscriber after registering for participation.
+        </p>
+        <p>
+          1.1.10. Chatbot is a part of the service, a software package available in the Telegram
+          information space via a link that is provided to the Subscriber after registering for
+          participation in the Community, related to the concept of Content that simulates a real
+          conversation and performs specified actions when interacting with the Subscriber using
+          text and (or) audio messages or Content.
+        </p>
+        <p>
+          1.1.11. The site is part of the service, an automated information system, available on the
+          Internet at the address (including subdomains):
+          <span class="policy__marker policy__text-decoration">link for landing page</span>
+        </p>
+        <p>
+          1.1.12. Telegram is a social network known as “Telegram”, available on the Internet at:
+          <a
+            class="policy__marker policy__text-decoration"
+            href="https://telegram.org"
+            target="_blank"
+            >https://telegram.org</a
+          >
+        </p>
+        <p></p>
+        <h2 class="policy__secondary-title">2. SUBJECT OF THE AGREEMENT</h2>
+        <p>
+          2.1. The Agreement defines the procedure and conditions for using the Service. The subject
+          of the Agreement includes the Content and all functions of the Service, as well as any
+          development thereof or the addition of new ones, which are explicitly available.
+        </p>
+        <p>
+          2.2. The Administrator grants the Subscriber the right to use the Service to view, get
+          acquainted with the Content, including Content on a paid and/or unpaid basis, contained in
+          the Community and implement other functionality of the Service by displaying the
+          corresponding technical means of the Subscriber on the monitor (screen).
+        </p>
+        <p>
+          2.4. The right to access Content on a paid and/or unpaid basis in the Community will be
+          considered granted by the Administrator in full from the moment the link to join the
+          Community is provided by sending a message to
+          <span class="policy__marker policy__text-decoration">Telegram.</span>
+        </p>
+        <p>
+          2.5. If within three (3) calendar days from the moment of access to the Content on a paid
+          and/or unpaid basis in the Community, the Administrator has not received motivated
+          objections from the Subscriber related to the provision of the right to access the Content
+          on a paid and/or unpaid basis under this Agreement, it is hereby recognized that the right
+          access to Content on a paid and/or unpaid basis in the Community is provided to the
+          Subscriber in full and properly.
+        </p>
+
+        <p>
+          2.6. This Agreement has the force of an act of fulfilled obligations. Acceptance of
+          fulfilled obligations is carried out without drawing up and signing a corresponding
+          separate act.
+        </p>
+        <p>
+          2.7. Accepting payments is based exclusively on financial services of partners. The
+          security of processing money transfers is guaranteed by the financial services of our
+          partners. Financial services of partners do not transfer the Subscriber’s data to the
+          Administrator and other third parties.
+        </p>
+        <p>
+          2.8. The Administrator guarantees that he/she is the Administrator of the exclusive rights
+          to the Service specified in clause 2.1 of the Agreement and Community. All exclusive
+          rights to the Service and Content, including paid Content, belong to the Administrator.
+        </p>
+        <h2 class="policy__secondary-title">3. ACCEPTANCE OF THE AGREEMENT</h2>
+        <p>
+          3.1. Acceptance (acceptance of an offer) is the implementation of one of the following
+          actions:
+        </p>
+        <p>3.1.1. Read the terms of the Agreement located in the Service.</p>
+        <p>3.1.2. Payment for the Service.</p>
+        <p>
+          3.2. By accepting the offer, the Subscriber confirms full and unconditional agreement with
+          all the terms of this Agreement and undertakes to comply with them accordingly. The
+          agreement can be accepted solely as a whole, without any reservations. The Administrator
+          and the Subscriber are collectively referred to as the “Parties”, and individually as the
+          “Party”.
+        </p>
+        <p>
+          3.3. This Offer does not have a specifically established period for its acceptance. The
+          Offer comes into force from the moment of its publication (or brought to the attention of
+          the Administrator in another form) and extends its effect to the relations of the Parties
+          arising from April 1, 2024, and in terms of changes - from the date of publication of the
+          relevant changes - until the day following the day publication by the Administrator of a
+          notice of termination of the offer.
+        </p>
+
+        <p>
+          3.4. The terms of the Agreement can be changed by the Administrator at any time
+          unilaterally out of court by publishing changes or a new version of the Agreement in the
+          Service. Changes come into force for the Subscriber from the date following the date of
+          their publication, provided that the Subscriber continues to use the Service after the
+          publication of the changes or acceptance of the updated version of the Agreement.
+          <span class="policy__text-decoration">
+            >If the Subscriber does not agree with the changes made, (s)he must refuse to use the
+            Service.</span
+          >
+        </p>
+        <h2 class="policy__secondary-title">4. ADMINISTRATOR RIGHTS</h2>
+        <p>4.1. The administrator has the right:</p>
+        <p>
+          4.1.1. Terminate the Subscriber's access to the Service if he violates the terms of the
+          Agreement or commits any illegal actions, as well as apply other measures to the
+          Subscriber in order to comply with legal requirements or the rights and legitimate
+          interests of third parties.
+        </p>
+        <p>
+          4.1.2. At any time, stop providing access to the Service, deleting or editing Content,
+          including Content on a paid basis in the Community, as well as partially limit or stop the
+          operation of certain functions, including the Chatbot, for the purpose of carrying out
+          technical work in the Service.
+        </p>
+        <h2 class="policy__secondary-title">5. RESPONSIBILITY OF THE PARTIES</h2>
+        <p>
+          5.1. The parties are responsible for failure to fulfill or improper fulfillment of their
+          obligations in accordance with the terms of the Agreement and the legislation of
+          <span class="policy__marker policy__text-decoration">the United States of America.</span>
+        </p>
+        <p>
+          5.2. At all times, the Service is provided on an “AS IS” basis. The Administrator does not
+          guarantee that the Service meets or will meet the Subscriber’s requirements, that access
+          to the Service will be provided continuously, quickly, reliably and without errors
+        </p>
+
+        <p>
+          5.3. The Administrator is not responsible for technical interruptions in the operation of
+          the Service. However, the Administrator undertakes to take all reasonable measures to
+          prevent such interruptions.
+        </p>
+
+        <p>
+          5.4. The Administrator is not responsible for the results obtained when using the Service,
+          and is not responsible for direct or indirect losses of any kind incurred as a result of
+          the use or non-use of the Service.
+        </p>
+
+        <p>
+          5.5. Under any circumstances, the Administrator’s liability is limited to 10 (ten) US
+          Dollars and is assigned to the Administrator if there is negligence in his/her actions
+        </p>
+
+        <p>
+          5.6. THE CONTENT PRESENTED IN THE SERVICE IS OF AN INFORMATIONAL AND ANALYTICAL PURPOSES
+          ONLY AND REFLECTS THE PERSONAL VIEW OF THE AUTHOR. THE LIST OF INSTRUMENTS
+          (CRYPTOCURRENCIES OR OTHER) PROVIDED IN THE CONTENT IS FOR INFORMATIONAL PURPOSES ONLY AND
+          IS NOT AN INVESTMENT IDEA, ADVICE, INDIVIDUAL RECOMMENDATION, OR AN OFFER TO BUY OR SELL
+          INSTRUMENTS (CRYPTOCURRENCIES) TO YOU. THE INSTRUMENTS (CRYPTOCURRENCIES) IN THE LIST MAY
+          NOT BE SUITABLE FOR THE SUBSCRIBER, MAY NOT COMPLY WITH HIS/HER INVESTMENT PROFILE,
+          FINANCIAL SITUATION, INVESTMENT EXPERIENCE, KNOWLEDGE, INVESTMENT GOALS, ATTITUDE TO RISK
+          AND RETURN SINCE AVAILABLE TO AN UNLIMITED RANGE OF PEOPLE.
+        </p>
+
+        <p>5.7. Any Content posted on the Service may subsequently be changed.</p>
+        <p>
+          5.8. The Administrator is not responsible for possible losses of the Subscriber should the
+          Subscriber elect to carry out a trading operation (transaction) on his/her own with the
+          instruments (cryptocurrencies) specified in the Content.
+        </p>
+
+        <p>
+          5.9. The subscriber independently makes any decisions on whether or not to carry out
+          trading operations (transactions) within the framework of his crypto-currency account, and
+          also independently bears the risk of losses. The analytical information provided on the
+          potential profitability of the instrument (cryptocurrency) is current as of the date of
+          publication in the Service. Profitability for the period specified in the Service does not
+          guarantee profitability in the future, and past investment results do not determine future
+          returns.
+        </p>
+        <p>
+          5.10. Posting information on the Service does not constitute an offer to purchase/sell
+          instruments (cryptocurrencies) or an offer to send offers to purchase/sell instruments
+          (cryptocurrencies or other).
+        </p>
+
+        <p>
+          5.11. The Administrator is not responsible for the accuracy of the information provided
+          and the consequences of the Subscriber's use of the information. Taking into account the
+          above, the Subscriber should not rely solely on the information provided, but should
+          independently analyze the instruments (cryptocurrencies or other).
+        </p>
+        <p>
+          5.12. Examples of results containing statistical data given for a specific period of time
+          cannot be considered by the Subscriber as a guarantee of profitability. The subscriber
+          independently makes decisions on investing in the cryptocurrency market or other markets
+          and bears full responsibility for the result of the decisions made.
+        </p>
+        <p>
+          5.13. Subscriber acknowledges and agrees that all content on the Service is protected by
+          copyright, trademark and other intellectual property rights, and that such rights are
+          valid and protected in all forms, media and technologies as they exist. currently, and
+          those developed or created subsequently. No rights to any content of the Service,
+          including, but not limited to, audiovisual works, text and graphic materials, trademarks,
+          are transferred to the Subscriber as a result of the conclusion of this Agreement.
+        </p>
+        <h2 class="policy__secondary-title">6. THIRD PARTY SITES AND CONTENT</h2>
+        <p>
+          6.1. The Service may contain links to other sites on the Internet (third party sites).
+          These third parties and their content are not checked by the Administrator for compliance
+          with any requirements (reliability, completeness, legality, etc.). The Administrator is
+          not responsible for any information, materials posted on third party sites that the
+          Subscriber accesses using the Service, including any opinions or statements expressed on
+          third party sites, advertising, etc., as well as for the availability of such sites or
+          content and the consequences of their use by the Subscriber.
+        </p>
+        <p>
+          6.2. A link (in any form) to any site, product, service, or any information of a
+          commercial or non-commercial nature posted in the Service does not constitute an approval
+          or recommendation of these products (services, activities) by the Administrator, unless
+          this is expressly indicated.
+        </p>
+        <h2 class="policy__secondary-title">7. DISPUTE RESOLUTION</h2>
+        <p>
+          7.1. The claim procedure for pre-trial settlement of disputes under the Agreement is
+          mandatory.
+        </p>
+        <p>
+          7.2. The claim must be sent in scanned form with the signature of the person who believes
+          that his rights have been violated, or his representative, in a personal message to the
+          Administrator.
+        </p>
+        <p>
+          7.3. The complaint must include the following information: what rights are violated;
+          information about the person who believes that his rights have been violated; information
+          about the representative, if the claim is signed by the representative (full name, scanned
+          copy of the power of attorney; for the head of a legal entity - scanned copy of the
+          order/protocol on appointment); what actions resulted in the violation of rights; a
+          message in which, according to the applicant, his/her rights have been violated; contact
+          information (telephone, email address, Skype nickname, if available); date and signature
+          of the applicant or his representative.
+        </p>
+        <p>
+          7.4. The period for consideration of a claim is ten (10) working days from the date of its
+          receipt.
+        </p>
+        <p>
+          7.5. If agreement is not reached in the manner provided for in clause 7 of this Agreement,
+          the dispute is referred to the court at the location of the Administrator.
+        </p>
+        <h2 class="policy__secondary-title">8. PROCESSING OF PERSONAL DATA</h2>
+
+        <p>
+          8.1. The Subscriber gives his consent to the Administrator for the unlimited processing of
+          his personal data provided upon acceptance of the Offer. The information includes but is
+          not limited to:
+        </p>
+        <p>- full name;</p>
+        <p>- date of birth;</p>
+        <p>- contact number;</p>
+        <p>- e-mail;</p>
+        <p>- full date of birth;</p>
+        <p>
+          8.2. Processing of personal data means recording, systematization, accumulation, storage,
+          clarification (updating, changing), extraction, use, transfer to third parties
+          (distribution, provision, access), including cross-border transfer to third parties,
+          depersonalization, blocking, deletion, destruction of personal data data that does not
+          fall under special categories, the processing of which, in accordance with the current
+          legislation of the
+          <span class="policy__marker policy__text-decoration"> United States of America </span
+          >might require the written consent of the Subscriber.
+        </p>
+
+        <p>
+          8.3. The processing of personal data is carried out in order for the Administrator to
+          fulfill its obligations under this Agreement, as well as for the purpose of sending
+          information and advertising messages to the Subscriber. In addition, the processing of
+          personal data is carried out to improve the Content based on the analysis of the specified
+          information, as well as to detect, prevent, mitigate the consequences and investigate
+          fraudulent or illegal actions in relation to the Service and published Content, as an
+          object of intellectual property of the Administrator.
+        </p>
+
+        <p>
+          8.4. The processing of the Subscriber's personal data is carried out by the Administrator
+          using databases and service providers on various territories
+        </p>
+        <p>
+          8.5. The Subscriber may at any time withdraw consent to the processing of personal data by
+          sending the Administrator a corresponding notification to the email address:
+          <a class="policy__marker" href="mailto:support@100franklins.com"
+            >support@100franklins.com</a
+          >
+        </p>
+        <p>
+          8.6. The Subscriber agrees to receive newsletters and promotional materials from the
+          Administrator, or from other persons on behalf of the Administrator to the phone number or
+          Telegram account of the Subscriber specified upon acceptance of the Offer. Consent to
+          receive newsletters and promotional materials may be revoked by the Subscriber at any time
+          by sending a corresponding notification to the Administrator at the email address:
+          <a class="policy__marker" href="mailto:support@100franklins.com"
+            >support@100franklins.com</a
+          >
+        </p>
+        <h2 class="policy__secondary-title">9. FINAL PROVISIONS</h2>
+        <p>
+          9.1. The laws of
+          <span class="policy__marker policy__text-decoration">United States of America</span> apply
+          to the relations of the Parties under the Agreement. The parties do not have any related
+          oral agreements. The content of the text of the Agreement fully corresponds to the actual
+          expression of the will of the Parties.
+        </p>
+        <p>
+          9.2. All correspondence on the subject of the Agreement prior to its conclusion loses
+          legal force from the date of conclusion of the Agreement.
+        </p>
+        <p>
+          9.3. The Parties acknowledge that if any of the provisions of the Agreement becomes
+          invalid during the term of its validity due to changes in legislation, the remaining
+          provisions of the Agreement are binding on the Parties during the term of the Agreement.
+        </p>
+
+        <p>
+          9.4. The Parties hereby confirm that when executing (amending, supplementing, terminating)
+          the Agreement, as well as when conducting correspondence on these issues, the use of
+          analogues of the Parties’ handwritten signature is allowed. The Parties confirm that all
+          notices, messages, agreements and documents within the framework of the Parties’
+          performance of obligations arising from the Agreement, signed by analogues of the Parties’
+          handwritten signature, are legally binding and binding on the Parties. Analogues of a
+          handwritten signature are understood to mean the Telegram Subscriber ID, phone number or
+          email address specified when accepting the Offer.
+        </p>
+        <p>
+          9.5. Subscriber hereby represents to the Administrator that he has read and understands
+          all provisions listed in this Agreement.
+        </p>
+        <h2 class="policy__secondary-title">9. FINAL PROVISIONS</h2>
+        <p>10. ADMINISTRATOR DETAILS</p>
+        <p>
+          100 Franklins
+          <a class="policy__marker" href="mailto:support@100franklins.com"
+            >support@100franklins.com</a
+          >
+        </p>
+      </div>
+    </section>
   </body>
 </html>
