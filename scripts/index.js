@@ -1,7 +1,7 @@
 import { Swiper } from './swiper-bundle.min.js';
 
 const usersSubmittingCounter = () => {
-  const updateProgress = (percentage) => {
+  const updateProgress = percentage => {
     const progressBar = document.querySelector('.percent-text');
     const loaderBar = document.querySelector('.loader-bar');
     loaderBar.style.width = `${percentage}%`;
@@ -11,7 +11,7 @@ const usersSubmittingCounter = () => {
   const simulateProgress = (progress = 0) => {
     const maxProgress = 99;
     const step = 5;
-    let requestId; 
+    let requestId;
 
     const incrementProgress = () => {
       if (progress < maxProgress) {
@@ -240,3 +240,56 @@ document.querySelector('.footer__policy-button').addEventListener('click', () =>
     }
   });
 });
+
+const preloaderAnimation = () => {
+  const blocks = [
+    { class: '.block1', effect: 'fade-down-left' },
+    { class: '.block2', effect: 'fade-down-right' },
+    { class: '.block3', effect: 'fade-down-right' },
+    { class: '.block4', effect: 'fade-up-left' },
+    { class: '.block5', effect: 'fade-up-right' },
+  ];
+
+  const animationDuration = 100;
+  const delayBetweenBlocks = 500;
+
+  blocks.forEach((block, index) => {
+    setTimeout(() => {
+      const element = document.querySelectorAll(block.class);
+      element.forEach(el => el.classList.add(block.effect));
+    }, index * delayBetweenBlocks);
+  });
+
+  const totalDelay = (blocks.length - 1) * delayBetweenBlocks + animationDuration + 500;
+  const html = document.querySelector('html');
+  const preloader = document.querySelector('.preloader');
+  const preloaderGreetings = document.querySelectorAll('.main-title');
+  const whiteScreen = document.querySelector('.slide');
+  const preloaderGreetingsImg = document.querySelector('.preloader__greetings-main-title-img');
+  const imgTopPart = document.querySelectorAll('.preloader__greetings-top');
+  const imgCenterPart = document.querySelectorAll('.preloader__greetings-center');
+  const imgBottomPart = document.querySelectorAll('.preloader__greetings-bottom');
+
+  setTimeout(() => {
+    preloaderGreetings.forEach(el => el.style.display = 'none');
+    preloaderGreetingsImg.style.display = 'flex';
+    imgTopPart.forEach(el => el.classList.add('shake-left'));
+    imgCenterPart.forEach(el => el.classList.add('shake-center-right'));
+    imgBottomPart.forEach(el => el.classList.add('shake-right'));
+  }, totalDelay);
+
+  setTimeout(() => {
+    preloaderGreetingsImg.style.opacity = 0;
+    whiteScreen.style.height = '100vh';
+    setTimeout(() => {
+      preloader.style.transform = 'translateY(100vh)';
+      setTimeout(() => {
+        html.style.overflowY = 'scroll';
+        preloader.style.display = 'none';
+
+      }, 500);
+    }, 500);
+  }, totalDelay + 200);
+};
+
+preloaderAnimation();
