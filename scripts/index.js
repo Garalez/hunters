@@ -1,5 +1,56 @@
 import { Swiper } from './swiper-bundle.min.js';
 
+const translationToShow = () => {
+  const storedLang = localStorage.getItem('storedLang');
+
+  const redirectToLanguagePage = lang => {
+    const pages = {
+      ru: 'index.html',
+      en: 'index-en.html',
+      uk: 'index-ua.html',
+    };
+    const page = pages[lang] || 'index.html';
+    localStorage.setItem('storedLang', lang);
+    window.location.href = page;
+  };
+
+  if (!storedLang) {
+    let userLang = navigator.language || navigator.userLanguage;
+    userLang = userLang.toLowerCase();
+
+    if (userLang.startsWith('ru')) {
+      redirectToLanguagePage('ru');
+    } else if (userLang.startsWith('en')) {
+      redirectToLanguagePage('en');
+    } else if (userLang.startsWith('uk')) {
+      redirectToLanguagePage('ua');
+    } else {
+      redirectToLanguagePage('en');
+    }
+  } else {
+    const currentUrl = window.location.href;
+    const langPages = {
+      ru: 'index.html',
+      en: 'index-en.html',
+      ua: 'index-ua.html',
+    };
+
+    if (!currentUrl.includes(langPages[storedLang])) {
+      window.location.href = langPages[storedLang];
+    }
+  }
+
+  document.querySelectorAll('.header__language-switcher-select').forEach(el => {
+    el.addEventListener('click', event => {
+      event.preventDefault();
+      const selectedLang = event.target.getAttribute('data-lang');
+      redirectToLanguagePage(selectedLang);
+    });
+  });
+};
+
+translationToShow();
+
 const usersSubmittingCounter = () => {
   const updateProgress = percentage => {
     const progressBar = document.querySelector('.percent-text');
@@ -271,7 +322,7 @@ const preloaderAnimation = () => {
   const imgBottomPart = document.querySelectorAll('.preloader__greetings-bottom');
 
   setTimeout(() => {
-    preloaderGreetings.forEach(el => el.style.display = 'none');
+    preloaderGreetings.forEach(el => (el.style.display = 'none'));
     preloaderGreetingsImg.style.display = 'flex';
     imgTopPart.forEach(el => el.classList.add('shake-left'));
     imgCenterPart.forEach(el => el.classList.add('shake-center-right'));
@@ -286,10 +337,19 @@ const preloaderAnimation = () => {
       setTimeout(() => {
         html.style.overflowY = 'scroll';
         preloader.style.display = 'none';
-
       }, 500);
     }, 500);
   }, totalDelay + 200);
 };
 
-// preloaderAnimation();
+preloaderAnimation();
+
+const telegramButton = document.querySelectorAll('.telegram-button');
+
+telegramButton.forEach(el => {
+  el.addEventListener('click', event => {
+    event.preventDefault();
+    const url = 'https://t.me/drop100f_bot?start=link_t9TbqYzkkA';
+    window.open(url, '_blank');
+  });
+});

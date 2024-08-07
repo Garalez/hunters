@@ -120,15 +120,15 @@
 .header__warning-wrapper {
   display: flex;
   justify-content: center;
-  padding-left: 26px;
+  padding-left: 25px;
   margin-bottom: 31px;
 }
 
 .header__warning {
   position: relative;
-  background: url('../assets/img/svg/headerWarningBG.svg') no-repeat;
+  background: url('../assets/img/headerWarningBG.png') no-repeat;
   background-size: 100% 100%;
-  padding: 9px 11px 10px 18px;
+  padding: 9px 10px 10px 18px;
   font-family: Geologica;
   font-size: 16px;
   font-weight: 300;
@@ -270,7 +270,7 @@
 
 .header__community-button {
   position: relative;
-  padding: 19px 53px 14px 47px;
+  padding: 19px 52px 14px 47px;
   background-color: #ffe70c;
   box-shadow: 0px 4px 34px 0px #00000057;
 
@@ -286,27 +286,10 @@
   color: #000000;
 }
 
-.ua .header__community-button {
-  position: relative;
-  padding: 19px 49px 14px 44px;
-  background-color: #ffe70c;
-  box-shadow: 0px 4px 34px 0px #00000057;
-
-  z-index: 2;
-  transition: all 0.3s ease;
-  transform: translate(5px, -5px);
-
-  font-family: Bicubik;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
 
 .en .header__community-button {
   position: relative;
-  padding: 24px 18px 20px 19px;
+  padding: 22px 18px 14px 19px;
   background-color: #ffe70c;
   box-shadow: 0px 4px 34px 0px #00000057;
 
@@ -371,7 +354,7 @@
 
 .header__community-counter-wrapper {
   padding: 10px 11px 16px 27px;
-  background: url('../assets/img/svg/headerCommunityCounterBG.svg') no-repeat;
+  background: url('../assets/img/headerCommunityCounterBG.png') no-repeat;
   background-size: contain;
 
   filter: drop-shadow(0px 0 20px #ffe70c);
@@ -442,6 +425,10 @@
     max-width: 390px;
   }
 
+  .header__logo {
+    height: 14px;
+  }
+
   .header__logo-wrapper {
     padding: 0 8px 0 7px;
     margin-bottom: 59px;
@@ -479,7 +466,8 @@
 
   .header__warning {
     padding: 9px 15px 11px 18px;
-    background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    background: url('../assets/img/headerWarningBGMobile.png') no-repeat;
+    background-size: 100% 100%;
     font-family: Geologica;
     font-size: 14px;
     font-weight: 300;
@@ -495,10 +483,6 @@
 
   .en .header__title-mobile {
     text-align: center;
-  }
-
-  .ua .header__community-wrapper {
-    align-self: center;
   }
 
   .header__title {
@@ -584,15 +568,6 @@
     letter-spacing: 0.05em;
   }
 
-  .ua .header__community-button {
-    max-width: 267px;
-    padding: 11px 23px 7px 20px;
-    transform: translate(4px, -6px);
-    font-size: 14px;
-    line-height: 16.8px;
-    letter-spacing: 0.05em;
-  }
-
   .en .header__community-button {
     padding: 22px 31px 13px 28px;
     font-size: 14px;
@@ -606,37 +581,12 @@
 
   .header__community-counter-wrapper {
     width: 100%;
+    max-width: 271px;
     padding: 9px 10px 11px 21px;
     position: relative;
-    left: 46px;
-    background: url('../assets/img/svg/headerCommunityCounterBGMobile.svg') no-repeat;
-
-    filter: drop-shadow(0px 0 20px #ffe70c);
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .ua .header__community-counter-wrapper {
-    width: 100%;
-    padding: 9px 10px 11px 21px;
-    position: relative;
-    left: 21px;
-    background: url('../assets/img/svg/headerCommunityCounterBGMobile.svg') no-repeat;
-    background-size: contain;
-    filter: drop-shadow(0px 0 20px #ffe70c);
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .en .header__community-counter-wrapper {
-    width: 100%;
-    padding: 9px 10px 11px 21px;
-    position: relative;
-    left: 46px;
-    background: url('../assets/img/svg/headerCommunityCounterBGMobile.svg') no-repeat;
-    background-size: cover;
+    left: 47px;
+    background: url('../assets/img/headerCommunityCounterBGMobile.png') no-repeat;
+    background-size: 100% 100%;
 
     filter: drop-shadow(0px 0 20px #ffe70c);
     border-radius: 10px;

@@ -37,13 +37,15 @@
 .footer__warning-wrapper {
   display: flex;
   justify-content: center;
-  padding-left: 26px;
+  padding-left: 25px;
   margin-bottom: 37px;
 }
 
 .footer__warning {
+  width: 100%;
+  max-width: 491px;
   position: relative;
-  background: url('../assets/img/svg/headerWarningBG.svg') no-repeat;
+  background: url('../assets/img/headerWarningBG.png') no-repeat;
   background-size: 100% 100%;
   padding: 9px 11px 10px 17px;
 
@@ -172,6 +174,10 @@
     margin-bottom: 72px;
   }
 
+  .footer__logo {
+    height: 14px;
+  }
+
   .footer__container {
     margin: 0 auto;
     max-width: 390px;
@@ -194,8 +200,10 @@
   }
 
   .footer__warning {
+    width: fit-content;
     padding: 9px 15px 11px 18px;
-    background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    background: url('../assets/img/headerWarningBGMobile.png') no-repeat;
+    background-size: 100% 100%;
     font-family: Geologica;
     font-size: 14px;
     font-weight: 300;
@@ -204,7 +212,7 @@
 
   .en .footer__warning {
     padding: 9px 15px 11px 18px;
-    background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    background: url('../assets/img/headerWarningBGMobile.png') no-repeat;
     background-size: 100% 100%;
     font-family: Geologica;
     font-size: 14px;
@@ -244,6 +252,13 @@
     max-width: none;
     padding: 22px 52px 13px 47px;
     transform: translate(5px, -5px);
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0.05em;
+  }
+
+  .en .footer__community-button {
+    padding: 22px 31px 13px 28px;
     font-size: 14px;
     line-height: 16.8px;
     letter-spacing: 0.05em;

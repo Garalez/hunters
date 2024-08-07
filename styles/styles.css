@@ -87,7 +87,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 body {

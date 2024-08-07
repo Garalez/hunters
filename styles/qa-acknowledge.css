@@ -86,7 +86,7 @@
 }
 
 .qa-acknowledge__first-answer-community-button {
-  padding: 19px 53px 13px 47px;
+  padding: 19px 52px 13px 47px;
   transform: translate(6px, -6px);
 }
 
@@ -494,13 +494,12 @@
     transform: translate(4px, -5px);
   }
 
-  .en .qa-acknowledge__first-answer-community-counter-wrapper {
-    left: 0;
+  .en .qa-acknowledge__first-answer-community-button {
+    padding: 15px 31px 9px 22px;
   }
 
-  .ua .qa-acknowledge__first-answer-community-counter-wrapper {
+  .qa-acknowledge__first-answer-community-counter-wrapper {
     left: 0;
-
   }
 
   .qa-acknowledge__second-question-wrapper {
