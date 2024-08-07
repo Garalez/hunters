@@ -20,7 +20,7 @@
 .qa-income__first-question-text {
   width: 100%;
   max-width: 706px;
-  padding: 25px 10px 25px 35px;
+  padding: 25px 10px 26px 35px;
   background: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -100,7 +100,7 @@
 
 .qa-income__second-question-text {
   max-width: 759px;
-  padding: 25px 35px 26px 35px;
+  padding: 25px 35px 25px 35px;
   background: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
 
@@ -217,6 +217,13 @@
 
   .qa-income__first-question-text {
     max-width: 226px;
+    padding: 13px 0 13px 25px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .en .qa-income__first-question-text {
+    max-width: 260px;
     padding: 13px 0 13px 25px;
     font-size: 13px;
     line-height: 14px;

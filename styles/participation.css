@@ -57,7 +57,7 @@
   font-family: Wadik;
   font-size: 18px;
   font-weight: 700;
-  line-height: 19.91px;
+  line-height: 20px;
 }
 
 .participation__card-provide-item:nth-of-type(1) {
@@ -140,12 +140,12 @@
   font-family: Wadik;
   font-size: 18px;
   font-weight: 700;
-  line-height: 19.91px;
+  line-height: 20px;
 }
 
 .participation__card-request-item:nth-of-type(1) {
   padding-left: 38px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .participation__card-request-item:nth-of-type(2) {
@@ -160,7 +160,7 @@
 .participation__card-request-item:nth-of-type(3) .participation__card-request-text {
   position: relative;
   width: fit-content;
-  padding: 12px 18px 13px 29px;
+  padding: 12px 18px 12px 29px;
   border-radius: 6px;
   background-color: #2943de;
   font-family: Geologica;
@@ -228,11 +228,25 @@
   padding: 19px 53px 14px 47px;
   background-color: #ffe70c;
   box-shadow: 0px 4px 34px 0px #00000057;
-
   z-index: 2;
   transition: all 0.3s ease;
   transform: translate(6px, -6px);
+  font-family: Bicubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
 
+.en .participation__community-button {
+  position: relative;
+  padding: 24px 18px 20px 19px;
+  background-color: #ffe70c;
+  box-shadow: 0px 4px 34px 0px #00000057;
+  z-index: 2;
+  transition: all 0.3s ease;
+  transform: translate(6px, -6px);
   font-family: Bicubik;
   font-size: 16px;
   font-weight: 400;
@@ -249,6 +263,28 @@
   width: 93px;
   height: 47px;
   background: url('../assets/img/svg/headerCommunityBtnRibbon.svg') no-repeat;
+  background-size: contain;
+}
+
+.ua .participation__community-button::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -24px;
+  width: 93px;
+  height: 47px;
+  background: url('../assets/img/svg/headerCommunityBtnRibbonUA.svg') no-repeat;
+  background-size: contain;
+}
+
+.en .participation__community-button::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -24px;
+  width: 93px;
+  height: 47px;
+  background: url('../assets/img/svg/headerCommunityBtnRibbonEN.svg') no-repeat;
   background-size: contain;
 }
 
@@ -447,6 +483,7 @@
     position: relative;
     padding: 21px 12px 23px 25px;
     background: url('../assets/img/participationCardProvideBGMobile.png') no-repeat;
+    background-size: 100% 100%;
   }
 
   .participation__card-provide-heading {
@@ -583,6 +620,22 @@
     font-size: 14px;
     line-height: 16.8px;
     letter-spacing: 0.05em;
+  }
+
+  .en .participation__community-button {
+    position: relative;
+    padding: 15px 29px 10px 16px;
+    background-color: #ffe70c;
+    box-shadow: 0px 4px 34px 0px #00000057;
+    z-index: 2;
+    transition: all 0.3s ease;
+    transform: translate(6px, -6px);
+    font-family: Bicubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0.05em;
+    color: #000000;
   }
 
   .participation__community-button-wrapper:hover .participation__community-button {

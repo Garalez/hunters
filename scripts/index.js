@@ -292,4 +292,4 @@ const preloaderAnimation = () => {
   }, totalDelay + 200);
 };
 
-preloaderAnimation();
+// preloaderAnimation();

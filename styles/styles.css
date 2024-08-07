@@ -71,6 +71,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Onest-ExtraBold';
+  src: url('../assets/fonts/Onest-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +87,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 body {
@@ -144,6 +151,11 @@ fieldset {
 .text-selection-red {
   color: #ff5050;
 }
+
+.custom-font-ua {
+  font-family: 'Onest-ExtraBold';
+}
+
 
 @media (max-width: 590px) {
   .avatar {

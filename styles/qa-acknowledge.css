@@ -4,7 +4,7 @@
 }
 
 .qa-acknowledge__wrapper {
-  padding: 70px 0 46px 113px;
+  padding: 70px 0 47px 113px;
   border-radius: 25px;
   background: url('../assets/img/acknowledgePictures/qaAcknowledgeBG.png') no-repeat;
   background-size: 100% 100%;
@@ -20,7 +20,7 @@
 
 .qa-acknowledge__first-question-text {
   max-width: 784px;
-  padding: 25px 35px 26px 35px;
+  padding: 25px 35px 25px 35px;
   background-color: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -37,7 +37,7 @@
 .qa-acknowledge__first-answer-wrapper {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .qa-acknowledge__first-answer-owner-avatar {
@@ -75,6 +75,11 @@
   margin-bottom: 34px;
 }
 
+.en .qa-acknowledge__first-answer-community-wrapper {
+  padding: 0;
+  max-width: none;
+}
+
 .qa-acknowledge__first-answer-community-wrapper {
   padding: 0;
   max-width: fit-content;
@@ -109,7 +114,7 @@
 
 .qa-acknowledge__second-question-text {
   max-width: 784px;
-  padding: 25px 35px 26px 35px;
+  padding: 25px 35px 25px 35px;
   background-color: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -143,7 +148,7 @@
 }
 
 .qa-acknowledge__second-answer-text {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   font-family: Wadik;
   font-size: 24px;
   font-weight: 700;
@@ -233,6 +238,13 @@
   line-height: 19px;
 }
 
+.en .qa-acknowledge__second-answer_experience-text {
+  font-family: Geologica;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
 .qa-acknowledge__second-answer_experience-wrapper-1 .qa-acknowledge__second-answer_experience-text {
   max-width: 205px;
 }
@@ -258,6 +270,12 @@
 .qa-acknowledge__second-answer_experience-wrapper-6
   .qa-acknowledge__second-answer_experience-text:nth-of-type(2) {
   max-width: 185px;
+}
+
+.en
+  .qa-acknowledge__second-answer_experience-wrapper-6
+  .qa-acknowledge__second-answer_experience-text:nth-of-type(2) {
+  max-width: 199px;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-7 .qa-acknowledge__second-answer_experience-text {
@@ -303,14 +321,24 @@
   height: 146px;
 }
 
+.en .qa-acknowledge__first-answer-community-counter-wrapper {
+  max-width: 403px;
+}
+
+.en .qa-acknowledge__first-answer-community-wrapper {
+  width: fit-content;
+}
+
 .qa-acknowledge__first-answer-text-wrapper-desktop,
-.qa-acknowledge__second-answer_experience-text-desktop {
+.qa-acknowledge__second-answer_experience-text-desktop,
+.qa-acknowledge__second-answer-text-desktop {
   display: block;
 }
 
 .qa-acknowledge__first-answer-text-wrapper-mobile,
 .qa-acknowledge__second-answer_experience-text-mobile,
-.qa-acknowledge__second-answer_team-mobile {
+.qa-acknowledge__second-answer_team-mobile,
+.qa-acknowledge__second-answer-text-mobile {
   display: none;
 }
 
@@ -411,6 +439,18 @@
     line-height: 14px;
   }
 
+  .en .qa-acknowledge__first-question-text {
+    max-width: 234px;
+    padding: 13px 24px 13px 25px;
+    box-shadow: none;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .ua .qa-acknowledge__first-answer-community-wrapper {
+    width: 100%;
+  }
+
   .qa-acknowledge__first-answer-wrapper {
     margin-bottom: 30px;
   }
@@ -454,8 +494,13 @@
     transform: translate(4px, -5px);
   }
 
-  .qa-acknowledge__first-answer-community-counter-wrapper {
+  .en .qa-acknowledge__first-answer-community-counter-wrapper {
     left: 0;
+  }
+
+  .ua .qa-acknowledge__first-answer-community-counter-wrapper {
+    left: 0;
+
   }
 
   .qa-acknowledge__second-question-wrapper {
@@ -571,6 +616,12 @@
     margin-bottom: 18px;
   }
 
+  .en
+    .qa-acknowledge__second-answer_experience-wrapper-6
+    .qa-acknowledge__second-answer_experience-text:nth-of-type(2) {
+    max-width: 171px;
+  }
+
   .qa-acknowledge__second-answer_experience-wrapper-6
     .qa-acknowledge__second-answer_experience-text:nth-of-type(2) {
     max-width: 171px;
@@ -583,6 +634,12 @@
     background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-7.png')
       no-repeat;
     background-size: 100% 100%;
+  }
+
+  .en
+    .qa-acknowledge__second-answer_experience-wrapper-7
+    .qa-acknowledge__second-answer_experience-text {
+    max-width: 200px;
   }
 
   .qa-acknowledge__second-answer_experience {
@@ -626,12 +683,14 @@
 
   .qa-acknowledge__first-answer-text-wrapper-desktop,
   .qa-acknowledge__second-answer_experience-text-desktop,
-  .qa-acknowledge__second-answer_team-desktop {
+  .qa-acknowledge__second-answer_team-desktop,
+  .qa-acknowledge__second-answer-text-desktop {
     display: none;
   }
 
   .qa-acknowledge__first-answer-text-wrapper-mobile,
-  .qa-acknowledge__second-answer_experience-text-mobile {
+  .qa-acknowledge__second-answer_experience-text-mobile,
+  .qa-acknowledge__second-answer-text-mobile {
     display: block;
   }
 }

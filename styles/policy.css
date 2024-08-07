@@ -50,7 +50,13 @@
   background-image: url('../assets/img/modal/popupClose.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.5;
   cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.policy__close-btn:hover {
+  opacity: 1;
 }
 
 .policy__container p {

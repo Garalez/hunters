@@ -1,5 +1,5 @@
 .footer {
-  padding: 51px 0 33px 0;
+  padding: 51px 0 11px 0;
 }
 
 .footer::before {
@@ -21,8 +21,12 @@
   margin-bottom: 37px;
 }
 
+.footer__logo {
+  height: 25.5px;
+}
+
 .footer__subheading {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-family: Bicubik;
   font-size: 14px;
   font-weight: 400;
@@ -69,6 +73,10 @@
   font-weight: 700;
   line-height: 27px;
   text-align: center;
+}
+
+.ua .footer__title {
+  max-width: 800px;
 }
 
 .footer__buttons-wrapper {
@@ -124,12 +132,14 @@
 }
 
 .footer__warning-desktop,
-.footer__title-desktop {
+.footer__title-desktop,
+.footer__subheading-desktop {
   display: block;
 }
 
 .footer__warning-mobile,
-.footer__title-mobile {
+.footer__title-mobile,
+.footer__subheading-mobile {
   display: none;
 }
 
@@ -186,6 +196,16 @@
   .footer__warning {
     padding: 9px 15px 11px 18px;
     background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    font-family: Geologica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+
+  .en .footer__warning {
+    padding: 9px 15px 11px 18px;
+    background: url('../assets/img/svg/headerWarningBGMobile.svg') no-repeat;
+    background-size: 100% 100%;
     font-family: Geologica;
     font-size: 14px;
     font-weight: 300;
@@ -259,13 +279,20 @@
     line-height: 15.48px;
   }
 
+  .en .footer__title-mobile,
+  .en .footer__subheading-mobile {
+    text-align: center;
+  }
+
   .footer__warning-desktop,
-  .footer__title-desktop {
+  .footer__title-desktop,
+  .footer__subheading-desktop {
     display: none;
   }
 
   .footer__warning-mobile,
-  .footer__title-mobile {
+  .footer__title-mobile,
+  .footer__subheading-mobile {
     display: block;
   }
 }

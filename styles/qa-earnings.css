@@ -20,7 +20,7 @@
 .qa-earnings__first-question-text {
   width: 100%;
   max-width: 767px;
-  padding: 25px 32px 26px 35px;
+  padding: 25px 32px 25px 35px;
   background-color: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -146,7 +146,33 @@
 .qa-earnings__second-question-text {
   width: 100%;
   max-width: 1044px;
-  padding: 25px 32px 25px 35px;
+  padding: 25px 32px 26px 35px;
+  background-color: rgba(65, 60, 178, 1);
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.ua .qa-earnings__second-question-text {
+  width: 100%;
+  max-width: 850px;
+  padding: 25px 32px 26px 35px;
+  background-color: rgba(65, 60, 178, 1);
+  box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.en .qa-earnings__second-question-text {
+  width: 100%;
+  max-width: 884px;
+  padding: 25px 32px 26px 35px;
   background-color: rgba(65, 60, 178, 1);
   box-shadow: 0px 0px 45px 0px rgba(255, 231, 12, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -269,6 +295,13 @@
     line-height: 14px;
   }
 
+  .en .qa-earnings__first-question-text {
+    max-width: 272px;
+    padding: 13px 32px 13px 25px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
   .qa-earnings__first-answer-wrapper {
     padding-left: 6px;
     margin-bottom: 22px;
@@ -303,6 +336,14 @@
     justify-content: flex-start;
     column-gap: 7px;
     margin-bottom: 14px;
+  }
+
+  .en .qa-earnings__first-answer-gallery-wrapper img {
+    width: 132px;
+  }
+
+  .ua .qa-earnings__first-answer-gallery-wrapper img {
+    width: 132px;
   }
 
   .qa-earnings__second-answer-wrapper {
@@ -355,6 +396,20 @@
     line-height: 14px;
   }
 
+  .en .qa-earnings__second-question-text {
+    max-width: 290px;
+    padding: 13px 25px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .ua .qa-earnings__second-question-text {
+    max-width: 290px;
+    padding: 13px 25px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
   .qa-earnings__fourth-answer-wrapper {
     padding-left: 6px;
   }
@@ -362,6 +417,14 @@
   .qa-earnings__fourth-answer-content {
     padding: 15px 0px 25px 9px;
     box-shadow: none;
+  }
+
+  .en .qa-earnings__second-answer-content-mobile img {
+    width: 132px;
+  }
+
+  .ua .qa-earnings__second-answer-content-mobile img {
+    width: 132px;
   }
 
   .qa-earnings__first-answer-owner-avatar,

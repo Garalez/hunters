@@ -28,6 +28,15 @@
   border-radius: 19.65px 19px 19.65px 0.85px;
 }
 
+.en .qa-investments__first-answer-content {
+  width: 100%;
+  max-width: 722px;
+  padding: 25px 35px 25px 35px;
+  background-color: #1c195b;
+  box-shadow: 0px 0px 45px 0px rgba(76, 100, 243, 1);
+  border-radius: 19.65px 19px 19.65px 0.85px;
+}
+
 .qa-investments__first-answer-text {
   font-family: Wadik;
   font-size: 24px;
@@ -36,7 +45,7 @@
 }
 
 .qa-investments__first-answer-text:nth-of-type(3) {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .qa-investments__first-answer-list {
@@ -189,7 +198,7 @@
 .qa-investments__third-answer-text {
   width: 100%;
   max-width: 694px;
-  padding: 25px 10px 25px 35px;
+  padding: 25px 10px 24px 35px;
   background-color: #1c195b;
   box-shadow: 0px 0px 45px 0px rgba(22, 115, 255, 0.58);
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -437,6 +446,12 @@
     box-shadow: none;
   }
 
+  .en .qa-investments__first-question-text {
+    max-width: 196px;
+    padding: 13px 25px 13px 25px;
+    box-shadow: none;
+  }
+
   .qa-investments__second-answer-wrapper {
     padding-left: 6px;
     margin-bottom: 22px;
@@ -468,6 +483,18 @@
 
   .qa-investments__second-question-text {
     max-width: 283px;
+    padding: 13px 29px 13px 25px;
+    box-shadow: none;
+  }
+
+  .ua .qa-investments__second-question-text {
+    max-width: 293px;
+    padding: 13px 29px 13px 25px;
+    box-shadow: none;
+  }
+
+  .en .qa-investments__second-question-text {
+    max-width: 289px;
     padding: 13px 29px 13px 25px;
     box-shadow: none;
   }

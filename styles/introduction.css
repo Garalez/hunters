@@ -61,13 +61,19 @@
 }
 
 .introduction__dialog_text:nth-of-type(2) {
-  max-width: 500px;
+  max-width: 535px;
   margin-bottom: 25px;
 }
 
 .introduction__dialog_text:nth-of-type(3) {
   max-width: 530px;
 }
+
+.ua .introduction__dialog_text:nth-of-type(3) {
+  max-width: 535px;
+}
+
+
 
 .introduction__info-wrapper {
   position: absolute;
@@ -108,7 +114,7 @@
 .introduction__info_owners-figcaption {
   position: absolute;
   right: 92px;
-  bottom: 126px;
+  bottom: 125px;
   padding: 11px 56px 11px 18px;
   border-radius: 6px;
   background-color: #2943de;

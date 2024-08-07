@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,6 +48,12 @@
       crossorigin="anonymous" />
     <link
       rel="preload"
+      href="./assets/fonts/Onest-ExtraBold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous" />
+    <link
+      rel="preload"
       href="./assets/fonts/wadik/Wadik.otf"
       as="font"
       type="font/otf"
@@ -60,7 +66,7 @@
       content="Инвестируйте в отобранные криптопроекты до их выхода на биржу вместе с ведущими инвестиционными фондами" />
     <title>Инвестиции в криптопроекты на ранних стадиях до выхода на биржу - 100F</title>
   </head>
-  <body>
+  <body class="ua">
     <div class="preloader">
       <span class="slide"></span>
       <div id="#preloader" class="preloader-screen lazy-bg">
@@ -69,7 +75,7 @@
             <div class="loader-bar"></div>
             <span id="percentText" class="percent-text">0%</span>
           </div>
-          <p class="subtitle">Ми з України</p>
+          <p class="subtitle">Ми з Укра<span class="custom-font-ua">ї</span>ни</p>
           <div class="title-cont">
             <h1 class="main-title main-title-desktop">
               <div class="preloader__greetings-main-title-text-top">
@@ -136,7 +142,9 @@
             </h1>
           </div>
 
-          <p class="subtitle">Для українців</p>
+          <p class="subtitle">
+            Для укра<span class="custom-font-ua">ї</span>нц<span class="custom-font-ua">і</span>в
+          </p>
         </div>
       </div>
     </div>
@@ -151,69 +159,83 @@
                 <img class="header__logo" src="./assets/img/logo.png" alt="100F logo" />
               </picture>
               <div class="header__language-switcher-wrapper">
-                <div class="header__logo-locale">РУ</div>
-                <div class='header__language-switcher-dropdown'>
-                  <div class='header__language-switcher-select'>UA</div>
-                  <div class='header__language-switcher-select'>EN</div>
+                <div class="header__logo-locale">UA</div>
+                <div class="header__language-switcher-dropdown">
+                  <div class="header__language-switcher-select">РУ</div>
+                  <div class="header__language-switcher-select">EN</div>
                 </div>
               </div>
             </div>
             <p class="header__subheading header__subheading-desktop">
-              Проект от 100 FRANKLINS
+              ПРОЄКТ КРИПТОКОМПАНІЇ 100 FRANKLINS
               <span class="text-selection"
-                >по восстановлению<br />
-                благосостояния Украины и украинцев</span
+                >З ВІДНОВЛЕННЯ<br />
+                ДОБРОБУТУ УКРАЇНИ ТА УКРАЇНЦІВ</span
               >
             </p>
             <p class="header__subheading header__subheading-mobile">
-              Проект от 100 FRANKLINS
-              <span class="text-selection"
-                >по восстановлению благосостояния Украины и украинцев</span
-              >
+              ПРОЄКТ КРИПТОКОМПАНІЇ 100 FRANKLINS
+              <span class="text-selection">З ВІДНОВЛЕННЯ ДОБРОБУТУ УКРАЇНИ ТА УКРАЇНЦІВ</span>
             </p>
             <div class="header__warning-wrapper">
               <p class="header__warning header__warning-desktop">
-                Только для украинцев 16+, у кого есть 2-3 часа в день<br />
-                и потребность в дополнительном заработке без вложений
+                Лише для українців 16+, хто має 2-3 години на день<br />
+                і потребує додаткового заробітку без вкладень
               </p>
               <p class="header__warning header__warning-mobile">
-                Только для украинцев 16+, у кого<br />
-                есть 2-3 часа в день и потребность<br />
-                в дополнительном заработке без вложений
+                Лише для українців 16+, хто<br />
+                має 2-3 години на день і потребує<br />
+                додаткового заробітку без вкладень
               </p>
             </div>
             <h1 class="header__title header__title-desktop">
-              Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
-              <span class="text-selection">Поможем</span> на каждом шаге.<br />
-              И даже <span class="text-selection">инвестируем</span> в вас деньги
+              МИ <span class="text-selection">БЕЗКОШТОВНО </span> НАВЧИМО ВАС ЗАРОБЛЯТИ НА
+              КРИПТ<span class="custom-font-ua">І</span>.
+              <span class="text-selection">ДОПОМОЖЕМО </span> НА КОЖНОМУ КРОЦ<span
+                class="custom-font-ua"
+                >І</span
+              >.<br />
+              <span class="custom-font-ua">І</span> НАВ<span class="custom-font-ua">І</span>ТЬ
+              <span class="text-selection">ВКЛАДЕМО </span> У ВАС ГРОШ<span class="custom-font-ua"
+                >І</span
+              >
             </h1>
             <h1 class="header__title header__title-mobile">
-              Мы <span class="text-selection">бесплатно</span> вас<br />
-              научим зарабатывать<br />
-              на крипте. <span class="text-selection">Поможем</span><br />
-              на каждом шаге.<br />
-              И даже <span class="text-selection">инвестируем</span><br />
-              в вас деньги
+              МИ <span class="text-selection">БЕЗКОШТОВНО</span> <br />
+              НАВЧИМО ВАС <br />
+              ЗАРОБЛЯТИ НА КРИПТ<span class="custom-font-ua">І</span>.<br />
+              <span class="text-selection">ДОПОМОЖЕМО</span> на <br />
+              КОЖНОМУ КРОЦ<span class="custom-font-ua">І</span>.<br />
+              <span class="custom-font-ua">І</span> НАВ<span class="custom-font-ua">І</span>ТЬ
+              <span class="text-selection">ВКЛАДЕМО</span><br />
+              У ВАС ГРОШ<span class="custom-font-ua">І</span>
             </h1>
             <div class="header__footer">
               <div class="header__card-wrapper">
                 <p class="header__card-required">
-                  От вас <span class="text-selection">требуется:</span>
+                  ВІД ВАС
+                  <span class="text-selection"
+                    >ВИМАГА<span class="custom-font-ua">Є</span>ТЬСЯ:</span
+                  >
                 </p>
-                <p class="header__card-confirmation">Подтвердить свое гражданство и личность 16+</p>
-                <p class="header__card-runtime">2-3 часа в день на выполнение детальных заданий</p>
+                <p class="header__card-confirmation">
+                  Підтвердити своє громадянство та особистість 16+
+                </p>
+                <p class="header__card-runtime">
+                  2-3 години на день на виконання детальних завдань
+                </p>
                 <div class="header__card-warning-wrapper">
-                  <p class="header__card-warning">Стартовый капитал – не нужен!</p>
+                  <p class="header__card-warning">Стартовий капітал – не потрібен!</p>
                 </div>
               </div>
               <div class="header__community-wrapper">
                 <div class="header__community-button-wrapper">
-                  <button class="header__community-button">Стать частью сообщества</button>
+                  <button class="header__community-button">Стати частиною спільноти</button>
                   <span class="header__community-button-underlay"></span>
                 </div>
                 <div class="header__community-counter-wrapper">
                   <p class="header__community-counter-text">
-                    Оставили заявку на подключение к сообществу:
+                    Залишили заявку на підключення до спільноти:
                   </p>
                   <p class="header__community-counter-counter counter">1891</p>
                 </div>
@@ -236,47 +258,56 @@
               <div
                 class="introduction__dialog_text-wrapper introduction__dialog_text-wrapper-desktop">
                 <p class="introduction__dialog_text introduction__dialog_text-desktop">
-                  Всем – привет! Меня зовут Кир Уланов, и до начала войны большая часть моей
-                  профессиональной деятельности была сосредоточена на территории РФ. Обрубив все
-                  концы – я начал строить бизнес с 0 в сфере крипты
+                  Всім привіт! Мене звуть Кір Уланов, і до початку війни моя професійна діяльність
+                  здебільшого була зосереджена на території РФ. Обрубавши всі кінці – я почав
+                  будувати бізнес з 0 у сфері крипти
                 </p>
                 <p class="introduction__dialog_text">
-                  За 2 года удалось построить компанию 100 FRANKLINS (<span
+                  За 2 роки вдалося побудувати компанію 100 FRANKLINS (<span
                     class="introduction__dialog_text-underline"
                     >100F.COM</span
-                  >) в США и организовать сообщество людей, с которыми вместе зарабатываем на крипте
+                  >) у США та організувати спільноту людей, з якими ми разом заробляємо на крипті
                 </p>
                 <p class="introduction__dialog_text">
-                  Финально организовав все рабочие процессы, я увидел, как
+                  Фінально організувавши всі робочі процеси, я побачив, як
                   <span class="text-selection"
-                    >наша команда экспертов и инвесторов может помочь украинцам зарабатывать без
-                    вложений,</span
-                  >
-                  при этом помогая ветеранам восстанавливаться после боевых действий
+                    >наша команда експертів та інвесторів може допомогти українцям заробляти без
+                    вкладень,
+                  </span>
+                  при цьому допомагаючи ветеранам відновлюватись після бойових дій
                 </p>
               </div>
               <div
                 class="introduction__dialog_text-wrapper introduction__dialog_text-wrapper-mobile">
                 <p class="introduction__dialog_text">
-                  Всем – привет! Меня зовут Кир Уланов, и до начала войны большая часть моей
-                  профессиональной деятельности была сосредоточена на территории РФ. Обрубив все
-                  концы – я начал строить бизнес<br />
-                  с 0 в сфере крипты
+                  Всім привіт! Мене звуть Кір Уланов, і<br />
+                  до початку війни моя професійна<br />
+                  діяльність здебільшого була<br />
+                  зосереджена на території РФ.<br />
+                  Обрубавши всі кінці – я почав<br />
+                  будувати бізнес з 0 у сфері крипти
                 </p>
                 <p class="introduction__dialog_text">
-                  За 2 года удалось построить компанию 100 FRANKLINS (<span
-                    class="introduction__dialog_text-underline"
+                  За 2 роки вдалося побудувати<br />
+                  компанію 100 FRANKLINS (<span class="introduction__dialog_text-underline"
                     >100F.COM</span
-                  >) в США и организовать сообщество людей, с которыми вместе зарабатываем на крипте
+                  >)<br />
+                  у США та організувати спільноту<br />
+                  людей, з якими ми разом<br />
+                  заробляємо на крипті
                 </p>
                 <p class="introduction__dialog_text">
-                  Финально организовав все рабочие процессы, я увидел, как
+                  Фінально організувавши всі робочі<br />
+                  процеси, я побачив, як
                   <span class="text-selection"
-                    >наша команда экспертов и инвесторов может помочь украинцам зарабатывать без
-                    вложений,</span
-                  >
-                  при этом помогая ветеранам восстанавливаться<br />
-                  после боевых действий
+                    >наша<br />
+                    команда експертів та інвесторів<br />
+                    може допомогти українцям<br />
+                    заробляти без вкладень,
+                  </span>
+                  при цьому<br />
+                  допомагаючи ветеранам<br />
+                  відновлюватись після бойових дій
                 </p>
               </div>
             </div>
@@ -284,7 +315,7 @@
               <div class="introduction__info">
                 <div class="introduction__info_qr">
                   <figure class="introduction__info_figure">
-                    <figcaption class="introduction__info_figcaption">О КИРЕ</figcaption>
+                    <figcaption class="introduction__info_figcaption">ПРО КІРА</figcaption>
                     <div class="introduction__info_qr-code-wrapper">
                       <picture>
                         <source media="(min-width: 591px)" srcset="./assets/img/svg/qrCode.svg" />
@@ -312,9 +343,11 @@
                         alt="Фото основателя" />
                     </picture>
                     <figcaption class="introduction__info_owners-figcaption">
-                      <p class="introduction__info_owners-info-heading">Кир Уланов</p>
+                      <p class="introduction__info_owners-info-heading">
+                        К<span class="custom-font-ua">І</span>Р УЛАНОВ
+                      </p>
                       <p class="introduction__info_owners-info-text">
-                        Создатель crypto-экосистемы<br />
+                        Засновник crypto-екосистеми<br />
                         100 FRANKLINS
                       </p>
                     </figcaption>
@@ -335,47 +368,58 @@
               alt="owner avatar" />
             <div class="participation__content">
               <h2 class="participation__heading">
-                <span class="text-selection">Условия участия</span> очень простые
+                <span class="text-selection">УМОВИ УЧАСТ<span class="custom-font-ua">І</span></span>
+                ДУЖЕ ПРОСТ<span class="custom-font-ua">І</span>
               </h2>
 
               <div class="participation__cards-wrapper">
                 <div class="participation__card-provide">
                   <p class="participation__card-provide-heading">
-                    Для украинцев мы <span class="text-selection">бесплатно</span> предоставляем:
+                    ДЛЯ УКРА<span class="custom-font-ua">Ї</span>НЦ<span class="custom-font-ua"
+                      >І</span
+                    >В МИ <span class="text-selection">БЕЗКОШТОВНО </span> НАДА<span
+                      class="custom-font-ua"
+                      >Є</span
+                    >МО:
                   </p>
                   <ul class="participation__card-provide-list">
                     <li class="participation__card-provide-item">
-                      <p class="participation__card-provide-text">Обучение</p>
+                      <p class="participation__card-provide-text">Навчання</p>
                     </li>
                     <li class="participation__card-provide-item">
-                      <p class="participation__card-provide-text">Наставников</p>
+                      <p class="participation__card-provide-text">Наставників</p>
                     </li>
                     <li class="participation__card-provide-item">
-                      <p class="participation__card-provide-text">Сообщество</p>
+                      <p class="participation__card-provide-text">Спільноту</p>
                     </li>
                     <li class="participation__card-provide-item">
-                      <p class="participation__card-provide-text">Инвестиции</p>
+                      <p class="participation__card-provide-text">Інвестиції</p>
                     </li>
                   </ul>
                 </div>
 
                 <div class="participation__card-request">
                   <p class="participation__card-request-heading">
-                    От вас <span class="text-selection">требуется:</span>
+                    В<span class="custom-font-ua">І</span>Д ВАС
+                    <span class="text-selection"
+                      >ВИМАГА<span class="custom-font-ua">Є</span>ТЬСЯ:</span
+                    >
                   </p>
                   <ul class="participation__card-request-list">
                     <li class="participation__card-request-item">
                       <p class="participation__card-request-text">
-                        Подтвердить свое гражданство и личность 16+
+                        Підтвердити своє громадянство та особистість 16+
                       </p>
                     </li>
                     <li class="participation__card-request-item">
                       <p class="participation__card-request-text">
-                        2-3 часа в день на выполнение детальных заданий
+                        2-3 години на день на виконання детальних завдань
                       </p>
                     </li>
                     <li class="participation__card-request-item">
-                      <p class="participation__card-request-text">Стартовый капитал – не нужен!</p>
+                      <p class="participation__card-request-text">
+                        Стартовий капітал – не потрібен!
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -383,12 +427,12 @@
 
               <div class="participation__community-wrapper">
                 <div class="participation__community-button-wrapper">
-                  <button class="participation__community-button">Стать частью сообщества</button>
+                  <button class="participation__community-button">Стати частиною спільноти</button>
                   <span class="participation__community-button-underlay"></span>
                 </div>
                 <div class="participation__community-counter-wrapper">
                   <p class="participation__community-counter-text">
-                    Оставили заявку на подключение к сообществу:
+                    Залишили заявку на підключення до спільноти:
                   </p>
                   <p class="participation__community-counter-counter counter">1891</p>
                 </div>
@@ -402,21 +446,19 @@
                     alt="указатель на то что можете обрести" />
                 </li>
                 <li class="participation__profit-item text-selection">
-                  <span class="text-selection">И обрести:</span>
+                  <span class="text-selection">І ЗНАЙТИ:</span>
                 </li>
                 <li class="participation__profit-item">
-                  <p class="participation__profit-online">
-                    Дополнительный или основной доход онлайн
-                  </p>
+                  <p class="participation__profit-online">Додатковий або основний дохід онлайн</p>
                 </li>
                 <li class="participation__profit-item">
                   <p class="participation__profit-independance">
-                    Независимость от политических/военных событий
+                    Незалежність від політичних/військових подій
                   </p>
                 </li>
                 <li class="participation__profit-item">
                   <p class="participation__profit-help participation__profit-experience-desktop">
-                    Возможность помогать близким, защитникам и своей стране
+                    Можливість допомагати близьким, захисникам та своїй країні
                   </p>
                 </li>
               </ul>
@@ -430,10 +472,18 @@
           <div class="why-us__container">
             <div class="why-us__question-wrapper">
               <p class="why-us__question why-us__question-desktop">
-                Вы спросите: <span class="text-selection">зачем нам это все нужно?</span>
+                ВИ ЗАПИТА<span class="custom-font-ua">Є</span>ТЕ:
+                <span class="text-selection"
+                  >НАВ<span class="custom-font-ua">І</span>ЩО НАМ ЦЕ ВСЕ ПОТР<span
+                    class="custom-font-ua"
+                    >І</span
+                  >БНО?</span
+                >
               </p>
               <p class="why-us__question why-us__question-mobile">
-                Вы спросите: зачем нам это все нужно?
+                ВИ ЗАПИТА<span class="custom-font-ua">Є</span>ТЕ: НАВ<span class="custom-font-ua"
+                  >І</span
+                >ЩО НАМ ЦЕ ВСЕ ПОТР<span class="custom-font-ua">І</span>БНО?
               </p>
               <img
                 class="why-us__question-avatar avatar"
@@ -449,26 +499,27 @@
 
               <div class="why-us__first-answer-content why-us__first-answer-content-desktop">
                 <p class="why-us__first-answer-text">
-                  Мы хотим в течение 2024-2025 гг. вместе с вами
+                  МИ ХОЧЕМО ПРОТЯГОМ 2024-2025 РР. РАЗОМ З ВАМИ
                   <span class="text-selection"
-                    >заработать более $10 млн и минимум $1 млн выделить на восстановление</span
+                    >ЗАРОБИТИ ПОНАД $10 МЛН І ЩОНАЙМЕНШЕ $1 МЛН ВИДІЛИТИ НА ВІДНОВЛЕННЯ</span
                   >
-                  и реабилитацию защитников Украины
+                  ТА РЕАБІЛІТАЦІЮ ЗАХИСНИКІВ УКРАЇНИ
                 </p>
                 <p class="why-us__first-answer-text">
-                  Экономика Украины из-за войны сильно пострадала. И война еще продолжается, и нужно
-                  армии помогать, раненых лечить, детей растить и экономику поднимать, потому что
-                  нам тут жить.
+                  Економіка України через війну дуже постраждала. І війна ще триває, і треба армії
+                  допомогати, поранених лікувати, дітей ростити та економіку піднімати
                 </p>
               </div>
               <div class="why-us__first-answer-content why-us__first-answer-content-mobile">
                 <p class="why-us__first-answer-text">
-                  Мы хотим в течение 2024-2025 гг. вместе с вами
+                  МИ ХОЧЕМО ПРОТЯГОМ 2024-2025<br />
+                  РР. РАЗОМ З ВАМИ
                   <span class="text-selection"
-                    >заработать<br />
-                    более $10 млн и минимум $1 млн выделить на восстановление<br
-                  /></span>
-                  и реабилитацию защитников Украины
+                    >ЗАРОБИТИ ПОНАД<br />
+                    $10 МЛН І ЩОНАЙМЕНШЕ $1 МЛН<br />
+                    ВИДІЛИТИ НА ВІДНОВЛЕННЯ</span
+                  ><br />
+                  ТА РЕАБІЛІТАЦІЮ ЗАХИСНИКІВ УКРАЇНИ
                 </p>
                 <p class="why-us__first-answer-text">
                   Экономика Украины из-за войны сильно пострадала. И война еще продолжается, и нужно
@@ -486,49 +537,59 @@
 
               <div class="why-us__second-answer-content why-us__second-answer-content-desktop">
                 <p class="why-us__second-answer-text">
-                  Многие украинцы потеряли работу, а цены на коммуналку растут, буквально все
-                  дорожает день за днем. И люди приходят в отчаяние, как заработать на жизнь. 
+                  Чимало українців втратили роботу, а ціни на комуналку зростають, буквально все
+                  дорожчає день за днем. І люди приходять у відчай, як заробити на життя
                 </p>
                 <p class="why-us__second-answer-text">
                   <span class="text-selection"
-                    >Мы покажем, как зарабатываем сами, и научим так же зарабатывать и вас.</span
+                    >Ми покажемо, як заробляємо самі, і навчимо заробляти вас.</span
                   >
-                  Денег за это мы не возьмем. Это будет наш вклад в восстановление благосостояния
-                  Украины<br />
-                  и наших любимых украинцев. 
+                  Грошей за це ми не візьмемо. Це буде наш внесок у<br />
+                  відновлення добробуту України та наших улюблених українців 
                 </p>
                 <p class="why-us__second-answer-text">
                   <span class="text-selection-blue">
-                    Заработок на крипте – это отличный вариант поддержать себя и близких. Многие
-                    считают, что это архисложно и не всем подходит.
+                    Заробіток на крипті – це чудовий варіант підтримати себе та близьких.
                   </span>
-                  Это не так. Если у вас есть комп/ноут и смартфон, пара часов в день<br />
-                  и немного упорства – вы не пропадёте и научитесь зарабатывать, не выходя из дома
+                  Багато хто вважає, що це дуже складно і не всім підходить. Це не так. Якщо у вас є
+                  комп/ноут і смартфон, пара годин на день і трохи завзятості – ви не пропадете і
+                  навчитеся заробляти, не виходячи з дому
                 </p>
               </div>
               <div class="why-us__second-answer-content why-us__second-answer-content-mobile">
                 <p class="why-us__second-answer-text">
-                  Многие украинцы потеряли работу,<br />
-                  а цены на коммуналку растут, буквально все дорожает день<br />
-                  за днем. И люди приходят<br />
-                  в отчаяние, как заработать на жизнь. 
+                  Чимало українців втратили роботу,<br />
+                  а ціни на комуналку зростають,<br />
+                  буквально все дорожчає день за<br />
+                  днем. І люди приходять у відчай, як<br />
+                  заробити на життя
                 </p>
                 <p class="why-us__second-answer-text">
                   <span class="text-selection"
-                    >Мы покажем, как зарабатываем сами,<br />
-                    и научим так же зарабатывать и вас.</span
+                    >Ми покажемо, як заробляємо самі, і<br />
+                    навчимо заробляти вас.</span
                   >
-                  Денег за это мы не возьмем. Это<br />
-                  будет наш вклад в восстановление благосостояния Украины<br />
-                  и наших любимых украинцев. 
+                  Грошей за<br />
+                  це ми не візьмемо. Це буде наш<br />
+                  внесок у<br />
+                  відновлення добробуту<br />
+                  України та наших улюблених<br />
+                  українців 
                 </p>
                 <p class="why-us__second-answer-text">
                   <span class="text-selection-blue">
-                    Заработок на крипте – это отличный вариант поддержать себя и близких.</span
-                  >
-                  Многие считают, что это архисложно и не всем подходит. Это не так. Если у вас есть
-                  комп/ноут и смартфон, пара часов в день и немного упорства – вы не пропадёте и
-                  научитесь зарабатывать, не выходя из дома
+                    Заробіток на крипті – це<br />
+                    чудовий варіант підтримати<br />
+                    себе та близьких.
+                  </span>
+                  Багато хто<br />
+                  вважає, що це дуже складно і<br />
+                  не всім підходить. Це не так.<br />
+                  Якщо у вас є комп/ноут і<br />
+                  смартфон, пара годин на день і<br />
+                  трохи завзятості – ви не<br />
+                  пропадете і навчитеся<br />
+                  заробляти, не виходячи з дому
                 </p>
               </div>
             </div>
@@ -540,13 +601,13 @@
                 alt="owner avatar" />
 
               <p class="why-us__third-answer-text">
-                Что ещё важно отметить – это
+                Що ще важливо відзначити – це
                 <span class="text-selection"
-                  >ваше доверие, которым мы дорожим, как и своей репутацией.</span
+                  >ваша довіра, яку ми цінуємо, як і свою репутацію.</span
                 >
-                В этом вы можете быть уверены на все сто. Ни один заработанный доллар не пройдет
-                мимо участников сообщества. Каждое действие и перевод можно будет отслеживать в
-                режиме реального времени!
+                У цьому ви можете бути впевнені на всі сто. Жоден зароблений долар не пройде повз
+                учасників спільноти. Кожну дію та переказ можна буде відстежувати в режимі реального
+                часу!
               </p>
             </div>
           </div>
@@ -563,26 +624,29 @@
                 alt="owner avatar" />
               <div class="qa-investments__first-answer-content">
                 <p class="qa-investments__first-answer-text text-selection-red">
-                  Мы не про пирамиду
+                  МИ НЕ ПРО П<span class="custom-font-ua">І</span>РАМИДУ
                 </p>
                 <p class="qa-investments__first-answer-text text-selection-red">
-                  Мы не про успешный успех
+                  МИ НЕ ПРО УСП<span class="custom-font-ua">І</span>ШНИЙ УСП<span
+                    class="custom-font-ua"
+                    >І</span
+                  >Х
                 </p>
-                <p class="qa-investments__first-answer-text text-selection">Мы – про крипту</p>
+                <p class="qa-investments__first-answer-text text-selection">МИ – ПРО КРИПТУ</p>
                 <ul class="qa-investments__first-answer-list">
                   <li class="qa-investments__first-answer-item">
                     <p class="qa-investments__first-answer-item-text">
-                      Здесь нужно работать минимум 2-3 часа в день
+                      Тут потрібно працювати мінімум 2-3 години на день
                     </p>
                   </li>
                   <li class="qa-investments__first-answer-item">
                     <p class="qa-investments__first-answer-item-text">
-                      Важна компьютерная грамотность на уровне офисного сотрудника
+                      Важлива комп'ютерна грамотність на рівні офісного співробітника
                     </p>
                   </li>
                   <li class="qa-investments__first-answer-item">
                     <p class="qa-investments__first-answer-item-text">
-                      Прохождение верификации с подтверждением гражданства и личности 16+
+                      Проходження верифікації з підтвердженням громадянства та особи 16+
                     </p>
                   </li>
                 </ul>
@@ -590,7 +654,12 @@
             </div>
             <div class="qa-investments__first-question-wrapper">
               <p class="qa-investments__first-question-text">
-                Нужны ли здесь <span class="text-selection">инвестиции?</span>
+                ЧИ ПОТР<span class="custom-font-ua">І</span>БН<span class="custom-font-ua">І</span>
+                ТУТ
+                <span class="text-selection"
+                  ><span class="custom-font-ua">І</span>НВЕСТИЦ<span class="custom-font-ua">ІЇ</span
+                  >?
+                </span>
               </p>
               <img
                 class="qa-investments__first-question-avatar avatar"
@@ -604,21 +673,24 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <div class="qa-investments__second-answer-content">
-                <p class="qa-investments__second-answer-heading">Да, но…</p>
+                <p class="qa-investments__second-answer-heading">ТАК, АЛЕ…</p>
                 <p class="qa-investments__second-answer-text">
                   <span class="text-selection"
-                    >На 1 участника нужны минимум $300 инвестиций в месяц</span
+                    >На 1 учасника потрібні мінімум $300 інвестицій на місяць</span
                   >
-                  для активной работы (оплата работы команды, развитие сообщества, пополнение
-                  кошельков и пр.)
+                  для активної роботи (оплата роботи команди, розвиток спільноти, поповнення
+                  гаманців та ін.)
                 </p>
               </div>
             </div>
 
             <div class="qa-investments__second-question-wrapper">
               <p class="qa-investments__second-question-text">
-                Тогда <span class="text-selection">как возможен старт</span> без начального
-                капитала?
+                ТОД<span class="custom-font-ua">І</span>
+                <span class="text-selection">ЯК МОЖНА СТАРТУВАТИ</span> БЕЗ ПОЧАТКОВОГО КАП<span
+                  class="custom-font-ua"
+                  >І</span
+                >ТАЛУ?
               </p>
               <img
                 class="qa-investments__second-question-avatar avatar"
@@ -632,14 +704,16 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <p class="qa-investments__third-answer-text">
-                Компания 100 FRANKLINS полностью берет на себя все расходы!
+                Компанія 100 FRANKLINS повністю бере на себе всі витрати!
               </p>
             </div>
 
             <div class="qa-investments__third-question-wrapper">
               <p class="qa-investments__third-question-text">
-                <span class="text-selection">А что нужно,</span> чтобы я мог заработать на
-                крипторынке?
+                <span class="text-selection"
+                  >А ЩО ПОТР<span class="custom-font-ua">І</span>БНО,</span
+                >
+                ЩОБ Я М<span class="custom-font-ua">І</span>Г ЗАРОБИТИ НА КРИПТОРИНКУ?
               </p>
               <img
                 class="qa-investments__third-question-avatar avatar"
@@ -657,21 +731,22 @@
                   class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-desktop">
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Подтверждение своей личности: при прохождении верификации важно
-                      продемонстрировать<br />
-                      документ, подтверждающий ваше<br />
-                      гражданство и возраст 16+
+                      Підтвердження своєї особи: під час проходження<br />
+                      верифікації важливо продемонструвати<br />
+                      документ, що підтверджує ваше<br />
+                      громадянство та вік 16+
                     </p>
                   </li>
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Быть активным и выделять ежедневно на проект минимум 2-3 часа в день
+                      Бути активним та виділяти щодня на проєкт<br />
+                      мінімум 2-3 години
                     </p>
                   </li>
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Следовать правилам сообщества. Помогать<br />
-                      и поддерживать других участников
+                      Дотримуватися правил спільноти. Допомагати<br />
+                      та підтримувати інших учасників
                     </p>
                   </li>
                 </ul>
@@ -679,20 +754,27 @@
                   class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-mobile">
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Подтверждение своей личности: при прохождении верификации важно
-                      продемонстрировать документ, подтверждающий ваше гражданство<br />
-                      и возраст 16+
+                      Підтвердження своєї особи:<br />
+                      під час проходження<br />
+                      верифікації важливо<br />
+                      продемонструвати документ,<br />
+                      що підтверджує ваше<br />
+                      громадянство та вік 16+
                     </p>
                   </li>
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Быть активным и выделять ежедневно на проект минимум 2-3 часа в день
+                      Бути активним та виділяти<br />
+                      щодня на проєкт мінімум 2-3<br />
+                      години
                     </p>
                   </li>
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
-                      Следовать правилам сообщества. Помогать<br />
-                      и поддерживать других участников
+                      Дотримуватися правил<br />
+                      спільноти. Допомагати<br />
+                      та підтримувати інших<br />
+                      учасників
                     </p>
                   </li>
                 </ul>
@@ -707,7 +789,10 @@
           <div class="qa-income__container">
             <div class="qa-income__first-question-wrapper">
               <p class="qa-income__first-question-text">
-                В чем ключевая <span class="text-selection">суть заработка?</span>
+                У ЧОМУ КЛЮЧОВА
+                <span class="text-selection"
+                  >СУТЬ ЗАРОБ<span class="custom-font-ua">І</span>ТКУ?</span
+                >
               </p>
               <img
                 class="qa-income__first-question-avatar avatar"
@@ -723,22 +808,22 @@
               <div class="qa-income__first-answer-content qa-income__first-answer-content-desktop">
                 <p class="qa-income__first-answer-text">
                   <span class="text-selection">
-                    Наша команда экспертов находит перспективные проекты<br />
-                    и готовит подробные текстовые и видеоинструкции, </span
+                    Наша команда експертів знаходить перспективні проєкти<br />
+                    та готує докладні текстові та відеоінструкції, </span
                   ><br />
-                  какие кнопки нажимать, чтобы выполнить задания
+                  які кнопки натискати, щоб виконати завдання
                 </p>
                 <p class="qa-income__first-answer-text">
-                  Задания совершенно разные: от «подписаться на соцсети проекта» до «сделать 10
-                  оплат, используя бюджет, выделенный нашей компании»
+                  Завдання абсолютно різні: від «підписатися на соцмережі проєкту» до «зробити 10
+                  оплат, використовуючи бюджет, виділений нашій компанії»
                 </p>
                 <div class="qa-income__first-answer-card-wrapper">
                   <p class="qa-income__first-answer-card-text text-selection-blue">
-                    Таким образом, тестируем проекты на начальном этапе их развития, выделяя для
-                    этого время и деньги
+                    Таким чином, тестуємо проєкти на початковому етапі їхнього розвитку, виділяючи
+                    для цього час та гроші
                   </p>
                   <p class="qa-income__first-answer-card-text">
-                    Взамен имеем возможность получить вознаграждение от проектов
+                    Натомість маємо можливість отримати винагороду від проєктів!
                   </p>
                 </div>
               </div>
@@ -746,25 +831,32 @@
               <div class="qa-income__first-answer-content qa-income__first-answer-content-mobile">
                 <p class="qa-income__first-answer-text">
                   <span class="text-selection">
-                    Наша команда экспертов находит перспективные проекты и готовит подробные
-                    текстовые<br />
-                    и видеоинструкции,
-                  </span>
-                  какие кнопки нажимать, чтобы выполнить задания
+                    Наша команда експертів знаходить<br />
+                    перспективні проєкти та готує<br />
+                    докладні текстові та відеоінструкції, </span
+                  ><br />
+                  які кнопки натискати, щоб виконати<br />
+                  завдання
                 </p>
                 <p class="qa-income__first-answer-text">
-                  Задания совершенно разные:<br />
-                  от «подписаться на соцсети проекта» до «сделать 10 оплат, используя бюджет,
-                  выделенный нашей компании»
+                  Завдання абсолютно різні: від<br />
+                  «підписатися на соцмережі проєкту»<br />
+                  до «зробити 10 оплат, використовуючи<br />
+                  бюджет, виділений нашій компанії»
                 </p>
 
                 <div class="qa-income__first-answer-card-wrapper">
                   <p class="qa-income__first-answer-card-text text-selection-blue">
-                    Таким образом, тестируем проекты на начальном этапе их развития, выделяя для
-                    этого время и деньги
+                    Таким чином, тестуємо<br />
+                    проєкти на початковому<br />
+                    етапі їхнього розвитку,<br />
+                    виділяючи для цього час та<br />
+                    гроші
                   </p>
                   <p class="qa-income__first-answer-card-text">
-                    Взамен имеем возможность получить вознаграждение от проектов
+                    Натомість маємо можливість<br />
+                    отримати винагороду від<br />
+                    проєктів!
                   </p>
                 </div>
               </div>
@@ -772,7 +864,12 @@
 
             <div class="qa-income__second-question-wrapper">
               <p class="qa-income__second-question-text">
-                <span class="text-selection">Зачем проектам</span> раздавать деньги?
+                <span class="text-selection"
+                  >НАВ<span class="custom-font-ua">І</span>ЩО ПРО<span class="custom-font-ua"
+                    >Є</span
+                  >КТАМ</span
+                >
+                РОЗДАВАТИ ГРОШ<span class="custom-font-ua">І</span>?
               </p>
               <img
                 class="qa-income__second-question-avatar avatar"
@@ -787,12 +884,12 @@
                 alt="owner avatar" />
               <div class="qa-income__second-answer-content">
                 <p class="qa-income__second-answer-text">
-                  Проектам это выгодно. Мы их тестируем, становимся лояльным к их бренду,
-                  обеспечиваем маркетинг и узнаваемость на рынке
+                  Проєктам це вигідно. Ми їх тестуємо, стаємо лояльними до їхнього бренду,
+                  забезпечуємо маркетинг та впізнаваність на ринку
                 </p>
                 <p class="qa-income__second-answer-text">
-                  Если совсем коротко –
-                  <span class="text-selection">наши действия помогают им развиваться</span>
+                  Якщо дуже коротко –
+                  <span class="text-selection">наші дії допомагають їм розвиватися</span>
                 </p>
               </div>
             </div>
@@ -805,10 +902,16 @@
           <div class="qa-team__container">
             <div class="qa-team__first-question-wrapper">
               <p class="qa-team__first-question-text qa-team__first-question-text-desktop">
-                <span class="text-selection">Как организована работа</span> в команде?
+                <span class="text-selection"
+                  >ЯК ОРГАН<span class="custom-font-ua">І</span>ЗОВАНО РОБОТУ</span
+                >
+                В КОМАНД<span class="custom-font-ua">І</span>?
               </p>
               <p class="qa-team__first-question-text qa-team__first-question-text-mobile">
-                <span class="text-selection">Как организована</span> работа в команде?
+                <span class="text-selection"
+                  >ЯК ОРГАН<span class="custom-font-ua">І</span>ЗОВАНО</span
+                >
+                РОБОТУ В КОМАНД<span class="custom-font-ua">І</span>?
               </p>
               <img
                 class="qa-team__first-question-avatar avatar"
@@ -823,38 +926,38 @@
                 alt="owner avatar" />
               <ul class="qa-team__first-answer-list">
                 <li class="qa-team__first-answer-item">
-                  <p class="qa-team__first-answer-step">Шаг 1</p>
+                  <p class="qa-team__first-answer-step">Крок 1</p>
                   <p class="qa-team__first-answer-text qa-team__first-answer-text-desktop">
-                    Вы заполняете форму и подтверждаете свою личность 16+
+                    Ви заповнюєте форму та підтверджуєте свою особистість 16+
                   </p>
                   <p class="qa-team__first-answer-text qa-team__first-answer-text-mobile">
-                    Вы заполняете форму<br />
-                    и подтверждаете свою личность 16+
+                    Ви заповнюєте форму та<br />
+                    підтверджуєте свою особистість 16+
                   </p>
                 </li>
                 <li class="qa-team__first-answer-item">
-                  <p class="qa-team__first-answer-step">Шаг 2</p>
+                  <p class="qa-team__first-answer-step">Крок 2</p>
                   <p class="qa-team__first-answer-text">
-                    Руководитель подтверждает, что вы подходите (да, участвовать могут не все, а
-                    только те, кто реально готов вкладываться своим временем)
+                    Керівник підтверджує, що ви підходите (так, взяти участь зможуть не всі, а лише
+                    ті, хто реально готовий вкладатися своїм часом)
                   </p>
                 </li>
                 <li class="qa-team__first-answer-item">
-                  <p class="qa-team__first-answer-step">Шаг 3</p>
+                  <p class="qa-team__first-answer-step">Крок 3</p>
                   <p class="qa-team__first-answer-text qa-team__first-answer-text-desktop">
-                    Вам выдают все необходимые инструменты для работы: доступ в сообщество,
-                    обучение, наставника, криптокошельки, аккаунты в соцсетях и пр.
+                    Вам видають усі необхідні інструменти для роботи: доступ до спільноти, навчання,
+                    наставника, криптогаманці, акаунти в соцмережах та ін.
                   </p>
                   <p class="qa-team__first-answer-text qa-team__first-answer-text-mobile">
-                    Вам выдают все необходимые инструменты для работы: доступ<br />
-                    в сообщество, обучение, наставника, криптокошельки, аккаунты<br />
-                    в соцсетях и пр.
+                    Вам видають усі необхідні інструменти для роботи: доступ<br />
+                    до спільноти, навчання, наставника, криптогаманці, акаунти<br />
+                    в соцмережах та ін.
                   </p>
                 </li>
                 <li class="qa-team__first-answer-item">
-                  <p class="qa-team__first-answer-step">Шаг 4</p>
+                  <p class="qa-team__first-answer-step">Крок 4</p>
                   <p class="qa-team__first-answer-text">
-                    Вы следуете плану «1-2-3», выполняете задания
+                    Ви дотримуєтеся плану «1-2-3», виконуєте завдання
                   </p>
                 </li>
               </ul>
@@ -862,7 +965,7 @@
 
             <div class="qa-team__second-question-wrapper">
               <p class="qa-team__second-question-text">
-                <span class="text-selection">Что делает команда</span> 100 FRANKLINS?
+                <span class="text-selection">ЩО РОБИТЬ КОМАНДА</span> 100 FRANKLINS?
               </p>
               <img
                 class="qa-team__second-question-avatar avatar"
@@ -882,7 +985,7 @@
                       <img src="./assets/img/svg/trohyIcon.svg" alt="" />
                     </div>
                     <p class="qa-team__second-answer-projects">
-                      Мы находим самые перспективные проекты, которые готовы заплатить нам деньги
+                      Ми знаходимо найперспективніші проєкти, які готові заплатити нам гроші
                     </p>
                     <div class="qa-team__second-answer-projects-img">
                       <img src="./assets/img/screenShotGallery/firstScreenShot.png" alt="" />
@@ -893,14 +996,14 @@
                       <img src="./assets/img/svg/tvIcon.svg" alt="" />
                     </div>
                     <p class="qa-team__second-answer-todo qa-team__second-answer-todo-desktop">
-                      Рассказываем в тексте и показываем<br />
-                      в детальном видеообзоре по шагам, что именно и как необходимо сделать
+                      Розповідаємо у тексті та показуємо<br />
+                      у детальному відеоогляді по кроках, що саме і як необхідно зробити
                     </p>
                     <p class="qa-team__second-answer-todo qa-team__second-answer-todo-mobile">
-                      Рассказываем в тексте<br />
-                      и показываем в детальном видеообзоре по шагам,<br />
-                      что именно и как<br />
-                      необходимо сделать
+                      Розповідаємо у тексті<br />
+                      та показуємо у детальному відеоогляді по кроках,<br />
+                      що саме і як<br />
+                      необхідно зробити
                     </p>
                     <div class="qa-team__second-answer-todo-img-wrapper">
                       <img src="./assets/img/screenShotGallery/secondScreenShot.png" alt="" />
@@ -912,7 +1015,7 @@
                       <img src="./assets/img/svg/textingIcon.svg" alt="" />
                     </div>
                     <p class="qa-team__second-answer-support">
-                      Поддерживаем вас и подсказываем, как поступить, если возникли вопросы
+                      Підтримуємо вас і підказуємо, як вчинити, якщо виникли питання
                     </p>
                     <div class="qa-team__second-answer-support-img-wrapper">
                       <img src="./assets/img/screenShotGallery/fourthScreenShot.png" alt="" />
@@ -925,14 +1028,15 @@
                     </div>
                     <p
                       class="qa-team__second-answer-investment qa-team__second-answer-investment-desktop">
-                      Мы инвестируем. Все расходы<br />
-                      для выполнения тестов, активностей, финансовая мотивация наставников,
-                      производство обучающих материалов, – компания 100 FRANKLINS берет на себя
+                      Ми інвестуємо. Усі витрати<br />
+                      для виконання тестів, активностей, фінансову мотивацію наставників,
+                      виробництво навчальних матеріалів – компанія 100 FRANKLINS бере на себе
                     </p>
                     <p
                       class="qa-team__second-answer-investment qa-team__second-answer-investment-mobile">
-                      Мы инвестируем. Все расходы для выполнения тестов и активностей компания 100
-                      FRANKLINS берет на себя
+                      Ми інвестуємо. Усі витрати для виконання тестів, активностей, фінансову
+                      мотивацію наставників, виробництво навчальних матеріалів – компанія 100
+                      FRANKLINS бере на себе
                     </p>
 
                     <div class="qa-team__second-answer-investment-img-wrapper">
@@ -946,7 +1050,12 @@
 
             <div class="qa-team__third-question-wrapper">
               <p class="qa-team__third-question-text">
-                <span class="text-selection">Есть ли отзывы</span> от участников сообщества?
+                <span class="text-selection"
+                  >ЧИ <span class="custom-font-ua">Є</span> В<span class="custom-font-ua">І</span
+                  >ДГУКИ</span
+                >
+                В<span class="custom-font-ua">І</span>Д УЧАСНИК<span class="custom-font-ua">І</span
+                >В СП<span class="custom-font-ua">І</span>ЛЬНОТИ?
               </p>
               <img
                 class="qa-team__third-question-avatar avatar"
@@ -986,8 +1095,8 @@
                       data-video="assets/video/IvanYatskovetsReview.MP4">
                       <img loading="lazy" src="./assets/img/IvanYatskovets.png" alt="photo" />
                     </div>
-                    <p class="qa-team__third-answer-reviews-name">Иван Яцковец</p>
-                    <p class="qa-team__third-answer-reviews-position">Системный администратор</p>
+                    <p class="qa-team__third-answer-reviews-name">Іван Яцковець</p>
+                    <p class="qa-team__third-answer-reviews-position">Системний адміністратор</p>
                   </div>
                   <div
                     class="qa-team__third-answer-reviews-item qa-team__third-answer-reviews-card-wrapper-3">
@@ -1006,8 +1115,8 @@
                       data-video="assets/video/OlgaByzdygaReview.MP4">
                       <img loading="lazy" src="./assets/img/OlgaByzdyga.png" alt="photo" />
                     </div>
-                    <p class="qa-team__third-answer-reviews-name">Ольга Быздыга</p>
-                    <p class="qa-team__third-answer-reviews-position">Мама в декрете</p>
+                    <p class="qa-team__third-answer-reviews-name">Ольга Біздига</p>
+                    <p class="qa-team__third-answer-reviews-position">Мама в декреті</p>
                   </div>
                 </div>
               </div>
@@ -1036,9 +1145,9 @@
                           data-video="assets/video/IvanYatskovetsReview.MP4">
                           <img loading="lazy" src="./assets/img/IvanYatskovets.png" alt="photo" />
                         </div>
-                        <p class="qa-team__third-answer-reviews-name">Иван Яцковец</p>
+                        <p class="qa-team__third-answer-reviews-name">Іван Яцковець</p>
                         <p class="qa-team__third-answer-reviews-position">
-                          Системный администратор
+                          Системний адміністратор
                         </p>
                       </div>
                       <div
@@ -1058,8 +1167,8 @@
                           data-video="assets/video/OlgaByzdygaReview.MP4">
                           <img loading="lazy" src="./assets/img/OlgaByzdyga.png" alt="photo" />
                         </div>
-                        <p class="qa-team__third-answer-reviews-name">Ольга Быздыга</p>
-                        <p class="qa-team__third-answer-reviews-position">Мама в декрете</p>
+                        <p class="qa-team__third-answer-reviews-name">Ольга Біздига</p>
+                        <p class="qa-team__third-answer-reviews-position">Мама в декреті</p>
                       </div>
                     </div>
                   </div>
@@ -1069,7 +1178,13 @@
 
             <div class="qa-team__fourth-question-wrapper">
               <p class="qa-team__fourth-question-text">
-                <span class="text-selection">Зачем это все команде</span> 100 FRANKLINS?
+                <span class="text-selection"
+                  >НАВ<span class="custom-font-ua">І</span>ЩО ЦЕ ВСЕ КОМАНД<span
+                    class="custom-font-ua"
+                    >І</span
+                  ></span
+                >
+                100 FRANKLINS?
               </p>
               <img
                 class="qa-team__fourth-question-avatar avatar"
@@ -1083,16 +1198,21 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <p class="qa-team__fourth-answer-text qa-team__fourth-answer-text-desktop">
-                Мы заинтересованы в том, чтобы вы зарабатывали вместе с нами, потому что такую
-                амбициозную цель, которую мы поставили, можно реализовать только вместе с армией
-                единомышленников.<br />
-                <span class="text-selection">Вы нам нужны, и мы очень рассчитываем на вас!</span>
+                Ми зацікавлені в тому, щоб ви заробляли разом із нами,<br />
+                бо таку амбітну мету, яку ми поставили, можна<br />
+                реалізувати лише разом з армією однодумців.<br />
+                <span class="text-selection">Ви нам потрібні, і ми дуже розраховуємо на вас! </span>
               </p>
               <p class="qa-team__fourth-answer-text qa-team__fourth-answer-text-mobile">
-                Мы заинтересованы в том, чтобы вы зарабатывали вместе с нами, потому что такую
-                амбициозную цель, которую мы поставили, можно реализовать только вместе с армией
-                единомышленников.
-                <span class="text-selection">Вы нам нужны, и мы очень рассчитываем на вас!</span>
+                Ми зацікавлені в тому, щоб ви<br />
+                заробляли разом із нами, бо таку<br />
+                амбітну мету, яку ми поставили,<br />
+                можна реалізувати лише разом з<br />
+                армією однодумців.
+                <span class="text-selection"
+                  >Ви нам потрібні,<br />
+                  і ми дуже розраховуємо на вас!</span
+                >
               </p>
             </div>
           </div>
@@ -1103,7 +1223,7 @@
         <div class="qa-earnings__wrapper">
           <div class="qa-earnings__container">
             <div class="qa-earnings__first-question-wrapper">
-              <p class="qa-earnings__first-question-text">А с вами точно… можно заработать?!</p>
+              <p class="qa-earnings__first-question-text">А З ВАМИ ТОЧНО… МОЖНА ЗАРОБИТИ?!</p>
               <img
                 class="qa-earnings__first-question-avatar avatar"
                 src="./assets/img/svg/userAvatar.svg"
@@ -1120,64 +1240,65 @@
                 class="qa-earnings__first-answer-content qa-earnings__first-answer-content-desktop">
                 <p class="qa-earnings__first-answer-text">
                   <span class="text-selection">
-                    Крипторынок – щедр! Только за 2023 год проекты выделили для таких, как мы, более
-                    $7 миллиардов!
+                    Крипторинок – щедрий! Тільки за 2023 рік проєкти виділили для таких, як ми,
+                    понад $7 мільярдів!
                   </span>
-                  Выделили в благодарность за то, что мы помогаем проектам находить ошибки,
-                  рассказываем о них в социальных сетях
+                  Виділили як подяку за те, що ми допомагаємо проєктам знаходити помилки,
+                  розповідаємо про них у соціальних мережах
                 </p>
                 <p class="qa-earnings__first-answer-text">
-                  И это только крупные проекты, которые обрели известность на рынке!
+                  І це лише великі проєкти, які здобули популярність на ринку!
                 </p>
-                <p class="qa-earnings__first-answer-text text-selection">Среди них:</p>
+                <p class="qa-earnings__first-answer-text text-selection">Серед них:</p>
                 <div class="qa-earnings__first-answer-gallery-wrapper">
-                  <img src="./assets/img/earningsPictures/firstAnswerGallery-1.png" alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGallery-2.png"
+                  <img src="./assets/img/earningsPictures/firstAnswerGalleryEN-1.png" alt="" /><img
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-2.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGallery-3.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-3.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGallery-4.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-4.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGallery-5.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-5.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGallery-6.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-6.png"
                     alt="" />
                 </div>
-                <p class="qa-earnings__first-answer-text">И это лишь маленькая часть!</p>
+                <p class="qa-earnings__first-answer-text">І це лише невелика частина!</p>
               </div>
 
               <div
                 class="qa-earnings__first-answer-content qa-earnings__first-answer-content-mobile">
                 <p class="qa-earnings__first-answer-text">
                   <span class="text-selection">
-                    Крипторынок – щедр! Только за 2023 год проекты выделили для таких,<br />
-                    как мы, более $7 миллиардов!
+                    Крипторинок – щедрий! Тільки за 2023 рік проєкти виділили для таких, як ми,
+                    понад $7 мільярдів!<br />
                   </span>
-                  Выделили в благодарность за то,<br />
-                  что мы помогаем проектам находить ошибки, рассказываем о них<br />
-                  в социальных сетях
+                  Виділили як подяку за те, що ми<br />
+                  допомагаємо проєктам знаходити помилки, розповідаємо про них<br />
+                  у соціальних мережах
                 </p>
                 <p class="qa-earnings__first-answer-text">
-                  И это только крупные проекты, которые обрели известность<br />
-                  на рынке!
+                  І це лише великі проєкти, які здобули популярність<br />
+                  на ринку!
                 </p>
-                <p class="qa-earnings__first-answer-text text-selection">Среди них:</p>
+                <p class="qa-earnings__first-answer-text text-selection">Серед них:</p>
                 <div class="qa-earnings__first-answer-gallery-wrapper">
                   <img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-1.png"
+                    <img
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-1.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-2.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-2.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-3.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-3.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-4.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-4.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-5.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-5.png"
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryMobile-6.png"
+                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-6.png"
                     alt="" />
                 </div>
-                <p class="qa-earnings__first-answer-text">И это лишь маленькая часть!</p>
+                <p class="qa-earnings__first-answer-text">І це лише невелика частина!</p>
               </div>
             </div>
 
@@ -1188,25 +1309,26 @@
                 alt="owner avatar" />
               <div
                 class="qa-earnings__second-answer-content qa-earnings__second-answer-content-desktop">
-                <img src="./assets/img/earningsPictures/secondAnswerGallery-1.png" alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGallery-2.png"
+                <img src="./assets/img/earningsPictures/secondAnswerGalleryUA-1.png" alt="" /><img
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-2.png"
                   alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGallery-3.png"
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-3.png"
                   alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGallery-4.png"
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-4.png"
                   alt="" />
               </div>
 
               <div
                 class="qa-earnings__second-answer-content qa-earnings__second-answer-content-mobile">
                 <img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryMobile-1.png"
+                  <img
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-1.png"
                   alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryMobile-2.png"
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-2.png"
                   alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryMobile-3.png"
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-3.png"
                   alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryMobile-4.png"
+                  src="./assets/img/earningsPictures/secondAnswerGalleryUA-4.png"
                   alt="" />
               </div>
             </div>
@@ -1218,26 +1340,34 @@
                 alt="owner avatar" />
               <p
                 class="qa-earnings__third-answer-text qa-earnings__third-answer-text-desktop text-selection">
-                В 2024-2025 гг. нас с вами ждут «раздачи» на десятки миллиардов долларов. И сейчас
-                самое время разобраться во всем и заработать вместе!
+                У 2024-2025 pp. на нас з вами чекають «роздачі» на десятки мільярдів доларів. І
+                зараз саме час розібратися у всьому та заробити разом!
               </p>
 
               <div class="qa-earnings__third-answer-text-mobile-wrapper">
                 <p
                   class="qa-earnings__third-answer-text qa-earnings__third-answer-text-mobile text-selection">
-                  В 2024-2025 гг. нас с вами ждут «раздачи» на десятки миллиардов долларов.
+                  У 2024-2025 pp. на нас з вами чекають «роздачі» на десятки мільярдів доларів.
                 </p>
 
                 <p
                   class="qa-earnings__third-answer-text qa-earnings__third-answer-text-mobile text-selection">
-                  И сейчас самое время разобраться во всем и заработать вместе!
+                  І зараз саме час розібратися у всьому та заробити разом!
                 </p>
               </div>
             </div>
 
             <div class="qa-earnings__second-question-wrapper">
               <p class="qa-earnings__second-question-text">
-                <span class="text-selection">Как будут распределяться</span> заработанные деньги?
+                <span class="text-selection"
+                  >ЯК БУДУТЬ РОЗПОД<span class="custom-font-ua">І</span>ЛЕН<span
+                    class="custom-font-ua"
+                    >І</span
+                  ></span
+                >
+                ЗАРОБЛЕН<span class="custom-font-ua">І</span> ГРОШ<span class="custom-font-ua"
+                  >І</span
+                >?
               </p>
               <img
                 class="qa-earnings__second-question-avatar avatar"
@@ -1251,15 +1381,7 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <div class="qa-earnings__fourth-answer-content">
-                <picture>
-                  <source
-                    media="(min-width: 591px)"
-                    srcset="./assets/img/earningsPictures/diagramDesktop.svg" />
-                  <source
-                    media="(max-width: 590px)"
-                    srcset="./assets/img/earningsPictures/diagramMobile.svg" />
-                  <img src="./assets/img/earningsPictures/diagramMobile.svg" alt="" />
-                </picture>
+                <img src="./assets/img/earningsPictures/diagramDesktopUA.svg" alt="" />
               </div>
             </div>
           </div>
@@ -1271,7 +1393,7 @@
           <div class="qa-acknowledge__container">
             <div class="qa-acknowledge__first-question-wrapper">
               <p class="qa-acknowledge__first-question-text">
-                А вы точно <span class="text-selection">нас не обманете?</span>
+                А ВИ ТОЧНО <span class="text-selection">НАС НЕ ОБДУРИТЕ?</span>
               </p>
               <img
                 class="qa-acknowledge__first-question-avatar avatar"
@@ -1288,43 +1410,43 @@
                 <div
                   class="qa-acknowledge__first-answer-text-wrapper qa-acknowledge__first-answer-text-wrapper-desktop">
                   <p class="qa-acknowledge__first-answer-text">
-                    Обучить бесплатно каждого участника – это большая экспертная работа и огромный
-                    вклад
+                    Навчити безкоштовно кожного учасника – це велика експертна робота та величезний
+                    внесок
                   </p>
                   <p class="qa-acknowledge__first-answer-text text-selection">
-                    Мы за 100% прозрачность в наших действиях и за построение доверительных
-                    отношений в рамках сообщества
+                    Ми за 100% прозорість у наших діях і за побудову довірчих стосунків у рамках
+                    спільноти
                   </p>
                   <p class="qa-acknowledge__first-answer-text">
-                    К тому же все наши активности на крипторынке фиксируются<br />
-                    в онлайн-реестре (блокчейне). Это абсолютно прозрачный реестр, где каждую
-                    транзакцию, любое движение денег можно проверить и увидеть: сколько денег
-                    пришло, кому и куда они ушли далее 
+                    До того ж, всі наші активності на крипторинку фіксуються<br />
+                    в онлайн-реєстрі (блокчейні). Це абсолютно прозорий реєстр, де кожну транзакцію,
+                    будь-який рух грошей можна перевірити та побачити: скільки грошей прийшло, кому
+                    і куди вони пішли далі
                   </p>
                   <p class="qa-acknowledge__first-answer-text text-selection">
-                    Ни один доллар не пройдет мимо участников нашего сообщества!
+                    Жоден долар не пройде повз учасників нашої спільноти!
                   </p>
                 </div>
 
                 <div
                   class="qa-acknowledge__first-answer-text-wrapper qa-acknowledge__first-answer-text-wrapper-mobile">
                   <p class="qa-acknowledge__first-answer-text">
-                    Обучить бесплатно каждого<br />
-                    участника – это большая экспертная работа и огромный вклад
+                    Навчити безкоштовно кожного<br />
+                    учасника – це велика експертна робота та величезний внесок
                   </p>
                   <p class="qa-acknowledge__first-answer-text text-selection">
-                    Мы за 100% прозрачность в наших действиях и за построение доверительных
-                    отношений в рамках сообщества
+                    Ми за 100% прозорість у наших діях і за побудову довірчих стосунків у рамках
+                    спільноти
                   </p>
                   <p class="qa-acknowledge__first-answer-text">
-                    К тому же все наши активности<br />
-                    на крипторынке фиксируются<br />
-                    в онлайн-реестре (блокчейне).<br />
-                    Это абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег
-                    можно проверить и увидеть: сколько денег пришло, кому и куда они ушли далее 
+                    До того ж, всі наші активності<br />
+                    на крипторинку фіксуються<br />
+                    в онлайн-реєстрі (блокчейні).<br />
+                    Це абсолютно прозорий реєстр, де кожну транзакцію, будь-який рух грошей можна
+                    перевірити та побачити: скільки грошей прийшло, кому і куди вони пішли далі
                   </p>
                   <p class="qa-acknowledge__first-answer-text text-selection">
-                    Ни один доллар не пройдет мимо участников нашего сообщества!
+                    Жоден долар не пройде повз учасників нашої спільноти!
                   </p>
                 </div>
                 <div
@@ -1333,7 +1455,7 @@
                     class="header__community-button-wrapper qa-acknowledge__first-answer-community-button-wrapper">
                     <button
                       class="header__community-button qa-acknowledge__first-answer-community-button">
-                      Стать частью сообщества
+                      Стати частиною спільноти
                     </button>
                     <span
                       class="header__community-button-underlay qa-acknowledge__first-answer-community-button-underlay"></span>
@@ -1342,7 +1464,7 @@
                     class="header__community-counter-wrapper qa-acknowledge__first-answer-community-counter-wrapper">
                     <p
                       class="header__community-counter-text qa-acknowledge__first-answer-community-counter-text">
-                      Оставили заявку на подключение к сообществу:
+                      Залишили заявку на підключення до спільноти:
                     </p>
                     <p
                       class="header__community-counter-counter qa-acknowledge__first-answer-community-counter-counter counter">
@@ -1355,7 +1477,10 @@
 
             <div class="qa-acknowledge__second-question-wrapper">
               <p class="qa-acknowledge__second-question-text text-selection">
-                Кто будет в команде проекта?
+                ХТО БУДЕ У КОМАНД<span class="custom-font-ua">І</span> ПРО<span
+                  class="custom-font-ua"
+                  >Є</span
+                >КТУ?
               </p>
               <img
                 class="qa-acknowledge__second-question-avatar avatar"
@@ -1369,34 +1494,60 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <div class="qa-acknowledge__second-answer-content">
-                <p class="qa-acknowledge__second-answer-text">
-                  Ниже описан
+                <p
+                  class="qa-acknowledge__second-answer-text qa-acknowledge__second-answer-text-desktop">
+                  НИЖЧЕ ОПИСАНО
                   <span class="text-selection"
-                    >опыт crypto-команды<br />
-                    100 FRANKLINS</span
-                  >
-                  и представлены ключевые<br />
-                  руководители сообщества
+                    >ДОСВ<span class="custom-font-ua">І</span>Д CRYPTO-КОМАНДИ<br />
+                    100 FRANKLINS
+                  </span>
+                  ТА ПРЕДСТАВЛЕН<span class="custom-font-ua">І</span> КЛЮЧОВ<span
+                    class="custom-font-ua"
+                    >І</span
+                  ><br />
+                  КЕР<span class="custom-font-ua">І</span>ВНИКИ СП<span class="custom-font-ua"
+                    >І</span
+                  >ЛЬНОТИ
+                </p>
+                <p
+                  class="qa-acknowledge__second-answer-text qa-acknowledge__second-answer-text-mobile">
+                  НИЖЧЕ ОПИСАНО
+                  <span class="text-selection"
+                    >ДОСВ<span class="custom-font-ua">І</span>Д CRYPTO-КОМАНДИ<br />
+                    100 FRANKLINS
+                  </span>
+                  ТА ПРЕДСТАВЛЕН<span class="custom-font-ua">І</span> КЛЮЧОВ<span
+                    class="custom-font-ua"
+                    >І</span
+                  ><br />
+                  КЕР<span class="custom-font-ua">І</span>ВНИКИ <br />
+                  СП<span class="custom-font-ua">І</span>ЛЬНОТИ
                 </p>
                 <div class="qa-acknowledge__second-answer_experience">
                   <div class="qa-acknowledge__second-answer_experience-column">
                     <div class="qa-acknowledge__second-answer_experience-wrapper-1">
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Сеть из 100+ crypto-инфлюенсеров с аудиторией в Telegram свыше 10 млн
-                        подписчиков
+                        Мережа з 100+ крипто-впливових з аудиторією в Telegram понад 10 млн
+                        підписників
                       </p>
                     </div>
 
                     <div class="qa-acknowledge__second-answer_experience-wrapper-2">
-                      <p class="qa-acknowledge__second-answer_experience-text">
-                        Опыт организации crypto-пулов на 10+ млн долларов
+                      <p
+                        class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-desktop">
+                        Досвід організації crypto-пулів на 10+ млн доларів
+                      </p>
+                      <p
+                        class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-mobile">
+                        Досвід організації crypto-пулів на 10+ млн<br />
+                        доларів
                       </p>
                     </div>
 
                     <div class="qa-acknowledge__second-answer_experience-wrapper-3">
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Создана платформа<br />
-                        по увеличению дохода crypto-инвесторов <br />и crypto-проектов
+                        Створена платформа зі<br />
+                        збільшення прибутку crypto-інвесторів <br />і crypto-проєктів
                       </p>
                     </div>
                   </div>
@@ -1405,21 +1556,23 @@
                     <div class="qa-acknowledge__second-answer_experience-custom-wrapper">
                       <div class="qa-acknowledge__second-answer_experience-wrapper-4">
                         <p class="qa-acknowledge__second-answer_experience-text">
-                          Основан сервис по созданию ботов и автоворонок<br />
-                          для crypto-экспертов<br />
-                          и crypto-проектов
+                          Заснований сервіс зі створення<br />
+                          ботів і воронок продажiв для<br />
+                          crypto-експертів<br />
+                          і crypto-проєктів
                         </p>
                       </div>
                     </div>
 
                     <div class="qa-acknowledge__second-answer_experience-wrapper-5">
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Опыт набора свыше 100.000 пользователей в crypto-проекты
+                        Досвід набору більше 100.000 користувачів у crypto-проєкти
                       </p>
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Опыт создания бот-автоворонок для запуска криптопроектов (среднее количество
-                        иксов<br />
-                        на листинге х38)
+                        Досвід створення ботів та воронок продажiв для запуску криптопроєктів
+                        (середня<br />
+                        кількість іксів<br />
+                        на лістингу х38)
                       </p>
                     </div>
                   </div>
@@ -1427,23 +1580,26 @@
                   <div class="qa-acknowledge__second-answer_experience-column">
                     <div class="qa-acknowledge__second-answer_experience-wrapper-6">
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Сообщество из 10.000+ программистов
+                        Спільнота з 10.000+ програмістів
                       </p>
                       <p class="qa-acknowledge__second-answer_experience-text">
-                        Опыт валидации SUI, Solana, Aptos, NYM и еще с десятка crypto-проектов
+                        Досвід валідації SUI, Solana, Aptos, NYM та ще близько десятка
+                        crypto-проєктів
                       </p>
                     </div>
 
                     <div class="qa-acknowledge__second-answer_experience-wrapper-7">
                       <p
                         class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-desktop">
-                        Партнерский опыт инкубации crypto-проектов и листинга на ByBit, OKX, MEXc,
-                        BitGet, Gate
+                        Партнерський досвід інкубації crypto-проєктів та лістингу на ByBit, OKX,
+                        MEXc, BitGet, Gate
                       </p>
                       <p
                         class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-mobile">
-                        Партнерский опыт инкубации crypto-проектов и листинга<br />
-                        на ByBit, OKX, MEXc, BitGet, Gate
+                        Партнерський досвід інкубації<br />
+                        crypto-проєктів та лістингу<br />
+                        на ByBit, OKX, MEXc, BitGet,<br />
+                        Gate
                       </p>
                     </div>
                   </div>
@@ -1460,7 +1616,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Кир Уланов
+                      КІР УЛАНОВ
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1475,7 +1631,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Игорь Жаленко
+                      ІГОР ЖАЛЕНКО
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1490,7 +1646,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Ксандер Ким
+                      КСАНДЕР КІМ
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1505,7 +1661,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Алексей Помельников
+                      ОЛЕКСІЙ ПОМЕЛЬНИКОВ
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Lead Investor 100 Franklins & CRYPTO DROP CAMP
@@ -1520,7 +1676,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Владимир Бова
+                      ВОЛОДИМИР БОВА
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Co-Founder 100 Franklins & CRYPTO HUNTERS
@@ -1535,7 +1691,7 @@
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
-                      Валерий Мушник
+                      ВАЛЕРІЙ МУШНИК
                     </figcaption>
                     <p class="qa-acknowledge__second-answer_team-position">
                       Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1556,7 +1712,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Кир Уланов
+                        КІР УЛАНОВ
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1571,7 +1727,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Игорь Жаленко
+                        ІГОР ЖАЛЕНКО
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1586,7 +1742,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Ксандер Ким
+                        КСАНДЕР КІМ
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1601,7 +1757,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Алексей Помельников
+                        ОЛЕКСІЙ ПОМЕЛЬНИКОВ
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Lead Investor 100 Franklins & CRYPTO DROP CAMP
@@ -1616,7 +1772,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Владимир Бова
+                        ВОЛОДИМИР БОВА
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Co-Founder 100 Franklins & CRYPTO HUNTERS
@@ -1631,7 +1787,7 @@
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
-                        Валерий Мушник
+                        ВАЛЕРІЙ МУШНИК
                       </figcaption>
                       <p class="qa-acknowledge__second-answer_team-position">
                         Co-Founder 100 Franklins & CRYPTO DROP CAMP
@@ -1650,7 +1806,14 @@
           <div class="qa-common-issues__container">
             <div class="qa-common-issues__first-question-wrapper">
               <p class="qa-common-issues__first-question-text">
-                На какие еще вопросы нужно <span class="text-selection">знать ответы?</span>
+                НА ЯК<span class="custom-font-ua">І</span> ПИТАННЯ ПОТР<span class="custom-font-ua"
+                  >І</span
+                >БНО
+                <span class="text-selection"
+                  >ЗНАТИ В<span class="custom-font-ua">І</span>ДПОВ<span class="custom-font-ua"
+                    >І</span
+                  >Д<span class="custom-font-ua">І</span>?
+                </span>
               </p>
               <img
                 class="qa-common-issues__first-question-avatar avatar"
@@ -1664,7 +1827,7 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <p class="qa-common-issues__first-answer-text">
-                На основные вопросы уже даны ответы выше. Давайте финально разберем самые основные!
+                НА ОСНОВНІ ПИТАННЯ ВЖЕ ДАНО ВІДПОВІДІ ВИЩЕ. ДАВАЙТЕ ФІНАЛЬНО РОЗБЕРЕМО НАЙГОЛОВНІШІ!
               </p>
             </div>
 
@@ -1677,152 +1840,152 @@
                 <ul class="qa-common-issues__second-answer-list">
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 1</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 1</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Нужен ли стартовый капитал, чтобы начать зарабатывать в крипте?
+                        Чи потрібен стартовий капітал, щоб почати заробляти у крипті?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Нужен ли стартовый капитал,<br />
-                        чтобы начать зарабатывать в крипте?
+                        Чи потрібен стартовий капітал, <br />
+                        щоб почати заробляти у крипті?
                       </p>
                     </div>
                     <p class="qa-common-issues__second-answer-question-answer">
-                      Нет. Мы готовы инвестировать деньги, вам необходимо уделять только время
+                      Ні. Ми готові інвестувати гроші, вам необхідно лише приділяти свій час
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 2</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 2</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Что нужно иметь для старта? Какая нужна техника?
+                        Що потрібно мати для старту? Яка потрібна техніка?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Что нужно иметь для старта?<br />
-                        Какая нужна техника?
+                        Що потрібно мати для старту?<br />
+                        Яка потрібна техніка?
                       </p>
                     </div>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
-                      Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
-                      Основная ваша деятельность заключается в работе с информацией в интернете,
-                      поэтому не обязательно покупать/иметь самый мощный компьютер на свете.
-                      Достаточно вашего домашнего компьютера
+                      З техніки достатньо мати комп'ютер/ноутбук, а також смартфон/планшет. Основна
+                      ваша діяльність полягає в роботі з інформацією в інтернеті, тому не
+                      обов'язково купувати/мати найпотужніший комп'ютер у світі. Вистачить вашого
+                      домашнього комп'ютера
                     </p>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
-                      Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
-                      Основная ваша деятельность заключается в работе с информацией<br />
-                      в интернете, поэтому не обязательно покупать/иметь самый мощный компьютер на
-                      свете. Достаточно вашего домашнего компьютера
+                      З техніки достатньо мати комп'ютер/ноутбук, а також смартфон/планшет. Основна
+                      ваша діяльність полягає в роботі з інформацією<br />
+                      в інтернеті, тому не обов'язково купувати/мати найпотужніший комп'ютер у
+                      світі. Вистачить вашого домашнього комп'ютера
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 3</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 3</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Как можно стать частью сообщества?
+                        Як можна стати частиною спільноти?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Как можно стать частью<br />
-                        сообщества?
+                        Як можна стати частиною<br />
+                        спільноти?
                       </p>
                     </div>
                     <p class="qa-common-issues__second-answer-question-answer">
-                      Нажмите кнопку «Стать частью сообщества» на этой странице. После пройдите
-                      короткий опрос, и если вы успешно прошли его – следующим этапом будет
-                      прохождение верификации с одним из руководителей проекта. Верификация проходит
-                      в формате онлайн-встречи, обязательно включите видео
+                      На цій сторінці натисніть кнопку «Стати частиною спільноти» та пройдіть
+                      коротке опитування. Якщо ви успішно пройдете його – наступним етапом буде
+                      проходження верифікації з одним із керівників проєкту. Верифікація проходить у
+                      форматі онлайн-зустрічі, обов'язково увімкніть відео
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 4</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 4</p>
                       <p class="qa-common-issues__second-answer-question-text text-selection">
-                        Требуется ли специальное техническое или другое образование?
+                        Чи потрібна спеціальна технічна або інша освіта?
                       </p>
                     </div>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
-                      Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
-                      сотрудника. И также качества характера – мы ценим и уважаем друг друга, и в
-                      команду принимаем единомышленников. Ваше образование не имеет значения
+                      Ні. Важлива комп'ютерна грамотність, вона має бути на рівні офісного
+                      працівника. І також якості характеру – ми цінуємо та поважаємо один одного, і
+                      в команду приймаємо однодумців. Ваша освіта не має значення
                     </p>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
-                      Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
-                      сотрудника. И также качества характера – мы ценим и уважаем друг друга,<br />
-                      и в команду принимаем единомышленников. Ваше образование не имеет значения
+                      Ні. Важлива комп'ютерна грамотність, вона має бути на рівні офісного
+                      працівника. І також якості характеру – ми цінуємо та поважаємо один одного,<br />і
+                      в команду приймаємо однодумців. Ваша освіта не має значення
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 5</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 5</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Когда получится заработать первые деньги?
+                        Коли вийде заробити перші гроші?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Когда получится заработать<br />
+                        Коли вийде заробити<br />
                         первые деньги?
                       </p>
                     </div>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-desktop">
-                      Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
-                      на начальном этапе. В среднем первые деньги вы начнете зарабатывать уже на 2,
-                      возможно, на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно
-                      получать уже после 7-8 месяцев активной работы, когда накопите базу проектов
+                      Ми наголошуємо, що наші активності не можуть бути основним видом діяльності на
+                      початковому етапі. У середньому перші гроші ви зароблятимете вже на 2,
+                      можливо, на 3 місяць. Відчутну винагороду (від $500-700/міс.) можна отримувати
+                      вже після 7-8 місяців активної роботи, коли накопичите базу проєктів
                     </p>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
-                      Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
-                      на начальном этапе.<br />
-                      В среднем первые деньги вы начнете зарабатывать уже на 2, возможно,<br />
-                      на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать уже
-                      после 7-8 месяцев активной работы, когда накопите базу проектов
+                      Ми наголошуємо, що наші активності<br />
+                      не можуть бути основним видом діяльності на початковому етапі.<br />
+                      У середньому перші гроші ви зароблятимете вже на 2, можливо,<br />
+                      на 3 місяць. Відчутну винагороду (від $500-700/міс.) можна отримувати вже
+                      після 7-8 місяців активної роботи, коли накопичите базу проєктів
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 6</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 6</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Как можно быть уверенным, что заработанные вознаграждения не уйдут налево?
+                        Як можна бути впевненим, що зароблені винагороди не підуть наліво?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Как можно быть уверенным,<br />
-                        что заработанные вознаграждения<br />
-                        не уйдут налево?
+                        Як можна бути впевненим,<br />
+                        що зароблені винагороди<br />
+                        не підуть наліво?
                       </p>
                     </div>
                     <p class="qa-common-issues__second-answer-question-answer">
-                      Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне).
-                      Это абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег
-                      можно проверить и увидеть, сколько денег пришло, кому и куда они ушли далее 
+                      Усі наші активності на крипторинку фіксуються в онлайн-реєстрі (блокчейні). Це
+                      абсолютно прозорий реєстр, де кожну транзакцію, будь-який рух грошей можна
+                      перевірити та побачити, скільки грошей прийшло, кому і куди вони пішли далі
                     </p>
                     <p class="qa-common-issues__second-answer-question-answer">
-                      Ни один доллар не пройдет мимо участников нашего сообщества!
+                      Жоден долар не пройде повз учасників нашої спільноти!
                     </p>
                   </li>
                   <li class="qa-common-issues__second-answer-item">
                     <div class="qa-common-issues__second-answer-question-wrapper">
-                      <p class="qa-common-issues__second-answer-question-counter">Вопрос 7</p>
+                      <p class="qa-common-issues__second-answer-question-counter">Питання 7</p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-desktop text-selection">
-                        Сколько можно зарабатывать с компанией 100 ФРАНКЛИНОВ?
+                        Скільки можна заробляти з компанією 100 ФРАНКЛІНІВ?
                       </p>
                       <p
                         class="qa-common-issues__second-answer-question-text qa-common-issues__second-answer-question-text-mobile text-selection">
-                        Сколько можно зарабатывать<br />
-                        с компанией 100 ФРАНКЛИНОВ?
+                        Скільки можна заробляти<br />
+                        з компанією 100 ФРАНКЛІНІВ?
                       </p>
                     </div>
                     <p
@@ -1834,10 +1997,9 @@
                     </p>
                     <p
                       class="qa-common-issues__second-answer-question-answer qa-common-issues__second-answer-question-answer-mobile">
-                      Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
-                      каждый участник мог зарабатывать от $1’000 в месяц.<br />
-                      И со своей стороны предоставим для этого все возможности – инвестиции,
-                      экспертизу, обучение и поддержку
+                      Це повністю залежить від вас, вашої активності та дисципліни. Ми хочемо, щоб
+                      кожен учасник міг заробляти від $1'000 на місяць. І зі свого боку надамо для
+                      цього всі можливості – інвестиції, експертизу, навчання та підтримку
                     </p>
                   </li>
                 </ul>
@@ -1847,7 +2009,7 @@
                     class="participation__community-button-wrapper qa-common-issues__community-button-wrapper">
                     <button
                       class="participation__community-button qa-common-issues__community-button">
-                      Стать частью сообщества
+                      Стати частиною спільноти
                     </button>
                     <span
                       class="participation__community-button-underlay qa-common-issues__community-button-underlay"></span>
@@ -1856,7 +2018,7 @@
                     class="participation__community-counter-wrapper qa-common-issues__community-counter-wrapper">
                     <p
                       class="participation__community-counter-text qa-common-issues__community-counter-text">
-                      Оставили заявку на подключение к сообществу:
+                      Залишили заявку на підключення до спільноти:
                     </p>
                     <p
                       class="participation__community-counter-counter qa-common-issues__community-counter-counter counter">
@@ -1881,42 +2043,51 @@
               <img class="footer__logo" src="./assets/img/logo.png" alt="100F logo" />
             </picture>
           </div>
-          <p class="footer__subheading">
-            Проект от 100 FRANKLINS
+          <p class="footer__subheading footer__subheading-desktop">
+            ПРОЄКТ КРИПТОКОМПАНІЇ 100 FRANKLINS
             <span class="text-selection"
-              >по восстановлению<br />
-              благосостояния Украины и украинцев</span
+              >З ВІДНОВЛЕННЯ<br />
+              ДОБРОБУТУ УКРАЇНИ ТА УКРАЇНЦІВ</span
             >
+          </p>
+          <p class="footer__subheading footer__subheading-mobile">
+            ПРОЄКТ КРИПТОКОМПАНІЇ 100 FRANKLINS
+            <span class="text-selection">З ВІДНОВЛЕННЯ ДОБРОБУТУ УКРАЇНИ ТА УКРАЇНЦІВ</span>
           </p>
           <div class="footer__warning-wrapper">
             <p class="footer__warning footer__warning-desktop">
-              Только для украинцев 16+, у кого есть 2-3 часа в день<br />
-              и потребность в дополнительном заработке без вложений
+              Лише для українців 16+, хто має 2-3 години на день<br />
+              і потребує додаткового заробітку без вкладень
             </p>
             <p class="footer__warning footer__warning-mobile">
-              Только для украинцев 16+, у кого<br />
-              есть 2-3 часа в день и потребность<br />
-              в дополнительном заработке без вложений
+              Лише для українців 16+, хто<br />
+              має 2-3 години на день і потребує<br />
+              додаткового заробітку без вкладень
             </p>
           </div>
           <h2 class="footer__title footer__title-desktop">
-            Мы <span class="text-selection">бесплатно</span> вас научим зарабатывать на крипте.
-            Поможем на каждом шаге.<br />
-            И даже инвестируем в вас деньги
+            МИ <span class="text-selection">БЕЗКОШТОВНО</span> НАВЧИМО ВАС ЗАРОБЛЯТИ НА КРИПТ<span
+              class="custom-font-ua"
+              >І</span
+            >. ДОПОМОЖЕМО НА КОЖНОМУ КРОЦ<span class="custom-font-ua">І</span>.<br />
+            <span class="custom-font-ua">І</span> НАВ<span class="custom-font-ua">І</span>ТЬ
+            ВКЛАДЕМО У ВАС ГРОШ<span class="custom-font-ua">І</span>
           </h2>
           <h2 class="footer__title footer__title-mobile">
-            Мы <span class="text-selection">бесплатно</span> вас<br />
-            научим зарабатывать<br />
-            на крипте. <span class="text-selection">Поможем</span><br />
-            на каждом шаге.<br />
-            И даже <span class="text-selection">инвестируем</span><br />
-            в вас деньги
+            МИ <span class="text-selection">БЕЗКОШТОВНО</span><br />
+            НАВЧИМО ВАС<br />
+            ЗАРОБЛЯТИ НА КРИПТ<span class="custom-font-ua">І</span>.<br />
+            <span class="text-selection">ДОПОМОЖЕМО</span> НА<br />
+            КОЖНОМУ КРОЦ<span class="custom-font-ua">І</span>.<br />
+            <span class="custom-font-ua">І</span> НАВ<span class="custom-font-ua">І</span>ТЬ
+            <span class="text-selection">ВКЛАДЕМО</span><br />
+            У ВАС ГРОШ<span class="custom-font-ua">І</span>
           </h2>
           <div class="footer__buttons-wrapper">
             <div class="participation__community-wrapper footer__community-wrapper">
               <div class="participation__community-button-wrapper footer__community-button-wrapper">
                 <button class="participation__community-button footer__community-button">
-                  Стать частью сообщества
+                  Стати частиною спільноти
                 </button>
                 <span
                   class="participation__community-button-underlay footer__community-button-underlay"></span>
@@ -1924,7 +2095,7 @@
               <div class="footer__community-counter-wrapper">
                 <div class="participation__community-counter-wrapper footer__community-counter">
                   <p class="participation__community-counter-text footer__community-counter-text">
-                    Оставили заявку на подключение к сообществу:
+                    Залишили заявку на підключення до спільноти:
                   </p>
                   <p
                     class="participation__community-counter-counter footer__community-counter-counter counter">
@@ -1935,7 +2106,7 @@
             </div>
           </div>
           <div class="footer__policy-button-wrapper">
-            <button class="footer__policy-button">Условия и Политика конфиденциальности</button>
+            <button class="footer__policy-button">Умови та політика конфіденційності</button>
           </div>
         </div>
       </div>
@@ -1946,7 +2117,7 @@
         <span class="modal-close">&times;</span>
         <video id="modalVideo" width="100%" controls>
           <source src="" type="video/mp4" />
-          Ваш браузер не поддерживает видео.
+          Ваш браузер не підтримує відео.
         </video>
       </div>
     </div>
@@ -1955,34 +2126,38 @@
       <div class="leave-popup-wrapper">
         <span class="leave-popup-close-btn"></span>
         <h2 class="leave-popup-header">
-          <span class="text-selection">Подключайтесь к команде CRYPTO HUNTERS</span> и получите
+          <span class="text-selection"
+            >Приєднуйтесь до команди<br />
+            CRYPTO HUNTERS</span
+          >
+          і отримайте
         </h2>
         <div class="leave-popup-content">
           <ul class="leave-popup-list">
-            <li class="leave-popup-item"><p class="leave-popup-list-text">Обучение</p></li>
-            <li class="leave-popup-item"><p class="leave-popup-list-text">Наставников</p></li>
-            <li class="leave-popup-item"><p class="leave-popup-list-text">Сообщество</p></li>
-            <li class="leave-popup-item"><p class="leave-popup-list-text">Инвестиции</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Навчання</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Наставників</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Спільноту</p></li>
+            <li class="leave-popup-item"><p class="leave-popup-list-text">Інвестиції</p></li>
           </ul>
           <p class="leave-popup-card-text">
             + «<span
-              >Топ 10 способов<br />
-              заработка на крипте<br
+              >Топ 10 способів<br />
+              заробітку на крипті<br
             /></span>
-            (даже без бюджета)»
+            (навіть без бюджету)»
           </p>
         </div>
         <div class="header__community-wrapper leave-popup__community-wrapper">
           <div class="header__community-button-wrapper leave-popup__community-button-wrapper">
             <button class="header__community-button leave-popup__community-button">
-              Стать частью сообщества
+              Стати частиною спільноти
             </button>
             <span
               class="header__community-button-underlay leave-popup__community-button-underlay"></span>
           </div>
           <div class="header__community-counter-wrapper leave-popup__community-counter-wrapper">
             <p class="header__community-counter-text leave-popup__community-counter-text">
-              Оставили заявку на подключение к сообществу:
+              Залишили заявку на підключення до спільноти:
             </p>
             <p
               class="header__community-counter-counter leave-popup__community-counter-counter counter">
