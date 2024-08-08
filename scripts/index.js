@@ -8,6 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const preloaderGreetingsImg = document.querySelector('.preloader__greetings-main-title-img');
   const whiteScreen = document.querySelector('.slide');
 
+  const head = document.querySelector('head');
+  const preloadLink = document.createElement('link');
+  preloadLink.rel = 'preload';
+  preloadLink.as = 'image';
+  preloadLink.type = 'image/png';
+
+  const isMobile = window.matchMedia('(max-width: 590px)').matches;
+  
+  if (isMobile) {
+    preloadLink.href = './assets/img/preloader/preloaderBgMobie.png';
+  } else {
+    preloadLink.href = './assets/img/preloader/preloaderBgMobile.png';
+  }
+  
+  head.appendChild(preloadLink);
+
   // const criticalImage = './assets/img/preloader/preloaderBg.png';
 
   // const preloadCriticalImage = src => {
