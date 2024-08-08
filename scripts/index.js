@@ -8,38 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const preloaderGreetingsImg = document.querySelector('.preloader__greetings-main-title-img');
   const whiteScreen = document.querySelector('.slide');
 
-  const head = document.querySelector('head');
-  const preloadLink = document.createElement('link');
-  preloadLink.rel = 'preload';
-  preloadLink.as = 'image';
-  preloadLink.type = 'image/png';
 
   const isMobile = window.matchMedia('(max-width: 590px)').matches;
-  
-  if (isMobile) {
-    preloadLink.href = './assets/img/preloader/preloaderBgMobie.png';
-  } else {
-    preloadLink.href = './assets/img/preloader/preloaderBgMobile.png';
-  }
-  
-  head.appendChild(preloadLink);
-
-  // const criticalImage = './assets/img/preloader/preloaderBg.png';
-
-  // const preloadCriticalImage = src => {
-  //   const img = new Image();
-  //   img.src = src;
-  //   img.onload = () => (container.style.opacity = 1);
-  //   img.onerror = () => (container.style.opacity = 1);
-  // };
 
   const onPageLoad = () => {
     preloaderGreetingsImg.style.opacity = 0;
     whiteScreen.style.height = '100vh';
+    html.style.overflowY = 'scroll';
     setTimeout(() => {
       preloader.style.transform = 'translateY(100vh)';
       setTimeout(() => {
-        html.style.overflowY = 'scroll';
         preloader.style.display = 'none';
       }, 500);
     }, 500);
@@ -49,19 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.preloader-screen').style.opacity = '1';
 
   const blocks = [
-    { class: '.block1', effect: 'fade-down-left' },
-    { class: '.block2', effect: 'fade-down-right' },
-    { class: '.block3', effect: 'fade-down-right' },
-    { class: '.block4', effect: 'fade-up-left' },
-    { class: '.block5', effect: 'fade-up-right' },
+    { class: `${isMobile ? '.block1-mobile' : '.block1'}`, effect: 'fade-down-left' },
+    { class: `${isMobile ? '.block2-mobile' : '.block2'}`, effect: 'fade-down-right' },
+    { class: `${isMobile ? '.block3-mobile' : '.block3'}`, effect: 'fade-down-right' },
+    { class: `${isMobile ? '.block4-mobile' : '.block4'}`, effect: 'fade-up-left' },
+    { class: `${isMobile ? '.block5-mobile' : '.block5'}`, effect: 'fade-up-right' },
   ];
 
   let currentIndex = 0;
   let pageLoaded = false;
   let animationComplete = false;
 
-  function showBlocks() {
-    const mainTitle = document.querySelector('.main-title');
+  const showBlocks = () => {
+    const mainTitle = document.querySelector(
+      `${isMobile ? '.main-title-mobile' : '.main-title-desktop'}`
+    );
+
     const preloaderGreetingsImgTopPart = document.querySelectorAll('.preloader__greetings-top');
     const preloaderGreetingsImgCenterPart = document.querySelectorAll(
       '.preloader__greetings-center'
@@ -124,7 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
       currentIndex++;
       setTimeout(showBlocks, 500);
     }
-  }
+  };
+
+  
+  showBlocks();
 
   const loaderBar = document.querySelector('.loader-bar');
   const percentText = document.getElementById('percentText');
@@ -136,8 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('load', logPageLoadTime);
-  // preloadCriticalImage(criticalImage);
-  showBlocks();
 
   const allBackgroundImages = Array.from(document.querySelectorAll('*'))
     .map(element => window.getComputedStyle(element).backgroundImage)
@@ -153,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const updateLoader = () => {
     const percentage = Math.min(Math.round((loadedResources / totalResources) * 100), 100);
+    console.log('percentage: ', percentage);
 
     if (percentage >= 97) {
       loaderBar.style.width = `${97}%`;
@@ -289,6 +272,57 @@ document.addEventListener('DOMContentLoaded', () => {
   lazyImagesMobile.forEach(img => {
     imgMobileObserver.observe(img);
   });
+
+  const translationToShow = () => {
+    const storedLang = localStorage.getItem('storedLang');
+  
+    const redirectToLanguagePage = lang => {
+      const pages = {
+        ru: 'index.html',
+        en: 'index-en.html',
+        uk: 'index-ua.html',
+      };
+      const page = pages[lang] || 'index.html';
+      localStorage.setItem('storedLang', lang);
+      window.location.href = page;
+    };
+  
+    if (!storedLang) {
+      let userLang = navigator.language || navigator.userLanguage;
+      userLang = userLang.toLowerCase();
+  
+      if (userLang.startsWith('ru')) {
+        redirectToLanguagePage('ru');
+      } else if (userLang.startsWith('en')) {
+        redirectToLanguagePage('en');
+      } else if (userLang.startsWith('uk')) {
+        redirectToLanguagePage('ua');
+      } else {
+        redirectToLanguagePage('en');
+      }
+    } else {
+      const currentUrl = window.location.href;
+      const langPages = {
+        ru: 'index.html',
+        en: 'index-en.html',
+        ua: 'index-ua.html',
+      };
+  
+      if (!currentUrl.includes(langPages[storedLang])) {
+        window.location.href = langPages[storedLang];
+      }
+    }
+  
+    document.querySelectorAll('.header__language-switcher-select').forEach(el => {
+      el.addEventListener('click', event => {
+        event.preventDefault();
+        const selectedLang = event.target.getAttribute('data-lang');
+        redirectToLanguagePage(selectedLang);
+      });
+    });
+  };
+  
+  translationToShow();
 });
 
 new Swiper('#reviews', {

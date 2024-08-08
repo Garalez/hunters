@@ -285,6 +285,13 @@
     line-height: 14px;
   }
 
+  .en .qa-income__second-question-text {
+    max-width: 270px;
+    padding: 13px 25px 13px 25px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
   .qa-income__second-answer-wrapper {
     margin-bottom: 0;
   }

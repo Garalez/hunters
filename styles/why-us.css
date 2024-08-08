@@ -328,6 +328,8 @@
   .why-us__second-answer-text:nth-of-type(3) {
     padding: 13px 6px 31px 36px;
     /* background: url('../assets/img/whyUsSecondAnswerTextBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-size: auto;
   }
 

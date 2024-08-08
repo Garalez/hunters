@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="./assets/img/preloader/preloaderBg.png" as="image" type="image/png" />
+    <link href="./assets/img/preloader/preloaderBg.png" rel="preload" as="image" type="image/png" />
+    <link
+      href="./assets/img/preloader/preloaderBgMobile.png"
+      rel="preload"
+      as="image"
+      type="image/png" />
     <link
       rel="preload"
       href="./assets/fonts/bicubik/bicubik.woff"
       as="font"
       type="font/woff"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaExtraLight.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaThinRegular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaLightRegular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaRegular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaMedium.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous" />
-    <link
-      rel="preload"
-      href="./assets/fonts/geologica/GeologicaSemiBold.ttf"
-      as="font"
-      type="font/ttf"
       crossorigin="anonymous" />
     <link
       rel="preload"
@@ -60,10 +29,10 @@
       content="Инвестируйте в отобранные криптопроекты до их выхода на биржу вместе с ведущими инвестиционными фондами" />
     <title>The project of the crypto company 100 FRANKLINS</title>
   </head>
-  <body class="en">
+  <body class='en'>
     <div class="preloader">
       <span class="slide"></span>
-      <div id="#preloader" class="preloader-screen lazy-bg">
+      <div id="#preloader" class="preloader-screen">
         <div class="container">
           <div class="loader">
             <div class="loader-bar"></div>
@@ -84,13 +53,13 @@
             </h1>
             <h1 class="main-title main-title-mobile">
               <div class="preloader__greetings-main-title-text-top">
-                <span class="block1 text-fx">We are from Ukraine</span>
-                <span class="block2 text-fx">Мы с Украины </span>
-                <span class="block3 text-fx">Jesteśmy z Ukrainy</span>
+                <span class="block1-mobile text-fx">We are from Ukraine</span>
+                <span class="block2-mobile text-fx">Мы с Украины </span>
+                <span class="block3-mobile text-fx">Jesteśmy z Ukrainy</span>
               </div>
               <div class="preloader__greetings-main-title-text-bottom">
-                <span class="block4 text-fx">Nous venons d 'Ukraine</span>
-                <span class="block5 text-fx">Somos de Ucrania</span>
+                <span class="block4-mobile text-fx">Nous venons d 'Ukraine</span>
+                <span class="block5-mobile text-fx">Somos de Ucrania</span>
               </div>
             </h1>
             <h1 class="preloader__greetings-main-title-img">
@@ -145,10 +114,13 @@
         <div class="header__container">
           <div class="header__wrapper">
             <div class="header__logo-wrapper">
-              <picture>
-                <source media="(min-width: 591px)" srcset="./assets/img/logo.png" />
-                <source media="(max-width: 590px)" srcset="./assets/img/svg/logoMobile.svg" />
-                <img class="header__logo" src="./assets/img/logo.png" alt="100F logo" />
+              <picture
+                class="lazy-picture"
+                data-src-desktop="./assets/img/logo.png"
+                data-src-mobile="./assets/img/svg/logoMobile.svg">
+                <source media="(min-width: 591px)" srcset="" />
+                <source media="(max-width: 590px)" srcset="" />
+                <img class="header__logo" src="" alt="100F logo" />
               </picture>
               <div class="header__language-switcher-wrapper">
                 <div class="header__logo-locale">EN</div>
@@ -237,7 +209,10 @@
 
     <main>
       <section class="introduction">
-        <div class="introduction__wrapper">
+        <div
+          class="introduction__wrapper lazy-bg"
+          data-bg="./assets/img/introductionBG.png"
+          data-bg-mobile="./assets/img/introductionBGMobile.png">
           <div class="introduction__container">
             <div class="introduction__dialog">
               <img
@@ -306,30 +281,26 @@
                   <figure class="introduction__info_figure">
                     <figcaption class="introduction__info_figcaption">ABOUT KIR</figcaption>
                     <div class="introduction__info_qr-code-wrapper">
-                      <picture>
-                        <source media="(min-width: 591px)" srcset="./assets/img/svg/qrCode.svg" />
-                        <source
-                          media="(max-width: 590px)"
-                          srcset="./assets/img/svg/qrCodeMobile.svg" />
-                        <img
-                          class="introduction__info_qr-code"
-                          src="./assets/img/svg/qrCode.svg"
-                          alt="QR код" />
+                      <picture
+                        class="lazy-picture"
+                        data-src-desktop="./assets/img/svg/qrCode.svg"
+                        data-src-mobile="./assets/img/svg/qrCodeMobile.svg">
+                        <source media="(min-width: 591px)" srcset="" />
+                        <source media="(max-width: 590px)" srcset="" />
+                        <img class="introduction__info_qr-code" src="" alt="QR код" />
                       </picture>
                     </div>
                   </figure>
                 </div>
                 <figure class="introduction__info_owners-figure">
                   <div class="introduction__info_owners-wrapper">
-                    <picture>
-                      <source media="(min-width: 591px)" srcset="./assets/img/ownersPhoto.png" />
-                      <source
-                        media="(max-width: 590px)"
-                        srcset="./assets/img/ownersPhotoMobile.png" />
-                      <img
-                        class="introduction__info_owners-photo"
-                        src="./assets/img/ownersPhoto.png"
-                        alt="Фото основателя" />
+                    <picture
+                      class="lazy-picture"
+                      data-src-desktop="./assets/img/ownersPhoto.png"
+                      data-src-mobile="./assets/img/ownersPhotoMobile.png">
+                      <source media="(min-width: 591px)" srcset="" />
+                      <source media="(max-width: 590px)" srcset="" />
+                      <img class="introduction__info_owners-photo" src="" alt="Фото основателя" />
                     </picture>
                     <figcaption class="introduction__info_owners-figcaption">
                       <p class="introduction__info_owners-info-heading">KIR ULANOV</p>
@@ -347,7 +318,10 @@
       </section>
 
       <section class="participation">
-        <div class="participation__wrapper">
+        <div
+          class="participation__wrapper lazy-bg"
+          data-bg="./assets/img/participationBG.png"
+          data-bg-mobile="./assets/img/participationBGMobile.png">
           <div class="participation__container">
             <img
               class="participation__dialog-owner-avatar avatar"
@@ -359,7 +333,10 @@
               </h2>
 
               <div class="participation__cards-wrapper">
-                <div class="participation__card-provide">
+                <div
+                  class="participation__card-provide lazy-bg"
+                  data-bg="./assets/img/participationCardProvideBG.png"
+                  data-bg-mobile="./assets/img/participationCardProvideBGMobile.png">
                   <p class="participation__card-provide-heading">
                     FOR UKRAINIANS WE PROVIDE <span class="text-selection">FOR FREE: </span>
                   </p>
@@ -379,7 +356,10 @@
                   </ul>
                 </div>
 
-                <div class="participation__card-request">
+                <div
+                  class="participation__card-request lazy-bg"
+                  data-bg="./assets/img/participationCardRequestBG.png"
+                  data-bg-mobile="./assets/img/participationCardRequestBGMobile.png">
                   <p class="participation__card-request-heading">
                     YOU ARE <span class="text-selection">REQUIRED TO: </span>
                   </p>
@@ -447,7 +427,10 @@
       </section>
 
       <section class="why-us">
-        <div class="why-us__wrapper lazy-bg">
+        <div
+          class="why-us__wrapper lazy-bg"
+          data-bg="./assets/img/whyUsBG.png"
+          data-bg-mobile="./assets/img/whyUsBGMobile.png">
           <div class="why-us__container">
             <div class="why-us__question-wrapper">
               <p class="why-us__question why-us__question-desktop">
@@ -457,8 +440,9 @@
                 YOU MAY ASK: WHY DO WE NEED ALL OF THIS?
               </p>
               <img
-                class="why-us__question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="why-us__question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -525,7 +509,9 @@
                   We won't take any money for this. This will be our contribution to the recovery of
                   Ukraine's prosperity and our beloved Ukrainians.
                 </p>
-                <p class="why-us__second-answer-text">
+                <p
+                  class="why-us__second-answer-text lazy-bg"
+                  data-bg="./assets/img/whyUsSecondAnswerTextBG.png">
                   <span class="text-selection-blue">
                     Earning on crypto is a great way to support yourself and your loved ones.
                   </span>
@@ -554,7 +540,9 @@
                   the recovery of Ukraine's prosperity<br />
                   and our beloved Ukrainians.
                 </p>
-                <p class="why-us__second-answer-text">
+                <p
+                  class="why-us__second-answer-text lazy-bg"
+                  data-bg-mobile="./assets/img/whyUsSecondAnswerTextBGMobile.png">
                   <span class="text-selection-blue">
                     Earning on crypto is a great way to<br />
                     support yourself and your loved<br />
@@ -589,11 +577,18 @@
               </p>
             </div>
           </div>
+          <div
+            class="why-us__franklin lazy-bg"
+            data-bg="./assets/img/franklin.png"
+            data-bg-mobile="./assets/img/franklinMobile.png"></div>
         </div>
       </section>
 
       <section class="qa-investments">
-        <div class="qa-investments__wrapper">
+        <div
+          class="qa-investments__wrapper lazy-bg"
+          data-bg="./assets/img/qaInvestmentsBG.png"
+          data-bg-mobile="./assets/img/qaInvestmentsBGMobile.png">
           <div class="qa-investments__container">
             <div class="qa-investments__first-answer-wrapper">
               <img
@@ -608,7 +603,10 @@
                   WE ARE NOT ABOUT FLASHY SUCCESS
                 </p>
                 <p class="qa-investments__first-answer-text text-selection">WE ARE ABOUT CRYPTO</p>
-                <ul class="qa-investments__first-answer-list">
+                <ul
+                  class="qa-investments__first-answer-list lazy-bg"
+                  data-bg="./assets/img/qaInvestmentsFirstAnswerListBG.png"
+                  data-bg-mobile="./assets/img/qaInvestmentsFirstAnswerListBGMobile.png">
                   <li class="qa-investments__first-answer-item">
                     <p class="qa-investments__first-answer-item-text">
                       Here, you need to work here at least 2-3 hours a day
@@ -632,8 +630,9 @@
                 IS <span class="text-selection">INVESTMENT </span> NEEDED HERE?
               </p>
               <img
-                class="qa-investments__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-investments__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -660,8 +659,9 @@
                 CAPITAL?
               </p>
               <img
-                class="qa-investments__second-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-investments__second-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -681,8 +681,9 @@
                 MARKET?
               </p>
               <img
-                class="qa-investments__third-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-investments__third-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -693,7 +694,8 @@
                 alt="owner avatar" />
               <div class="qa-investments__fourth-answer-content">
                 <ul
-                  class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-desktop">
+                  class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-desktop lazy-bg"
+                  data-bg="./assets/img/qaInvestmentsFourthAnswerListBG.png">
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
                       Confirmation of your identity: when undergoing<br />
@@ -714,7 +716,8 @@
                   </li>
                 </ul>
                 <ul
-                  class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-mobile">
+                  class="qa-investments__fourth-answer-list qa-investments__fourth-answer-list-mobile lazy-bg"
+                  data-bg-mobile="./assets/img/qaInvestmentsFourthAnswerListBGMobile.png">
                   <li class="qa-investments__fourth-answer-item">
                     <p class="qa-investments__fourth-answer-text">
                       Confirmation of your identity:<br />
@@ -744,15 +747,19 @@
       </section>
 
       <section class="qa-income">
-        <div class="qa-income__wrapper">
+        <div
+          class="qa-income__wrapper lazy-bg"
+          data-bg="./assets/img/qaIncomeBG.png"
+          data-bg-mobile="./assets/img/qaIncomeBGMobile.png">
           <div class="qa-income__container">
             <div class="qa-income__first-question-wrapper">
               <p class="qa-income__first-question-text">
                 WHAT IS THE KEY <span class="text-selection">ESSENCE OF EARNING? </span>
               </p>
               <img
-                class="qa-income__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-income__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -774,7 +781,9 @@
                   10 payments using the budget<br />
                   allocated by our company."
                 </p>
-                <div class="qa-income__first-answer-card-wrapper">
+                <div
+                  class="qa-income__first-answer-card-wrapper lazy-bg"
+                  data-bg="./assets/img/qaIncomeFirstAnswerCardBG.png">
                   <p class="qa-income__first-answer-card-text text-selection-blue">
                     In this way, we test projects at the initial stages of their development,
                     allocating time and money for this purpose.
@@ -802,7 +811,9 @@
                   allocated by our company."
                 </p>
 
-                <div class="qa-income__first-answer-card-wrapper">
+                <div
+                  class="qa-income__first-answer-card-wrapper lazy-bg"
+                  data-bg-mobile="./assets/img/qaIncomeFirstAnswerCardBGMobile.png">
                   <p class="qa-income__first-answer-card-text text-selection-blue">
                     In this way, we test projects at<br />
                     the initial stages of their<br />
@@ -810,8 +821,8 @@
                     and money for this purpose.
                   </p>
                   <p class="qa-income__first-answer-card-text">
-                    In return, we have the opportunity<br />
-                    to receive rewards<br />
+                    In return, we have the opportunity
+                    to receive rewards
                     from projects!
                   </p>
                 </div>
@@ -823,8 +834,9 @@
                 <span class="text-selection">WHY SHOULD PROJECTS</span> GIVE AWAY MONEY?
               </p>
               <img
-                class="qa-income__second-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-income__second-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -849,7 +861,10 @@
       </section>
 
       <section class="qa-team">
-        <div class="qa-team__wrapper">
+        <div
+          class="qa-team__wrapper lazy-bg"
+          data-bg="./assets/img/qaTeamBG.png"
+          data-bg-mobile="./assets/img/qaTeamBGMobile.png">
           <div class="qa-team__container">
             <div class="qa-team__first-question-wrapper">
               <p class="qa-team__first-question-text qa-team__first-question-text-desktop">
@@ -860,8 +875,9 @@
                 TEAMWORK <span class="text-selection">ORGANIZED?</span>
               </p>
               <img
-                class="qa-team__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-team__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -913,8 +929,9 @@
                 <span class="text-selection">WHAT DOES THE TEAM</span> 100 FRANKLINS DO?
               </p>
               <img
-                class="qa-team__second-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-team__second-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -924,7 +941,10 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <div class="qa-team__second-answer-content">
-                <ul class="qa-team__second-answer-list">
+                <ul
+                  class="qa-team__second-answer-list lazy-bg"
+                  data-bg="./assets/img/qaTeamSecondAnswerListBorder.png"
+                  data-bg-mobile="./assets/img/qaTeamSecondAnswerListBorderMobile.png">
                   <li class="qa-team__second-answer-item">
                     <div class="qa-team__second-answer-img">
                       <img src="./assets/img/svg/trohyIcon.svg" alt="" />
@@ -939,7 +959,10 @@
                       We find the most promising projects, willing to pay us
                     </p>
                     <div class="qa-team__second-answer-projects-img">
-                      <img src="./assets/img/screenShotGallery/firstScreenShot.png" alt="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/firstScreenShot.png"
+                        src="" />
                     </div>
                   </li>
                   <li class="qa-team__second-answer-item">
@@ -955,8 +978,14 @@
                       to be done and how
                     </p>
                     <div class="qa-team__second-answer-todo-img-wrapper">
-                      <img src="./assets/img/screenShotGallery/secondScreenShot.png" alt="" />
-                      <img src="./assets/img/screenShotGallery/thirdScreenShot.png" alt="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/secondScreenShot.png"
+                        src="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/thirdScreenShot.png"
+                        src="" />
                     </div>
                   </li>
                   <li class="qa-team__second-answer-item">
@@ -967,8 +996,14 @@
                       We support you and provide guidance on what to do if you have questions
                     </p>
                     <div class="qa-team__second-answer-support-img-wrapper">
-                      <img src="./assets/img/screenShotGallery/fourthScreenShot.png" alt="" />
-                      <img src="./assets/img/screenShotGallery/fifthScreenShot.png" alt="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/fourthScreenShot.png"
+                        src="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/fifthScreenShot.png"
+                        src="" />
                     </div>
                   </li>
                   <li class="qa-team__second-answer-item">
@@ -989,8 +1024,14 @@
                     </p>
 
                     <div class="qa-team__second-answer-investment-img-wrapper">
-                      <img src="./assets/img/screenShotGallery/sixthScreenShot.png" alt="" />
-                      <img src="./assets/img/screenShotGallery/seventhScreenShot.png" alt="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/sixthScreenShot.png"
+                        src="" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/screenShotGallery/seventhScreenShot.png"
+                        src="" />
                     </div>
                   </li>
                 </ul>
@@ -1002,8 +1043,9 @@
                 <span class="text-selection">ARE THERE REVIEWS</span> FROM COMMUNITY MEMBERS?
               </p>
               <img
-                class="qa-team__third-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-team__third-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1013,18 +1055,20 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
 
-              <div class="qa-team__third-answer-content qa-team__third-answer-content-desktop">
-                <div class="qa-team__third-answer-reviews-bg-1"></div>
-                <div class="qa-team__third-answer-reviews-bg-2"></div>
-                <div class="qa-team__third-answer-reviews-bg-additional"></div>
-                <div class="qa-team__third-answer-reviews-bg-3"></div>
+              <div
+                class="qa-team__third-answer-content qa-team__third-answer-content-desktop lazy-bg"
+                data-bg="./assets/img/reviewMembersBG.png">
                 <div class="qa-team__third-answer-reviews">
                   <div
                     class="qa-team__third-answer-reviews-item qa-team__third-answer-reviews-card-wrapper-1">
                     <div
                       class="qa-team__third-answer-reviews-img-wrapper open-modal"
                       data-video="./assets/video/SemeonovVladislavReview.MP4">
-                      <img loading="lazy" src="./assets/img/SemenovVladislav.png" alt="photo" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/SemenovVladislav.png"
+                        src=""
+                        alt="photo" />
                     </div>
                     <p class="qa-team__third-answer-reviews-name">
                       Vladyslav<br />
@@ -1037,7 +1081,11 @@
                     <div
                       class="qa-team__third-answer-reviews-img-wrapper open-modal"
                       data-video="assets/video/IvanYatskovetsReview.MP4">
-                      <img loading="lazy" src="./assets/img/IvanYatskovets.png" alt="photo" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/IvanYatskovets.png"
+                        src=""
+                        alt="photo" />
                     </div>
                     <p class="qa-team__third-answer-reviews-name">Ivan Yatskovets</p>
                     <p class="qa-team__third-answer-reviews-position">System Administrator</p>
@@ -1047,7 +1095,11 @@
                     <div
                       class="qa-team__third-answer-reviews-img-wrapper open-modal"
                       data-video="assets/video/AntonBudnikReview.MP4">
-                      <img loading="lazy" src="./assets/img/AntonBudnik.png" alt="photo" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/AntonBudnik.png"
+                        src=""
+                        alt="photo" />
                     </div>
                     <p class="qa-team__third-answer-reviews-name">Anton Budnik</p>
                     <p class="qa-team__third-answer-reviews-position">Marketing Manager</p>
@@ -1057,7 +1109,11 @@
                     <div
                       class="qa-team__third-answer-reviews-img-wrapper open-modal"
                       data-video="assets/video/OlgaByzdygaReview.MP4">
-                      <img loading="lazy" src="./assets/img/OlgaByzdyga.png" alt="photo" />
+                      <img
+                        class="lazy-img"
+                        data-src="./assets/img/OlgaByzdyga.png"
+                        src=""
+                        alt="photo" />
                     </div>
                     <p class="qa-team__third-answer-reviews-name">Olga Bizdiga</p>
                     <p class="qa-team__third-answer-reviews-position">Stay-at-Home Mom</p>
@@ -1065,7 +1121,9 @@
                 </div>
               </div>
 
-              <div class="qa-team__third-answer-content qa-team__third-answer-content-mobile">
+              <div
+                class="qa-team__third-answer-content qa-team__third-answer-content-mobile lazy-bg"
+                data-bg-mobile="./assets/img/reviewMembersBGMobile.png">
                 <div class="qa-team__third-answer-reviews-wrapper">
                   <div id="reviews" class="qa-team__third-answer-reviews swiper">
                     <div class="qa-team__third-answer-reviews swiper-wrapper">
@@ -1074,7 +1132,11 @@
                         <div
                           class="qa-team__third-answer-reviews-img-wrapper open-modal"
                           data-video="./assets/video/SemeonovVladislavReview.MP4">
-                          <img loading="lazy" src="./assets/img/SemenovVladislav.png" alt="photo" />
+                          <img
+                            class="lazy-img-mobile"
+                            data-src="./assets/img/SemenovVladislav.png"
+                            src=""
+                            alt="photo" />
                         </div>
                         <p class="qa-team__third-answer-reviews-name">
                           Vladyslav<br />
@@ -1087,7 +1149,11 @@
                         <div
                           class="qa-team__third-answer-reviews-img-wrapper open-modal"
                           data-video="assets/video/IvanYatskovetsReview.MP4">
-                          <img loading="lazy" src="./assets/img/IvanYatskovets.png" alt="photo" />
+                          <img
+                            class="lazy-img-mobile"
+                            data-src="./assets/img/IvanYatskovets.png"
+                            src=""
+                            alt="photo" />
                         </div>
                         <p class="qa-team__third-answer-reviews-name">Ivan Yatskovets</p>
                         <p class="qa-team__third-answer-reviews-position">System Administrator</p>
@@ -1097,7 +1163,11 @@
                         <div
                           class="qa-team__third-answer-reviews-img-wrapper open-modal"
                           data-video="assets/video/AntonBudnikReview.MP4">
-                          <img loading="lazy" src="./assets/img/AntonBudnik.png" alt="photo" />
+                          <img
+                            class="lazy-img-mobile"
+                            data-src="./assets/img/AntonBudnik.png"
+                            src=""
+                            alt="photo" />
                         </div>
                         <p class="qa-team__third-answer-reviews-name">Anton Budnik</p>
                         <p class="qa-team__third-answer-reviews-position">Marketing Manager</p>
@@ -1107,7 +1177,11 @@
                         <div
                           class="qa-team__third-answer-reviews-img-wrapper open-modal"
                           data-video="assets/video/OlgaByzdygaReview.MP4">
-                          <img loading="lazy" src="./assets/img/OlgaByzdyga.png" alt="photo" />
+                          <img
+                            class="lazy-img-mobile"
+                            data-src="./assets/img/OlgaByzdyga.png"
+                            src=""
+                            alt="photo" />
                         </div>
                         <p class="qa-team__third-answer-reviews-name">Olga Bizdiga</p>
                         <p class="qa-team__third-answer-reviews-position">Stay-at-Home Mom</p>
@@ -1123,8 +1197,9 @@
                 WHY DOES THE 100 FRANKLINS <span class="text-selection">TEAM NEED ALL THIS? </span>
               </p>
               <img
-                class="qa-team__fourth-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-team__fourth-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1149,13 +1224,17 @@
       </section>
 
       <section class="qa-earnings">
-        <div class="qa-earnings__wrapper">
+        <div
+          class="qa-earnings__wrapper lazy-bg"
+          data-bg="./assets/img/qaEarningsBG.png"
+          data-bg-mobile="./assets/img/qaEarningsBGMobile.png">
           <div class="qa-earnings__container">
             <div class="qa-earnings__first-question-wrapper">
               <p class="qa-earnings__first-question-text">CAN YOU REALLY... MAKE MONEY WITH US?</p>
               <img
-                class="qa-earnings__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-earnings__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1180,16 +1259,30 @@
                 </p>
                 <p class="qa-earnings__first-answer-text text-selection">Among them:</p>
                 <div class="qa-earnings__first-answer-gallery-wrapper">
-                  <img src="./assets/img/earningsPictures/firstAnswerGalleryEN-1.png" alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-2.png"
+                  <img
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-1.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-3.png"
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-2.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-4.png"
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-3.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-5.png"
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-4.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-6.png"
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-5.png"
+                    src=""
+                    alt="" /><img
+                    class="lazy-img"
+                    data-src="./assets/img/earningsPictures/firstAnswerGallery-6.png"
+                    src=""
                     alt="" />
                 </div>
                 <p class="qa-earnings__first-answer-text">And this is only a small part!</p>
@@ -1211,18 +1304,29 @@
                 <p class="qa-earnings__first-answer-text text-selection">Among them:</p>
                 <div class="qa-earnings__first-answer-gallery-wrapper">
                   <img
-                    <img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-1.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-1.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-2.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-2.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-3.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-3.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-4.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-4.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-5.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-5.png"
+                    src=""
                     alt="" /><img
-                    src="./assets/img/earningsPictures/firstAnswerGalleryEN-6.png"
+                    class="lazy-img-mobile"
+                    data-src="./assets/img/earningsPictures/firstAnswerGalleryMobile-6.png"
+                    src=""
                     alt="" />
                 </div>
                 <p class="qa-earnings__first-answer-text">And this is only a small part!</p>
@@ -1236,26 +1340,49 @@
                 alt="owner avatar" />
               <div
                 class="qa-earnings__second-answer-content qa-earnings__second-answer-content-desktop">
-                <img src="./assets/img/earningsPictures/secondAnswerGalleryEN-1.png" alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-2.png"
-                  alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-3.png"
-                  alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-4.png"
+                <img
+                  class="lazy-img"
+                  data-src="./assets/img/earningsPictures/secondAnswerGallery-1.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img"
+                  data-src="./assets/img/earningsPictures/secondAnswerGallery-2.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img"
+                  data-src="./assets/img/earningsPictures/secondAnswerGallery-3.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img"
+                  data-src="./assets/img/earningsPictures/secondAnswerGallery-4.png"
+                  src=""
                   alt="" />
               </div>
 
               <div
                 class="qa-earnings__second-answer-content qa-earnings__second-answer-content-mobile">
                 <img
-                  <img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-1.png"
-                  alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-2.png"
-                  alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-3.png"
-                  alt="" /><img
-                  src="./assets/img/earningsPictures/secondAnswerGalleryEN-4.png"
+                  class="lazy-img-mobile"
+                  data-src="./assets/img/earningsPictures/secondAnswerGalleryMobile-1.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img-mobile"
+                  data-src="./assets/img/earningsPictures/secondAnswerGalleryMobile-2.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img-mobile"
+                  data-src="./assets/img/earningsPictures/secondAnswerGalleryMobile-3.png"
+                  src=""
+                  alt="" />
+                <img
+                  class="lazy-img-mobile"
+                  data-src="./assets/img/earningsPictures/secondAnswerGalleryMobile-4.png"
+                  src=""
                   alt="" />
               </div>
             </div>
@@ -1289,8 +1416,9 @@
                 HOW WILL THE EARNED MONEY <span class="text-selection">BE DISTRIBUTED?</span>
               </p>
               <img
-                class="qa-earnings__second-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-earnings__second-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1300,7 +1428,14 @@
                 src="./assets/img/ownerAvatar.png"
                 alt="owner avatar" />
               <div class="qa-earnings__fourth-answer-content">
-                <img src="./assets/img/earningsPictures/diagramDesktopEN.svg" alt="" />
+                <picture
+                  class="lazy-picture"
+                  data-src-desktop="./assets/img/earningsPictures/diagramDesktop.svg"
+                  data-src-mobile="./assets/img/earningsPictures/diagramMobile.svg">
+                  <source media="(min-width: 591px)" srcset="" />
+                  <source media="(max-width: 590px)" srcset="" />
+                  <img src="" alt="" />
+                </picture>
               </div>
             </div>
           </div>
@@ -1308,15 +1443,19 @@
       </section>
 
       <section class="qa-acknowledge">
-        <div class="qa-acknowledge__wrapper">
+        <div
+          class="qa-acknowledge__wrapper lazy-bg"
+          data-bg="./assets/img/acknowledgePictures/qaAcknowledgeBG.png"
+          data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeBGMobile.png">
           <div class="qa-acknowledge__container">
             <div class="qa-acknowledge__first-question-wrapper">
               <p class="qa-acknowledge__first-question-text">
                 ARE YOU SURE YOU <span class="text-selection">WON'T DECEIVE US?</span>
               </p>
               <img
-                class="qa-acknowledge__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-acknowledge__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1402,8 +1541,9 @@
                 WHO WILL BE ON THE PROJECT TEAM?
               </p>
               <img
-                class="qa-acknowledge__second-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-acknowledge__second-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1431,14 +1571,20 @@
                 </p>
                 <div class="qa-acknowledge__second-answer_experience">
                   <div class="qa-acknowledge__second-answer_experience-column">
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-1">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-1 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-1.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-1.png">
                       <p class="qa-acknowledge__second-answer_experience-text">
                         A network of 100+ crypto-influencers with a Telegram audience of over 100
                         million followers
                       </p>
                     </div>
 
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-2">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-2 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-2.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-2.png">
                       <p
                         class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-desktop">
                         Experience in organizing crypto-pools worth 10+ million dollars
@@ -1449,7 +1595,10 @@
                       </p>
                     </div>
 
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-3">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-3 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-3.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-3.png">
                       <p class="qa-acknowledge__second-answer_experience-text">
                         We created a platform that increase the profit of crypto-investors and
                         crypto-projects
@@ -1459,7 +1608,10 @@
 
                   <div class="qa-acknowledge__second-answer_experience-column">
                     <div class="qa-acknowledge__second-answer_experience-custom-wrapper">
-                      <div class="qa-acknowledge__second-answer_experience-wrapper-4">
+                      <div
+                        class="qa-acknowledge__second-answer_experience-wrapper-4 lazy-bg"
+                        data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-4.svg"
+                        data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-4.png">
                         <p class="qa-acknowledge__second-answer_experience-text">
                           The service for creating bots and sales funnels for crypto-experts and
                           crypto-projects has been established
@@ -1467,7 +1619,10 @@
                       </div>
                     </div>
 
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-5">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-5 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-5.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-5.png">
                       <p class="qa-acknowledge__second-answer_experience-text">
                         Experience of recruitment of more than 100,000 users in crypto-projects
                       </p>
@@ -1480,7 +1635,10 @@
                   </div>
 
                   <div class="qa-acknowledge__second-answer_experience-column">
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-6">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-6 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-6.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-6.png">
                       <p class="qa-acknowledge__second-answer_experience-text">
                         A community of 10,000+ programmers
                       </p>
@@ -1490,7 +1648,10 @@
                       </p>
                     </div>
 
-                    <div class="qa-acknowledge__second-answer_experience-wrapper-7">
+                    <div
+                      class="qa-acknowledge__second-answer_experience-wrapper-7 lazy-bg"
+                      data-bg="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-7.svg"
+                      data-bg-mobile="./assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-7.png">
                       <p
                         class="qa-acknowledge__second-answer_experience-text qa-acknowledge__second-answer_experience-text-desktop">
                         Partner experience of incubation of crypto-projects and listing on ByBit,
@@ -1511,8 +1672,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-kir">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-1.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-1.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1526,8 +1688,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-igor">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-2.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-2.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1541,8 +1704,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-ksander">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-3.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-3.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1556,8 +1720,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-alex">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-4.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-4.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1571,8 +1736,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-vladimir">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-5.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-5.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1586,8 +1752,9 @@
                     <div
                       class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-valeriy">
                       <img
-                        class="qa-acknowledge__second-answer_team-img"
-                        src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-6.svg"
+                        class="qa-acknowledge__second-answer_team-img lazy-img"
+                        data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-6.svg"
+                        src=""
                         alt="" />
                     </div>
                     <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1607,8 +1774,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-kir">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-1.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-1.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1622,8 +1790,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-igor">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-2.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-2.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1637,8 +1806,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-ksander">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-3.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-3.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1652,8 +1822,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-alex">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-4.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-4.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1667,8 +1838,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-vladimir">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-5.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-5.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1682,8 +1854,9 @@
                       <div
                         class="qa-acknowledge__second-answer_team-img-wrapper qa-acknowledge__second-answer_team-valeriy">
                         <img
-                          class="qa-acknowledge__second-answer_team-img"
-                          src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-6.svg"
+                          class="qa-acknowledge__second-answer_team-img lazy-img-mobile"
+                          data-src="./assets/img/acknowledgePictures/qaAcknowledgeTeamMember-6.svg"
+                          src=""
                           alt="" />
                       </div>
                       <figcaption class="qa-acknowledge__second-answer_team-name">
@@ -1702,7 +1875,10 @@
       </section>
 
       <section class="qa-common-issues">
-        <div class="qa-common-issues__wrapper">
+        <div
+          class="qa-common-issues__wrapper lazy-bg"
+          data-bg="./assets/img/qaCommonIssuesBG.png"
+          data-bg-mobile="./assets/img/qaCommonIssuesBGMobile.png">
           <div class="qa-common-issues__container">
             <div class="qa-common-issues__first-question-wrapper">
               <p class="qa-common-issues__first-question-text">
@@ -1710,8 +1886,9 @@
                 <span class="text-selection">TO KNOW ANSWERS TO? </span>
               </p>
               <img
-                class="qa-common-issues__first-question-avatar avatar"
-                src="./assets/img/svg/userAvatar.svg"
+                class="qa-common-issues__first-question-avatar avatar lazy-img"
+                data-src="./assets/img/svg/userAvatar.svg"
+                src=""
                 alt="Аватар пользователя" />
             </div>
 
@@ -1934,12 +2111,19 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
+        <div
+          class="footer__bg lazy-bg"
+          data-bg="./assets/img/footerBG.png"
+          data-bg-mobile="./assets/img/footerBGMobile.png"></div>
         <div class="footer__container">
           <div class="footer__logo-wrapper">
-            <picture>
-              <source media="(min-width: 591px)" srcset="./assets/img/logo.png" />
-              <source media="(max-width: 590px)" srcset="./assets/img/svg/logoMobile.svg" />
-              <img class="footer__logo" src="./assets/img/logo.png" alt="100F logo" />
+            <picture
+              class="lazy-picture"
+              data-src-desktop="./assets/img/logo.png"
+              data-src-mobile="./assets/img/svg/logoMobile.svg">
+              <source media="(min-width: 591px)" srcset="" />
+              <source media="(max-width: 590px)" srcset="" />
+              <img class="footer__logo" src="" alt="100F logo" />
             </picture>
           </div>
           <p class="footer__subheading footer__subheading-desktop">
@@ -2031,7 +2215,9 @@
     </div>
 
     <div class="leave-popup-overlay">
-      <div class="leave-popup-wrapper">
+      <div
+        class="leave-popup-wrapper lazy-bg"
+        data-bg="./assets/img/modal/modalBG.png">
         <span class="leave-popup-close-btn"></span>
         <h2 class="leave-popup-header">
           <span class="text-selection"

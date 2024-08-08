@@ -549,6 +549,14 @@
     line-height: 16.8px;
   }
 
+  .ua .header__card-warning {
+    max-width: 255px;
+    padding: 5px 0 6px 19px;
+    font-size: 14px;
+    line-height: 16.8px;
+    
+  }
+
   .header__card-warning::before {
     top: 2px;
     width: 22px;
