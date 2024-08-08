@@ -6,7 +6,8 @@
 .qa-income__wrapper {
   padding: 70px 105px 45px 113px;
   border-radius: 22.27px;
-  background: url('../assets/img/qaIncomeBG.png') no-repeat;
+  /* background: url('../assets/img/qaIncomeBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -67,7 +68,8 @@
 
 .qa-income__first-answer-card-wrapper {
   padding: 22px 10px 20px 66px;
-  background: url('../assets/img/qaIncomeFirstAnswerCardBG.png') no-repeat;
+  /* background: url('../assets/img/qaIncomeFirstAnswerCardBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -202,7 +204,8 @@
   .qa-income__wrapper {
     padding: 30px 8px 42px 12px;
     border-radius: 15px;
-    background: url('../assets/img/qaIncomeBGMobile.png') no-repeat;
+    /* background: url('../assets/img/qaIncomeBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -250,7 +253,8 @@
 
   .qa-income__first-answer-card-wrapper {
     padding: 13px 10px 13px 36px;
-    background: url('../assets/img/qaIncomeFirstAnswerCardBGMobile.png') no-repeat;
+    /* background: url('../assets/img/qaIncomeFirstAnswerCardBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 

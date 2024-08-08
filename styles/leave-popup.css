@@ -33,7 +33,8 @@
   background-color: #1c195b;
   border-radius: 15px;
   padding: 41px 0 43px 0;
-  background: url('../assets/img/modal/modalBG.png') no-repeat;
+  /* background: url('../assets/img/modal/modalBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: -1;
 }

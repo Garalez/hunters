@@ -6,7 +6,8 @@
 .qa-acknowledge__wrapper {
   padding: 70px 0 47px 113px;
   border-radius: 25px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeBG.png') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -183,7 +184,8 @@
   height: 87px;
   padding: 6px 0 0 79px;
   margin-bottom: 8px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-1.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-1.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-2 {
@@ -191,14 +193,16 @@
   height: 69px;
   padding: 7px 0 0 79px;
   margin-bottom: 8px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-2.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-2.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-3 {
   width: 327px;
   height: 92px;
   padding: 8px 0 0 79px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-3.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-3.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-4 {
@@ -206,14 +210,16 @@
   height: 91px;
   padding: 8px 0 0 80px;
   margin-bottom: 8px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-4.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-4.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-5 {
   width: 327px;
   height: 165px;
   padding: 12px 0 0 80px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-5.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-5.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-6 {
@@ -221,14 +227,16 @@
   height: 134px;
   padding: 8px 0 0 91px;
   margin-bottom: 13px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-6.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-6.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-wrapper-7 {
   width: 327px;
   height: 117px;
   padding: 18px 0 0 91px;
-  background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-7.svg') no-repeat;
+  /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBG-7.svg') no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .qa-acknowledge__second-answer_experience-text {
@@ -417,7 +425,8 @@
   .qa-acknowledge__wrapper {
     padding: 35px 8px 11px 6px;
     border-radius: 15px;
-    background-image: url('../assets/img/acknowledgePictures/qaAcknowledgeBGMobile.png');
+    /* background-image: url('../assets/img/acknowledgePictures/qaAcknowledgeBGMobile.png'); */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -547,8 +556,9 @@
     height: 100%;
     padding: 7px 14px 8px 60px;
     margin-bottom: 9px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-1.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-1.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -557,8 +567,9 @@
     height: 100%;
     padding: 9px 42px 6px 60px;
     margin-bottom: 9px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-2.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-2.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -567,8 +578,9 @@
     height: 100%;
     padding: 9px 0px 11px 60px;
     margin-bottom: 9px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-3.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-3.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -576,8 +588,9 @@
     width: 100%;
     height: 100%;
     padding: 9px 0px 2px 59px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-4.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-4.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -590,8 +603,9 @@
     height: 100%;
     padding: 8px 0 8px 60px;
     margin-bottom: 9px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-5.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-5.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -605,8 +619,9 @@
     height: 100%;
     padding: 9px 0 11px 59px;
     margin-bottom: 9px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-6.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-6.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
@@ -630,8 +645,9 @@
     width: 100%;
     height: 100%;
     padding: 8px 0px 8px 59px;
-    background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-7.png')
-      no-repeat;
+    /* background: url('../assets/img/acknowledgePictures/qaAcknowledgeTeamExperienceBGMobile-7.png')
+      no-repeat; */
+      background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 

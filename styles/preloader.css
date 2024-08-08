@@ -8,7 +8,7 @@
   padding-top: 68px;
   background-color: #fff;
   z-index: 10;
-  background: url('../assets/img/preloader/preloaderBg.png') no-repeat;
+  /* background: url('../assets/img/preloader/preloaderBg.png') no-repeat; */
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -52,6 +52,10 @@
   font-family: bicubik;
   font-weight: 300;
   color: #413cb2;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .preloader-screen .container {
@@ -169,7 +173,9 @@
 }
 
 .preloader__greetings-main-title-img {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
   flex-direction: column;
 }
 
@@ -442,7 +448,7 @@
 
 @media (max-width: 590px) {
   .preloader {
-    background: url('../assets/img/preloader/preloaderBgMobile.png') no-repeat;
+    /* background: url('../assets/img/preloader/preloaderBgMobile.png') no-repeat; */
     background-size: cover;
   }
 

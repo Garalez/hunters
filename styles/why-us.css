@@ -6,19 +6,21 @@
 .why-us__wrapper {
   position: relative;
   padding: 73px 103px 134px 113px;
-  background: url('../assets/img/whyUsBG.png') no-repeat;
+  /* background: url('../assets/img/whyUsBG.png') no-repeat; */
+  background-repeat: no-repeat;
   border-radius: 22.27px;
   isolation: isolate;
 }
 
-.why-us__wrapper::after {
+.why-us__franklin {
   content: '';
   position: absolute;
   bottom: 0;
   right: -2px;
   width: 643px;
   height: 584px;
-  background: url('../assets/img/franklin.png') no-repeat;
+  /* background: url('../assets/img/franklin.png') no-repeat; */
+  background-repeat: no-repeat;
   background-position: bottom;
   z-index: -1;
 }
@@ -126,7 +128,7 @@
   max-width: 572px;
   padding: 22px 22px 31px 65px;
   color: #1c195b;
-  background: url('../assets/img/whyUsSecondAnswerTextBG.png') no-repeat;
+  /* background: url('../assets/img/whyUsSecondAnswerTextBG.png') no-repeat; */
   background-size: 100% 100%;
 }
 
@@ -178,7 +180,7 @@
     padding: 73px 103px 520px 113px;
   }
 
-  .why-us__wrapper::after {
+  .why-us__franklin {
     right: 50%;
     transform: translate(50%, 0);
   }
@@ -211,7 +213,7 @@
     padding: 73px 25px 450px 25px;
   }
 
-  .why-us__wrapper::after {
+  .why-us__franklin {
     background-size: contain;
     width: 570px;
   }
@@ -237,7 +239,8 @@
 
   .why-us__wrapper {
     padding: 30px 8px 334px 12px;
-    background: url('../assets/img/whyUsBGMobile.png') no-repeat;
+    /* background: url('../assets/img/whyUsBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 15px;
   }
@@ -247,12 +250,13 @@
     max-width: 357px;
   }
 
-  .why-us__wrapper::after {
+  .why-us__franklin {
     right: 50%;
     transform: translate(50%, 0);
     width: 380px;
     height: 362px;
-    background: url('../assets/img/franklinMobile.png') no-repeat;
+    /* background: url('../assets/img/franklinMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-position: bottom;
   }
 
@@ -323,7 +327,7 @@
 
   .why-us__second-answer-text:nth-of-type(3) {
     padding: 13px 6px 31px 36px;
-    background: url('../assets/img/whyUsSecondAnswerTextBGMobile.png') no-repeat;
+    /* background: url('../assets/img/whyUsSecondAnswerTextBGMobile.png') no-repeat; */
     background-size: auto;
   }
 

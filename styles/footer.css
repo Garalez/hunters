@@ -2,14 +2,15 @@
   padding: 51px 0 11px 0;
 }
 
-.footer::before {
+.footer__bg {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 968px;
-  background: url('../assets/img/footerBG.png') no-repeat;
+  /* background: url('../assets/img/footerBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -162,9 +163,10 @@
     overflow: hidden;
   }
 
-  .footer::before {
+  .footer__bg {
     height: 1397px;
-    background: url('../assets/img/footerBGMobile.png') no-repeat;
+    /* background: url('../assets/img/footerBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 

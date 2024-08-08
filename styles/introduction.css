@@ -10,11 +10,16 @@
   padding: 81px 72px 150px 109px;
   border-radius: 22.27px;
   background-color: #fcf9ec;
+  /* background: url('../assets/img/svg/introductionBG.svg') no-repeat; */
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* z-index: -2; */
   isolation: isolate;
   overflow: hidden;
 }
 
-.introduction__wrapper::before {
+/* .introduction__wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -24,7 +29,7 @@
   background: url('../assets/img/svg/introductionBG.svg') no-repeat;
   background-size: 100% 100%;
   z-index: -2;
-}
+} */
 
 .introduction__dialog {
   display: flex;
@@ -79,6 +84,7 @@
   position: absolute;
   bottom: 0;
   right: 13px;
+  z-index: 1;
 }
 
 .introduction__info {
@@ -193,7 +199,8 @@
   }
 
   .introduction__wrapper::before {
-    background: url('../assets/img/introductionBGMobile.png') no-repeat;
+    /* background: url('../assets/img/introductionBGMobile.png') no-repeat; */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 

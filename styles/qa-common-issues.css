@@ -5,7 +5,8 @@
 .qa-common-issues__wrapper {
   padding: 72px 103px 31px 113px;
   border-radius: 25px;
-  background: url('../assets/img/qaCommonIssuesBG.png') no-repeat;
+  /* background: url('../assets/img/qaCommonIssuesBG.png') no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -248,7 +249,8 @@
   .qa-common-issues__wrapper {
     padding: 30px 8px 38px 6px;
     border-radius: 15px;
-    background-image: url('../assets/img/qaCommonIssuesBGMobile.png');
+    /* background-image: url('../assets/img/qaCommonIssuesBGMobile.png'); */
+    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
