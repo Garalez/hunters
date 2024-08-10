@@ -1,7 +1,7 @@
 .preloader {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   right: 0;
@@ -70,7 +70,7 @@
 .preloader-screen .main-title {
   opacity: 0;
   visibility: hidden;
-  height: 0;
+  height: 100%;
   font-size: 20px;
   margin: 0 auto;
   white-space: nowrap;
@@ -465,19 +465,39 @@
 @media (max-width: 590px) {
   .preloader {
     background-color: #fff;
-    background-image: url('../assets/img/preloader/preloaderBgMobile.png') no-repeat;
-    background-size: cover;
+    background-image: url('../assets/img/preloader/preloaderBgMobile.png');
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: top;
+  }
+
+  .preloader-screen {
+    height: 100%;
   }
 
   .preloader-screen .container {
     position: relative;
-    height: 551px;
+    /* height: 551px; */
+    height: 100%;
     max-width: 390px;
-    padding: 0 25px 0 16px;
+    padding: 0 25px 10vh 16px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-cont-wrapper {
+    margin-top: auto;
   }
 
   .loader {
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+    height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .loader-bar {
+    height: 14px;
   }
 
   .percent-text {
@@ -503,10 +523,10 @@
   }
 
   .preloader-screen .subtitle:nth-of-type(2) {
-    position: absolute;
+    position: static;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(0, 0);
     margin-bottom: 0;
     font-size: 30px;
     line-height: 33px;

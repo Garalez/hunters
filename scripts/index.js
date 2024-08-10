@@ -1,13 +1,61 @@
 import { Swiper } from './swiper-bundle.min.js';
 
+const translationToShow = () => {
+  const storedLang = localStorage.getItem('storedLang');
+
+  const redirectToLanguagePage = lang => {
+    const pages = {
+      ru: 'index.html',
+      en: 'index-en.html',
+      ua: 'index-ua.html',
+    };
+    const page = pages[lang] || 'index.html';
+    localStorage.setItem('storedLang', lang);
+    window.location.href = page;
+  };
+
+  if (storedLang) {
+    const currentUrl = window.location.href;
+    const langPages = {
+      ru: 'index.html',
+      en: 'index-en.html',
+      ua: 'index-ua.html',
+    };
+
+    if (!currentUrl.includes(langPages[storedLang])) {
+      window.location.href = langPages[storedLang];
+    }
+  } else {
+    let userLang = navigator.language || navigator.userLanguage;
+    userLang = userLang.toLowerCase();
+
+    if (userLang.startsWith('ru')) {
+      redirectToLanguagePage('ru');
+    } else if (userLang.startsWith('en')) {
+      redirectToLanguagePage('en');
+    } else if (userLang.startsWith('uk')) {
+      redirectToLanguagePage('ua');
+    } else {
+      redirectToLanguagePage('en');
+    }
+  }
+
+  document.querySelectorAll('.header__language-switcher-select').forEach(el => {
+    el.addEventListener('click', event => {
+      event.preventDefault();
+      const selectedLang = event.target.getAttribute('data-lang');
+      redirectToLanguagePage(selectedLang);
+    });
+  });
+};
+
+translationToShow();
+
 document.addEventListener('DOMContentLoaded', () => {
   const html = document.querySelector('html');
-  const body = document.querySelector('body');
-  const container = document.querySelector('.container');
   const preloader = document.querySelector('.preloader');
   const preloaderGreetingsImg = document.querySelector('.preloader__greetings-main-title-img');
   const whiteScreen = document.querySelector('.slide');
-
 
   const isMobile = window.matchMedia('(max-width: 590px)').matches;
 
@@ -107,16 +155,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  
   showBlocks();
 
   const loaderBar = document.querySelector('.loader-bar');
   const percentText = document.getElementById('percentText');
 
+  let currentPercentage = 0;
+  let targetPercentage = 0;
+
   const logPageLoadTime = () => {
-    loaderBar.style.width = `${100}%`;
-    percentText.textContent = `${100}%`;
+    targetPercentage = 100;
     pageLoaded = true;
+    animateLoader();
   };
 
   window.addEventListener('load', logPageLoadTime);
@@ -134,15 +184,20 @@ document.addEventListener('DOMContentLoaded', () => {
   let loadedResources = 0;
 
   const updateLoader = () => {
-    const percentage = Math.min(Math.round((loadedResources / totalResources) * 100), 100);
-    console.log('percentage: ', percentage);
+    targetPercentage = Math.min(Math.round((loadedResources / totalResources) * 100), 97);
+    animateLoader();
+  };
 
-    if (percentage >= 97) {
-      loaderBar.style.width = `${97}%`;
-      percentText.textContent = `${97}%`;
-    } else {
-      loaderBar.style.width = `${percentage}%`;
-      percentText.textContent = `${percentage}%`;
+  const animateLoader = () => {
+    if (currentPercentage < targetPercentage) {
+      currentPercentage += (targetPercentage - currentPercentage) * 0.1;
+      loaderBar.style.width = `${currentPercentage}%`;
+      percentText.textContent = `${Math.round(currentPercentage)}%`;
+      requestAnimationFrame(animateLoader);
+    } else if (pageLoaded && currentPercentage < 100) {
+      currentPercentage = 100;
+      loaderBar.style.width = `${currentPercentage}%`;
+      percentText.textContent = `${currentPercentage}%`;
     }
   };
 
@@ -272,57 +327,6 @@ document.addEventListener('DOMContentLoaded', () => {
   lazyImagesMobile.forEach(img => {
     imgMobileObserver.observe(img);
   });
-
-  const translationToShow = () => {
-    const storedLang = localStorage.getItem('storedLang');
-  
-    const redirectToLanguagePage = lang => {
-      const pages = {
-        ru: 'index.html',
-        en: 'index-en.html',
-        uk: 'index-ua.html',
-      };
-      const page = pages[lang] || 'index.html';
-      localStorage.setItem('storedLang', lang);
-      window.location.href = page;
-    };
-  
-    if (!storedLang) {
-      let userLang = navigator.language || navigator.userLanguage;
-      userLang = userLang.toLowerCase();
-  
-      if (userLang.startsWith('ru')) {
-        redirectToLanguagePage('ru');
-      } else if (userLang.startsWith('en')) {
-        redirectToLanguagePage('en');
-      } else if (userLang.startsWith('uk')) {
-        redirectToLanguagePage('ua');
-      } else {
-        redirectToLanguagePage('en');
-      }
-    } else {
-      const currentUrl = window.location.href;
-      const langPages = {
-        ru: 'index.html',
-        en: 'index-en.html',
-        ua: 'index-ua.html',
-      };
-  
-      if (!currentUrl.includes(langPages[storedLang])) {
-        window.location.href = langPages[storedLang];
-      }
-    }
-  
-    document.querySelectorAll('.header__language-switcher-select').forEach(el => {
-      el.addEventListener('click', event => {
-        event.preventDefault();
-        const selectedLang = event.target.getAttribute('data-lang');
-        redirectToLanguagePage(selectedLang);
-      });
-    });
-  };
-  
-  translationToShow();
 });
 
 new Swiper('#reviews', {
