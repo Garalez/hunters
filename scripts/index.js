@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const onPageLoad = () => {
     preloaderGreetingsImg.style.opacity = 0;
     whiteScreen.style.height = '100vh';
-    body.style.overflowY = 'scroll';
     setTimeout(() => {
+      body.style.overflowY = 'scroll';
       preloader.style.transform = 'translateY(100vh)';
       setTimeout(() => {
         preloader.style.display = 'none';
