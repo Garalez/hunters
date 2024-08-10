@@ -38,7 +38,7 @@
 .qa-acknowledge__first-answer-wrapper {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .qa-acknowledge__first-answer-owner-avatar {
@@ -149,7 +149,7 @@
 }
 
 .qa-acknowledge__second-answer-text {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   font-family: Wadik;
   font-size: 24px;
   font-weight: 700;

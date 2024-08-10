@@ -131,7 +131,8 @@
 
 .participation__card-request {
   position: relative;
-  padding: 28px 27px 29px 40px;
+  max-width: 555px;
+  padding: 28px 26px 29px 40px;
   border-radius: 10px;
   background: url('../assets/img/participationCardRequestBG.png') no-repeat;
   background-size: 100% 100%;
@@ -162,7 +163,7 @@
 .participation__card-request-item:nth-of-type(3) .participation__card-request-text {
   position: relative;
   width: fit-content;
-  padding: 12px 18px 12px 29px;
+  padding: 12px 17px 12px 29px;
   border-radius: 6px;
   background-color: #2943de;
   font-family: Geologica;
@@ -478,7 +479,7 @@
   }
 
   .participation__cards-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     gap: 15px;
   }
 
@@ -555,7 +556,8 @@
   }
 
   .participation__card-request {
-    padding: 19px 10px 29px 25px;
+    padding: 19px 10px 25px 25px;
+    max-width: 271px;
     /* background: url('../assets/img/participationCardRequestBGMobile.png') no-repeat; */
     background-repeat: no-repeat;
   }

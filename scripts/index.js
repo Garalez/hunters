@@ -52,7 +52,7 @@ const translationToShow = () => {
 translationToShow();
 
 document.addEventListener('DOMContentLoaded', () => {
-  const html = document.querySelector('html');
+  const body = document.querySelector('body');
   const preloader = document.querySelector('.preloader');
   const preloaderGreetingsImg = document.querySelector('.preloader__greetings-main-title-img');
   const whiteScreen = document.querySelector('.slide');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const onPageLoad = () => {
     preloaderGreetingsImg.style.opacity = 0;
     whiteScreen.style.height = '100vh';
-    html.style.overflowY = 'scroll';
+    body.style.overflowY = 'scroll';
     setTimeout(() => {
       preloader.style.transform = 'translateY(100vh)';
       setTimeout(() => {

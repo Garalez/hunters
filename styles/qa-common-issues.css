@@ -3,7 +3,7 @@
 }
 
 .qa-common-issues__wrapper {
-  padding: 72px 103px 31px 113px;
+  padding: 73px 103px 31px 113px;
   border-radius: 25px;
   /* background: url('../assets/img/qaCommonIssuesBG.png') no-repeat; */
   background-repeat: no-repeat;
@@ -128,12 +128,12 @@
 
 .qa-common-issues__second-answer-item:nth-of-type(3)
   .qa-common-issues__second-answer-question-counter {
-  padding: 12px 15px 13px 29px;
+  padding: 12px 15px 12px 29px;
 }
 
 .qa-common-issues__second-answer-item:nth-of-type(4)
   .qa-common-issues__second-answer-question-counter {
-  padding: 12px 14px 12px 29px;
+  padding: 12px 14px 13px 29px;
 }
 
 .qa-common-issues__second-answer-item:nth-of-type(5)

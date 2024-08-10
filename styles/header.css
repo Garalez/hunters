@@ -164,7 +164,7 @@
 .header__footer {
   display: flex;
   justify-content: center;
-  padding-right: 6px;
+  padding-right: 7px;
   gap: 28px;
 }
 
