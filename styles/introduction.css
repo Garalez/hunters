@@ -195,7 +195,7 @@
   }
 
   .introduction__wrapper {
-    padding: 29px 0 331px 4px;
+    padding: 35px 3px 331px 4px;
   }
 
   .introduction__wrapper::before {
@@ -237,7 +237,7 @@
 
   .introduction__info_qr {
     top: 26px;
-    right: -1px;
+    right: -6px;
   }
 
   .introduction__info_qr-code {

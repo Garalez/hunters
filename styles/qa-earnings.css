@@ -4,7 +4,7 @@
 }
 
 .qa-earnings__wrapper {
-  padding: 70px 103px 45px 113px;
+  padding: 70px 113px 45px 113px;
   /* background: url('../assets/img/qaEarningsBG.png') no-repeat; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -274,7 +274,7 @@
   }
 
   .qa-earnings__wrapper {
-    padding: 30px 8px 17px 6px;
+    padding: 35px 8px 35px 6px;
     border-radius: 15px;
     /* background: url('../assets/img/qaEarningsBGMobile.png') no-repeat; */
     background-repeat: no-repeat;
@@ -414,6 +414,7 @@
 
   .qa-earnings__fourth-answer-wrapper {
     padding-left: 6px;
+    margin-bottom: 0;
   }
 
   .qa-earnings__fourth-answer-content {

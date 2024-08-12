@@ -4,7 +4,7 @@
 }
 
 .qa-income__wrapper {
-  padding: 70px 105px 45px 113px;
+  padding: 70px 113px 45px 113px;
   border-radius: 22.27px;
   /* background: url('../assets/img/qaIncomeBG.png') no-repeat; */
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@
   }
 
   .qa-income__wrapper {
-    padding: 30px 8px 42px 12px;
+    padding: 35px 8px 35px 12px;
     border-radius: 15px;
     /* background: url('../assets/img/qaIncomeBGMobile.png') no-repeat; */
     background-repeat: no-repeat;

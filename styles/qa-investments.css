@@ -4,7 +4,7 @@
 }
 
 .qa-investments__wrapper {
-  padding: 70px 108px 55px 113px;
+  padding: 70px 113px 55px 113px;
   border-radius: 25px;
   /* background: url('../assets/img/qaInvestmentsBG.png') no-repeat; */
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
 .qa-investments__first-answer-item:nth-of-type(1) .qa-investments__first-answer-item-text::before {
   content: '';
   position: absolute;
-  top: -4px;
+  top: 0;
   left: -45px;
   width: 30px;
   height: 30px;
@@ -100,7 +100,7 @@
 .qa-investments__first-answer-item:nth-of-type(3) .qa-investments__first-answer-item-text::before {
   content: '';
   position: absolute;
-  top: 7px;
+  top: 0;
   left: -45px;
   width: 31px;
   height: 31px;

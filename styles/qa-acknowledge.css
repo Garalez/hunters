@@ -16,7 +16,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin-bottom: 24px;
-  padding-right: 105px;
+  padding-right: 113px;
 }
 
 .qa-acknowledge__first-question-text {
@@ -110,7 +110,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin-bottom: 24px;
-  padding-right: 105px;
+  padding-right: 113px;
 }
 
 .qa-acknowledge__second-question-text {
@@ -423,7 +423,7 @@
   }
 
   .qa-acknowledge__wrapper {
-    padding: 35px 8px 11px 6px;
+    padding: 35px 8px 35px 6px;
     border-radius: 15px;
     /* background-image: url('../assets/img/acknowledgePictures/qaAcknowledgeBGMobile.png'); */
     background-repeat: no-repeat;
@@ -521,6 +521,10 @@
     font-size: 13px;
     line-height: 14px;
     box-shadow: none;
+  }
+
+  .qa-acknowledge__second-answer-wrapper {
+    margin-bottom: 0;
   }
 
   .qa-acknowledge__second-answer-content {

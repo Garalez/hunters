@@ -4,7 +4,7 @@
 }
 
 .participation__wrapper {
-  padding: 70px 20px 59px 113px;
+  padding: 70px 0 70px 0;
   /* background: url('../assets/img/participationBG.png') no-repeat; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -13,6 +13,8 @@
 
 .participation__container {
   display: flex;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .participation__dialog-owner-avatar {
